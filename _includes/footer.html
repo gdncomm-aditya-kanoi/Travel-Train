@@ -1,0 +1,27 @@
+{% assign ig = "https://www.instagram.com/" | append: site.data.instagram.handle | append: "/" %}
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-about">
+      <span class="footer-name">Travel Train</span>
+      <p>{{ site.description }}</p>
+      <p class="small">© {{ site.time | date: "%Y" }} Travel Train · by Aditya Kanoi</p>
+    </div>
+    <div class="footer-cols">
+      <nav aria-label="Journeys">
+        <span class="footer-head">Journeys</span>
+        <a href="{{ '/#journeys' | relative_url }}">Latest</a>
+        <a href="{{ '/#states' | relative_url }}">By state</a>
+      </nav>
+      <nav aria-label="Travel notes">
+        <span class="footer-head">Travel notes</span>
+        <a href="{{ '/#notes' | relative_url }}">Expenses</a>
+        <a href="{{ '/#notes' | relative_url }}">Do’s and don’ts</a>
+      </nav>
+      <nav aria-label="Connect">
+        <span class="footer-head">Connect</span>
+        <a href="{{ ig }}" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+    </div>
+  </div>
+  {% include hills.html %}
+</footer>

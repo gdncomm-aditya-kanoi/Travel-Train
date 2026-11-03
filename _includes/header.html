@@ -1,0 +1,16 @@
+{% assign ig = "https://www.instagram.com/" | append: site.data.instagram.handle | append: "/" %}
+<header class="site-header wrap">
+  <a class="brand" href="{{ '/' | relative_url }}">
+    {% include logo.html %}
+    <span class="brand-text">
+      <span class="brand-name">Travel Train</span>
+      <span class="brand-by">by Aditya Kanoi</span>
+    </span>
+  </a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="{{ '/#journeys' | relative_url }}">Journeys</a>
+    <a href="{{ '/#states' | relative_url }}">States</a>
+    <a href="{{ '/#instagram' | relative_url }}">Instagram</a>
+    <a class="btn btn-outline" href="{{ ig }}" target="_blank" rel="noopener">{% include icon-instagram.html %} Follow</a>
+  </nav>
+</header>

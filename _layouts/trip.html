@@ -1,0 +1,147 @@
+---
+layout: default
+---
+{% include trip-total.html trip=page %}
+<article class="trip wrap">
+
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <a href="{{ '/#journeys' | relative_url }}">Journeys</a> / <a href="{{ '/#states' | relative_url }}">{{ page.state }}</a> / <span aria-current="page">{{ page.title }}</span>
+  </nav>
+
+  <header class="trip-head">
+    <h1 class="page-title">{{ page.title }}</h1>
+    {% if page.summary %}<p class="lede">{{ page.summary }}</p>{% endif %}
+    <dl class="trip-stats">
+      <div><dt>When</dt><dd>{{ page.month }}</dd></div>
+      <div><dt>Days</dt><dd>{{ page.days_count }}</dd></div>
+      <div><dt>Total spent</dt><dd>{% if total > 0 %}<span data-inr="{{ total }}">₹{{ total }}</span>{% else %}—{% endif %}</dd></div>
+      <div><dt>Best season</dt><dd>{{ page.best_season }}</dd></div>
+    </dl>
+  </header>
+
+  <div class="gallery">
+    {% if page.cover and page.cover != "" %}
+      <img class="gallery-hero" src="{{ page.cover | relative_url }}" alt="{{ page.title }}">
+    {% else %}
+      <div class="gallery-hero ph" aria-hidden="true"></div>
+    {% endif %}
+    {% for img in page.gallery %}
+      <img src="{{ img | relative_url }}" alt="Photo from {{ page.title }}" loading="lazy">
+    {% endfor %}
+  </div>
+
+  <div class="trip-body">
+    <div class="trip-main">
+      <section>
+        <h2>The journey</h2>
+        <div class="story">{{ content }}</div>
+      </section>
+
+      {% if page.expenses.size > 0 %}
+      <section>
+        <h2>Expenses</h2>
+        <div class="table-scroll">
+          <table class="expenses">
+            <thead><tr><th scope="col">Category</th><th scope="col">Notes</th><th scope="col" class="num">Amount</th></tr></thead>
+            <tbody>
+              {% for e in page.expenses %}
+              <tr><td>{{ e.category }}</td><td>{{ e.note }}</td><td class="num">{% if e.amount > 0 %}<span data-inr="{{ e.amount }}">₹{{ e.amount }}</span>{% else %}—{% endif %}</td></tr>
+              {% endfor %}
+            </tbody>
+            <tfoot><tr><th scope="row">Total</th><td></td><td class="num total">{% if total > 0 %}<span data-inr="{{ total }}">₹{{ total }}</span>{% else %}—{% endif %}</td></tr></tfoot>
+          </table>
+        </div>
+      </section>
+      {% endif %}
+
+      <section class="dos">
+        <div class="panel">
+          <h2 class="h-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Things to do</h2>
+          <ul>{% for t in page.things_to_do %}<li>{{ t }}</li>{% endfor %}</ul>
+        </div>
+        <div class="panel">
+          <h2 class="h-icon h-skip"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>Things to skip</h2>
+          <ul>{% for t in page.things_to_skip %}<li>{{ t }}</li>{% endfor %}</ul>
+        </div>
+      </section>
+    </div>
+
+    <aside class="trip-side">
+      {% if page.details.size > 0 %}
+      <section class="panel panel-outline">
+        <h2 class="h3">Travel details</h2>
+        <dl class="details">
+          {% for d in page.details %}<div><dt>{{ d.label }}</dt><dd>{{ d.value }}</dd></div>{% endfor %}
+        </dl>
+      </section>
+      {% endif %}
+      {% for url in page.instagram %}{% include instagram-embed.html url=url %}{% endfor %}
+    </aside>
+  </div>
+
+  {% if page.days.size > 0 %}
+  <section id="day-planner" class="planner">
+    <h2>{{ page.days.size }}-day planner</h2>
+    <p class="section-sub">Pick a day to see its route. Every day opens in Google Maps for turn-by-turn directions.</p>
+
+    <div class="day-tabs no-print" role="tablist" aria-label="Days">
+      {% for d in page.days %}
+      <button type="button" role="tab" id="day-tab-{{ forloop.index }}" aria-controls="day-panel-{{ forloop.index }}" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}" {% unless forloop.first %}tabindex="-1"{% endunless %}>Day {{ forloop.index }}</button>
+      {% endfor %}
+    </div>
+
+    {% for d in page.days %}
+    <div class="day-panel" role="tabpanel" id="day-panel-{{ forloop.index }}" aria-labelledby="day-tab-{{ forloop.index }}" {% unless forloop.first %}hidden{% endunless %}>
+      <div class="day-map" data-day="{{ forloop.index0 }}" data-title="Day {{ forloop.index }}"></div>
+      <div class="day-info">
+        <h3>Day {{ forloop.index }}</h3>
+        <p>{{ d.title }}</p>
+        {% if d.stops.size > 0 %}
+        <ol class="stops">
+          {% for s in d.stops %}
+          <li class="{% if s.return %}is-return{% endif %}"><span class="num-dot">{{ forloop.index }}</span><span><strong>{{ s.name }}</strong>{% if s.note %}<br><span class="small">{{ s.note }}</span>{% endif %}</span></li>
+          {% endfor %}
+        </ol>
+        <p class="legend small"><span>— — Route</span>{% assign has_return = false %}{% for s in d.stops %}{% if s.return %}{% assign has_return = true %}{% endif %}{% endfor %}{% if has_return %}<span>· · · Way back</span>{% endif %}</p>
+        {% else %}
+        <p class="small">Stops for this day are coming soon.</p>
+        {% endif %}
+        {% if d.route and d.route != "" %}
+        <a class="btn btn-solid no-print" href="{{ d.route }}" target="_blank" rel="noopener">Open Day {{ forloop.index }} in Google Maps</a>
+        <p class="print-only small">Route: {{ d.route }}</p>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+
+    <div class="map-actions no-print">
+      <div class="panel panel-outline map-download">
+        <svg width="48" height="58" viewBox="0 0 56 68" aria-hidden="true"><path d="M4 4 H38 L52 18 V64 H4 Z" fill="#F7F1E4" stroke="#14204F" stroke-width="2"/><path d="M38 4 V18 H52" fill="none" stroke="#14204F" stroke-width="2"/><path d="M12 50 L22 34 L30 44 L36 36 L44 50 Z" fill="currentColor"/><circle cx="18" cy="26" r="3" fill="currentColor"/></svg>
+        <div>
+          <h3>Trip map PDF</h3>
+          <p class="small">Every day of the planner on paper. Save it to your phone for when the network drops.</p>
+          <div class="btn-row">
+            {% if page.map_pdf and page.map_pdf != "" %}<a class="btn btn-solid" href="{{ page.map_pdf | relative_url }}" download>Download map PDF</a>{% endif %}
+            <button type="button" class="btn {% if page.map_pdf and page.map_pdf != '' %}btn-outline-dark{% else %}btn-solid{% endif %}" data-print-map>Print or save as PDF</button>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <h3>Routes in Google Maps</h3>
+        <ul class="route-links">
+          {% for d in page.days %}
+          <li>{% if d.route and d.route != "" %}<a href="{{ d.route }}" target="_blank" rel="noopener">Day {{ forloop.index }} · {{ d.title }}</a>{% else %}<span>Day {{ forloop.index }} · route coming soon</span>{% endif %}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <script type="application/json" id="trip-days">{{ page.days | jsonify }}</script>
+  </section>
+  {% endif %}
+
+  <nav class="trip-pager no-print" aria-label="More journeys">
+    <a href="{{ '/#journeys' | relative_url }}">All journeys</a>
+    {% if page.next %}<a href="{{ page.next.url | relative_url }}">Next: {{ page.next.title }}</a>{% elsif page.previous %}<a href="{{ page.previous.url | relative_url }}">Next: {{ page.previous.title }}</a>{% endif %}
+  </nav>
+</article>

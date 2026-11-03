@@ -1,0 +1,2 @@
+{%- assign total = 0 -%}
+{%- for e in include.trip.expenses -%}{%- assign total = total | plus: e.amount -%}{%- endfor -%}

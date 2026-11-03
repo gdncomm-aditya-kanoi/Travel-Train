@@ -1,0 +1,12 @@
+{% assign trip = include.trip %}
+{% include trip-total.html trip=trip %}
+<a class="trip-card" href="{{ trip.url | relative_url }}" data-state="{{ trip.state | slugify }}">
+  {% if trip.cover and trip.cover != "" %}
+    <img class="photo" src="{{ trip.cover | relative_url }}" alt="" loading="lazy">
+  {% else %}
+    <span class="photo ph" aria-hidden="true"></span>
+  {% endif %}
+  <span class="kicker">{{ trip.state }}</span>
+  <span class="trip-card-title">{{ trip.title }}</span>
+  <span class="meta">{{ trip.days_count }} days{% if total > 0 %} · <span data-inr="{{ total }}">₹{{ total }}</span>{% endif %}{% if trip.month %} · {{ trip.month }}{% endif %}</span>
+</a>

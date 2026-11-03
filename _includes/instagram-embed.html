@@ -1,0 +1,8 @@
+{% if include.url and include.url != "" %}
+<div class="ig-card">
+  <blockquote class="instagram-media" data-instgrm-permalink="{{ include.url }}" data-instgrm-version="14">
+    <a href="{{ include.url }}" target="_blank" rel="noopener">View this post on Instagram</a>
+  </blockquote>
+  <a class="ig-open" href="{{ include.url }}" target="_blank" rel="noopener">{% include icon-instagram.html size=16 %} Open in Instagram</a>
+</div>
+{% endif %}

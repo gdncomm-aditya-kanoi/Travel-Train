@@ -1,0 +1,28 @@
+# ─────────────────────────────────────────────
+#  Travel Train — site settings
+# ─────────────────────────────────────────────
+title: Travel Train
+author: Aditya Kanoi
+description: Aditya Kanoi's journal of trips across India — what each trip cost, what to do, what to skip, and the reels behind them.
+
+# If your repository is named <your-username>.github.io, leave baseurl empty.
+# If it has any other name (e.g. "travel-train"), set baseurl: "/travel-train"
+baseurl: ""
+url: ""
+
+collections:
+  trips:
+    output: true
+    permalink: /trips/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: trips
+    values:
+      layout: trip
+
+markdown: kramdown
+exclude:
+  - README.md
+  - .pages.yml

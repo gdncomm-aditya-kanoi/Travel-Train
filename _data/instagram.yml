@@ -1,0 +1,8 @@
+# Your Instagram handle (without the @)
+handle: your_handle
+
+# Links to public posts or reels to show on the home page (newest first).
+# Copy a link from Instagram: ••• → Copy link
+posts: []
+#  - https://www.instagram.com/p/XXXXXXXXXXX/
+#  - https://www.instagram.com/reel/XXXXXXXXXXX/
