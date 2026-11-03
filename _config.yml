@@ -7,7 +7,7 @@ description: Aditya Kanoi's journal of trips across India — what each trip cos
 
 # If your repository is named <your-username>.github.io, leave baseurl empty.
 # If it has any other name (e.g. "travel-train"), set baseurl: "/travel-train"
-baseurl: ""
+baseurl: "/Travel-Train"
 url: ""
 
 collections:
