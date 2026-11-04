@@ -39,7 +39,7 @@ layout: default
       </section>
 
       {% if page.expenses.size > 0 %}
-      <section>
+      <section id="expenses">
         <h2>Expenses</h2>
         <div class="table-scroll">
           <table class="expenses">{% if page.cost_note %}<caption class="small">All amounts {{ page.cost_note }}.</caption>{% endif %}
@@ -55,7 +55,7 @@ layout: default
       </section>
       {% endif %}
 
-      <section class="dos">
+      <section id="dos" class="dos">
         <div class="panel">
           <h2 class="h-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Things to do</h2>
           <ul>{% for t in page.things_to_do %}<li>{{ t }}</li>{% endfor %}</ul>

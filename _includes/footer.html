@@ -1,3 +1,4 @@
+{% assign latest = site.trips | sort: "date" | last %}
 {% assign ig = "https://www.instagram.com/" | append: site.data.instagram.handle | append: "/" %}
 <footer class="site-footer">
   <div class="wrap footer-grid">
@@ -14,8 +15,9 @@
       </nav>
       <nav aria-label="Travel notes">
         <span class="footer-head">Travel notes</span>
-        <a href="{{ '/#notes' | relative_url }}">Expenses</a>
-        <a href="{{ '/#notes' | relative_url }}">Do’s and don’ts</a>
+        {% if latest %}<a href="{{ latest.url | relative_url }}#expenses">Expenses</a>
+        <a href="{{ latest.url | relative_url }}#dos">Do’s and don’ts</a>
+        <a href="{{ latest.url | relative_url }}#day-planner">Day planners</a>{% else %}<a href="{{ '/#notes' | relative_url }}">What every trip covers</a>{% endif %}
       </nav>
       <nav aria-label="Connect">
         <span class="footer-head">Connect</span>

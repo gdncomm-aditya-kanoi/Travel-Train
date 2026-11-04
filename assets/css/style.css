@@ -73,15 +73,15 @@ code { font-size: .9em; background: var(--paper); padding: 1px 6px; border-radiu
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
 .kicker { font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink); font-weight: 600; margin-bottom: 10px; display: block; }
 .lede { margin-top: 14px; max-width: 580px; font-size: 16px; }
-.hero-art { color: var(--ink); overflow: hidden; max-height: 200px; }
-.hero-art .art { height: 200px; width: 100%; object-fit: cover; object-position: bottom; }
+.hero-art { color: var(--ink); overflow: hidden; }
+.hero-art .art { height: 150px; width: 100%; }
 .art { display: block; width: 100%; height: auto; }
 
 /* The moving train */
 .tt-train { animation: tt-run 22s linear infinite; }
-@keyframes tt-run { from { transform: translateX(-1150px); } to { transform: translateX(1000px); } }
+@keyframes tt-run { from { transform: translateX(-420px); } to { transform: translateX(1460px); } }
 .tt-steam { animation: tt-puff 1.4s ease-in-out infinite alternate; }
-@keyframes tt-puff { from { transform: translate(0, 0); } to { transform: translate(-8px, -6px); } }
+@keyframes tt-puff { from { transform: translate(0, 0); } to { transform: translate(-6px, -4px); } }
 @media (prefers-reduced-motion: reduce) {
   .tt-train, .tt-steam { animation: none; }
   html { scroll-behavior: auto; }
@@ -89,6 +89,7 @@ code { font-size: .9em; background: var(--paper); padding: 1px 6px; border-radiu
 
 /* Sections */
 .section { padding-top: 56px; }
+#journeys, #states, #notes, #instagram, #expenses, #dos, #day-planner { scroll-margin-top: 16px; }
 .section-tight { padding-top: 40px; }
 .section-last { padding-bottom: 64px; }
 .section-head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px; margin-bottom: 24px; }
