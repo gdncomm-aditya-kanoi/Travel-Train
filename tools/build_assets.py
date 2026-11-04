@@ -34,6 +34,8 @@ def load(slug):
 def banner(slug, t):
     if t.get("art") == "coast":
         return banner_coast(slug, t)
+    if t.get("art") == "chola":
+        return banner_chola(slug, t)
     """Text-free line-art strip in the site's engraved style: boulders, a gopuram, the stone chariot, a coracle."""
     W, H, GY = 1260, 420, 352     # width, height, ground line
     out = []
@@ -176,6 +178,93 @@ def banner_coast(slug, t):
     os.makedirs(d, exist_ok=True)
     open(os.path.join(d, "banner.svg"), "w", encoding="utf-8").write(svg)
 
+
+def banner_chola(slug, t):
+    """Text-free line art for a Chola temple trip: a stepped vimana, a Nandi, a gopuram, palms and a river weir."""
+    W, H, GY = 1260, 420, 340
+    out = []
+    ID = f'stroke="{INK}" stroke-width="1.6"'
+
+    def palm(x, h, lean):
+        tx, ty = x + lean, GY - h
+        out.append(f'<path d="M{x},{GY} Q{x + lean * 0.2:.0f},{GY - h * 0.55:.0f} {tx},{ty}" fill="none" stroke="{INK}" stroke-width="5" stroke-linecap="round"/>')
+        for a in (-160, -125, -90, -55, -20, 15):
+            r = math.radians(a)
+            ex, ey = tx + 52 * math.cos(r), ty + 40 * math.sin(r) + 14
+            out.append(f'<path d="M{tx},{ty} Q{(tx + ex) / 2:.0f},{ty + 4 * math.sin(r) - 22:.0f} {ex:.0f},{ey:.0f}" fill="none" stroke="{INK}" stroke-width="3" stroke-linecap="round"/>')
+
+    def tower(cx, base_w, tiers, step_h, top_w):
+        """Stepped pyramid: each tier narrower than the last, with a small cornice."""
+        y = GY
+        for i in range(tiers):
+            w = base_w - (base_w - top_w) * i / (tiers - 1)
+            y -= step_h
+            out.append(f'<rect x="{cx - w / 2:.0f}" y="{y}" width="{w:.0f}" height="{step_h}" fill="url(#h{1 if i % 2 == 0 else 2})" {ID}/>')
+            out.append(f'<rect x="{cx - w / 2 - 3:.0f}" y="{y - 3}" width="{w + 6:.0f}" height="4" fill="{GROUND}" {ID}/>')
+        return y
+
+    # sun, drawn as hatched lines
+    sun = "".join(f'<line x1="{1090 - r:.0f}" y1="{y}" x2="{1090 + r:.0f}" y2="{y}"/>'
+                  for y in range(44, 128, 6) for r in [math.sqrt(max(0, 42 ** 2 - (y - 86) ** 2))])
+    out.append(f'<g stroke="{INK}" stroke-width="2.2">{sun}</g>')
+    # far wall of the temple courtyard
+    out.append(f'<rect x="0" y="{GY - 40}" width="{W}" height="40" fill="url(#h0)" stroke="{GROUND}" stroke-width="3"/>')
+    for x in range(30, W, 90):
+        out.append(f'<path d="M{x},{GY - 40} Q{x + 8},{GY - 54} {x + 16},{GY - 40} Z" fill="{INK}" opacity=".55"/>')
+    # the great vimana (Brihadeeswarar): base block, tall tapering tiers, dome and kalasa
+    cx = 520
+    out.append(f'<rect x="{cx - 130}" y="{GY - 70}" width="260" height="70" fill="url(#h2)" {ID}/>')
+    for k in range(-3, 4):
+        out.append(f'<rect x="{cx + k * 32 - 8}" y="{GY - 62}" width="16" height="44" fill="{GROUND}" {ID}/>')
+    out.append(f'<rect x="{cx - 140}" y="{GY - 78}" width="280" height="9" fill="{GROUND}" {ID}/>')
+    y = GY - 78
+    for i in range(13):
+        w = 220 - 150 * i / 12
+        y -= 15
+        out.append(f'<rect x="{cx - w / 2:.0f}" y="{y}" width="{w:.0f}" height="15" fill="url(#h{1 if i % 2 == 0 else 2})" {ID}/>')
+        out.append(f'<rect x="{cx - w / 2 - 3:.0f}" y="{y - 3}" width="{w + 6:.0f}" height="4" fill="{GROUND}" {ID}/>')
+        for j in (-1, 0, 1):
+            out.append(f'<rect x="{cx + j * w / 3 - 5:.0f}" y="{y + 4}" width="10" height="8" fill="{GROUND}" stroke="{INK}" stroke-width="1"/>')
+    out.append(f'<path d="M{cx - 36},{y - 4} A36,30 0 0 1 {cx + 36},{y - 4} Z" fill="url(#h1)" {ID}/>')           # the dome
+    out.append(f'<line x1="{cx}" y1="{y - 32}" x2="{cx}" y2="{y - 52}" stroke="{INK}" stroke-width="2.4"/>')       # kalasa
+    out.append(f'<circle cx="{cx}" cy="{y - 56}" r="5" fill="{INK}"/>')
+    out.append(f'<rect x="{cx - 18}" y="{GY - 42}" width="36" height="42" fill="{INK}"/><path d="M{cx - 18},{GY - 42} A18,18 0 0 1 {cx + 18},{GY - 42}" fill="{INK}"/>')
+    # Nandi mandapa in front
+    nx = 250
+    out.append(f'<rect x="{nx - 54}" y="{GY - 26}" width="108" height="26" fill="url(#h2)" {ID}/>')
+    for px in (nx - 46, nx - 16, nx + 16, nx + 46):
+        out.append(f'<rect x="{px - 4}" y="{GY - 70}" width="8" height="46" fill="url(#h1)" {ID}/>')
+    out.append(f'<rect x="{nx - 60}" y="{GY - 80}" width="120" height="10" fill="url(#h1)" {ID}/>')
+    out.append(f'<path d="M{nx - 26},{GY - 26} Q{nx - 26},{GY - 50} {nx - 6},{GY - 50} Q{nx + 2},{GY - 64} {nx + 12},{GY - 52} L{nx + 28},{GY - 44} L{nx + 26},{GY - 26} Z" fill="{INK}"/>')   # Nandi
+    # a gopuram on the right (Gangaikonda Cholapuram / Kumbakonam style)
+    gx = 800
+    y2 = tower(gx, 150, 8, 22, 54)
+    out.append(f'<path d="M{gx - 22},{y2 - 4} A22,14 0 0 1 {gx + 22},{y2 - 4} Z" fill="url(#h1)" {ID}/>')
+    out.append(f'<rect x="{gx - 18}" y="{GY - 52}" width="36" height="52" fill="{INK}"/><path d="M{gx - 18},{GY - 52} A18,18 0 0 1 {gx + 18},{GY - 52}" fill="{INK}"/>')
+    palm(960, 130, 22); palm(1010, 100, -16); palm(1195, 140, 18); palm(1120, 90, -12)
+    # ground and the Cauvery with its stone weir (Kallanai)
+    out.append(f'<rect x="0" y="{GY}" width="{W}" height="{H - GY}" fill="{GROUND}"/>')
+    for i, yy in enumerate(range(GY + 10, H - 4, 11)):
+        d = f"M0,{yy}"
+        for x in range(0, W, 60):
+            d += f" q15,{-5 if i % 2 else 5} 30,0 t30,0"
+        out.append(f'<path d="{d}" fill="none" stroke="{INK}" stroke-width="1.8" opacity="{0.9 - i * 0.12:.2f}"/>')
+    out.append(f'<rect x="640" y="{GY + 14}" width="240" height="14" fill="url(#h1)" stroke="{INK}" stroke-width="1.8"/>')
+    for k in range(7):
+        out.append(f'<rect x="{652 + k * 34}" y="{GY + 28}" width="16" height="14" fill="url(#h2)" stroke="{INK}" stroke-width="1.4"/>')
+    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img" aria-label="Line drawing of the Cauvery delta: a Chola temple tower, a Nandi pavilion, a gopuram, palms and a stone weir on the river">
+<defs>
+<pattern id="h0" width="8" height="6" patternUnits="userSpaceOnUse"><rect width="8" height="1.3" y="2" fill="{INK}" opacity=".45"/></pattern>
+<pattern id="h1" width="8" height="5" patternUnits="userSpaceOnUse"><rect width="8" height="2.2" y="1.4" fill="{INK}"/></pattern>
+<pattern id="h2" width="8" height="5" patternUnits="userSpaceOnUse"><rect width="8" height="1.2" y="2" fill="{INK}" opacity=".7"/></pattern>
+</defs>
+<rect width="{W}" height="{H}" fill="{GROUND}"/>
+{chr(10).join(out)}
+</svg>
+"""
+    d = os.path.join(ROOT, "assets", "images", slug)
+    os.makedirs(d, exist_ok=True)
+    open(os.path.join(d, "banner.svg"), "w", encoding="utf-8").write(svg)
 
 
 # ───────────────────────── pdf ─────────────────────────
