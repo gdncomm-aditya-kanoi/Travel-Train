@@ -1,0 +1,21 @@
+_trips/hampi.md
+  s_282d4bd6bc80bc::t_6acb0b36c46164 2
+assets/maps/hampi-guide.pdf
+  s_282d4bd6bc80bc::t_0375d33b0f8ae5 83-84,94,97,120-122,126,134
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "4e3dd516cddb25f795aa23f5af1bfd9344137efe",
+  "prompts": {},
+  "sessions": {
+    "s_282d4bd6bc80bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "38827b07-c1ae-43f1-98f6-81224780f2ad",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
