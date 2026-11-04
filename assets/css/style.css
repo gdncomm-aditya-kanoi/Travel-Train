@@ -276,3 +276,17 @@ caption { text-align: left; padding-bottom: 8px; color: var(--muted); }
 .shot img, .shot.tall img, .shot.square img { aspect-ratio: 1; object-fit: cover; }
 .gallery > .gallery-hero { aspect-ratio: auto; height: auto; object-fit: contain; }
 @media (max-width: 420px) { .shots { grid-template-columns: 1fr; } }
+
+/* Reference material: map, key, timetable */
+.shot.map { display: block; margin: 20px 0; }
+.shot.map img { width: 100%; height: auto; aspect-ratio: auto; object-fit: contain; border: 1px solid var(--line); border-radius: 6px; background: #fff; }
+.ref { margin: 20px 0; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); }
+.ref > summary { cursor: pointer; padding: 14px 18px; font-weight: 500; color: var(--navy); }
+.ref > :not(summary) { margin-left: 18px; margin-right: 18px; }
+.ref > :last-child { margin-bottom: 16px; }
+.monument-key { columns: 2 260px; column-gap: 32px; padding-left: 22px; font-size: 15px; }
+.monument-key li { break-inside: avoid; padding: 2px 0; }
+.timetable { width: 100%; min-width: 560px; border-collapse: collapse; font-size: 14px; margin: 12px 0; }
+.timetable th, .timetable td { padding: 8px 10px 8px 0; border-bottom: 1px solid var(--line); text-align: left; font-weight: 400; vertical-align: top; }
+.timetable thead th { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); border-bottom: 1.5px solid var(--navy); }
+.asi { color: var(--muted); }

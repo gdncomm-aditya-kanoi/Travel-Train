@@ -1,9 +1,9 @@
 ---
 title: Hampi
 state: Karnataka
-date: 2025-07-15            # used to sort trips, newest first (approximate, please confirm)
+date: 2024-07-10            # used to sort trips, newest first
 summary: "Boulders, ruined temples and cycle rides in Hampi, then on to Badami and Pattadakal."
-month: "Monsoon"
+month: "July 2024"
 days_count: 3
 best_season: "Oct – Feb"
 cost_note: "per person"
@@ -22,10 +22,10 @@ instagram:
   - https://www.instagram.com/p/DIISz40zrSf/
   - https://www.instagram.com/p/C9obSeVSdJW/
 
-expenses:                   # rupees per person (the trip was for 2, split in half)
+expenses:                   # rupees per person (the trip was for 2, split in half; train fare is from the e-ticket)
   - category: Getting there
-    note: "Train both ways: Bengaluru to Hospet, Badami to Bengaluru"
-    amount: 308
+    note: "Train both ways: Hampi Express sleeper (about ₹254 with fees) and Badami to Bengaluru (₹357)"
+    amount: 611
   - category: Stay
     note: "Viru Homestay, Kadirampura, 2 nights"
     amount: 439
@@ -67,6 +67,8 @@ eat:
     note: "Cheap, all meals · Badami"
 
 details:
+  - label: Train I took
+    value: "16592 Hampi Express, Bengaluru to Hosapete, 397 km, sleeper"
   - label: Nearest station
     value: "Hospet Junction, 13 km"
   - label: Nearest airport
@@ -90,15 +92,18 @@ days:
         lat: 15.3325
         lng: 76.4520
       - name: Virupaksha Temple
+        asi: 1
         type: temple
         note: Dosa breakfast in the bazaar
         lat: 15.3352
         lng: 76.4587
       - name: Krishna Temple
+        asi: 7
         type: temple
         lat: 15.3302
         lng: 76.4604
       - name: Vittala Temple
+        asi: 32
         type: chariot
         note: The stone chariot
         lat: 15.3423
@@ -118,22 +123,27 @@ days:
         lat: 15.3325
         lng: 76.4520
       - name: Hazara Rama Temple
+        asi: 52
         type: temple
         lat: 15.3178
         lng: 76.4689
       - name: Lotus Mahal
+        asi: 58
         type: palace
         lat: 15.3203
         lng: 76.4714
       - name: Elephant Stable
+        asi: 59
         type: stable
         lat: 15.3211
         lng: 76.4728
       - name: Queen's Bath
+        asi: 48
         type: bath
         lat: 15.3134
         lng: 76.4728
       - name: Matanga Hill
+        asi: 17
         type: hill
         note: Sunset climb
         lat: 15.3316
@@ -201,7 +211,7 @@ Hampi doesn't feel like a town. It feels like a giant open-air museum dropped be
 
 ### Getting there
 
-I took the overnight Hampi Express (Golgumbaz Express) from Bengaluru. It leaves around 10 PM and drops you at Hospet Junction by about 7 AM, which is the nearest station. Sleeper was ₹260, and the big city around it has everything you need.
+I took the overnight Hampi Express (Golgumbaz Express) from Bengaluru. It leaves around 10 PM and drops you at Hospet Junction by about 7 AM, which is the nearest station. I booked it about six weeks ahead: 16592, Bengaluru to Hosapete, 397 km, sleeper. The ticket worked out to about ₹254 a head with fees. Hospet is a big city and has everything you need.
 
 <div class="callout warn"><strong>The auto trap.</strong> Right outside the station, autos quote ₹600–1,000 for Hampi. Ignore them. Walk 600 m to JSW bus stop, the biggest in the district, and take a bus to Hampi or Kadirampura for ₹15.</div>
 
@@ -280,6 +290,107 @@ What I learned doing it by bus:
 - ₹140 and ₹81 for about 230 km is steep compared to Kerala.
 
 
+<details class="ref">
+<summary>Trains at Badami station (towards Vijayapura and Solapur)</summary>
+<p class="small">Copied from the notice at Badami station. Times are 24-hour, arrival / departure at Badami. These are the down-direction trains only. For the way back towards Hubballi and Bengaluru, check the up-direction sheet next to it.</p>
+<div class="table-scroll"><table class="timetable"><thead><tr><th>Train</th><th>From</th><th>To</th><th>At Badami</th><th>Type</th><th>Runs</th></tr></thead><tbody>
+<tr><td>20657</td><td>Hubli</td><td>Nizamuddin</td><td>02:12 / 02:13</td><td>Express</td><td>Saturday</td></tr>
+<tr><td>11306</td><td>Hospet</td><td>Solapur</td><td>03:26 / 03:27</td><td>Express</td><td>Daily</td></tr>
+<tr><td>16535</td><td>Mysore</td><td>Pandharpur</td><td>04:40 / 04:41</td><td>Express</td><td>Daily</td></tr>
+<tr><td>07378</td><td>Mangalore Central</td><td>Vijayapura</td><td>06:05 / 06:06</td><td>Express</td><td>Daily</td></tr>
+<tr><td>06545</td><td>Yashvantapur</td><td>Vijayapura</td><td>08:37 / 08:38</td><td>Train on demand</td><td>Daily</td></tr>
+<tr><td>06919</td><td>Hubballi</td><td>Vijayapura</td><td>09:03 / 09:04</td><td>Special passenger</td><td>Daily</td></tr>
+<tr><td>11140</td><td>Hospet</td><td>CSMT</td><td>16:13 / 16:14</td><td>Superfast</td><td>Daily</td></tr>
+<tr><td>56906</td><td>Hubballi</td><td>Solapur</td><td>16:16 / 16:17</td><td>Passenger</td><td>Daily</td></tr>
+<tr><td>07389</td><td>Belagavi</td><td>Gomati Nagar</td><td>18:18 / 18:20</td><td>Train on demand</td><td>Sunday</td></tr>
+<tr><td>07329</td><td>Hubballi</td><td>Vijayapura (Intercity)</td><td>19:09 / 19:10</td><td>Train on demand</td><td>Daily</td></tr>
+<tr><td>01661</td><td>Mysore</td><td>Rani Kamalapati</td><td>20:54 / 20:55</td><td>Train on demand</td><td>Saturday</td></tr>
+<tr><td>16217</td><td>Mysore</td><td>Sai Nagar Shirdi</td><td>21:09 / 21:10</td><td>Mail Express</td><td>Monday</td></tr>
+<tr><td>17323</td><td>Hubballi</td><td>Banaras</td><td>21:09 / 21:10</td><td>Mail Express</td><td>Friday</td></tr>
+<tr><td>56904</td><td>Dharwad</td><td>Solapur</td><td>21:50 / 21:51</td><td>Passenger</td><td>Daily</td></tr>
+<tr><td>14805</td><td>Yashvantapur</td><td>Barmer</td><td>22:44 / 22:45</td><td>Mail Express</td><td>Monday</td></tr>
+<tr><td>16587</td><td>Yashvantapur</td><td>Bikaner</td><td>22:44 / 22:45</td><td>Mail Express</td><td>Friday, Sunday</td></tr>
+<tr><td>17319</td><td>Hubballi</td><td>Hyderabad</td><td>23:29 / 23:30</td><td>Mail Express</td><td>Daily</td></tr>
+</tbody></table></div>
+<p class="small">Two of these start at Hospet: 11306 (at Badami 03:26) and the 11140 Superfast (at Badami 16:13). The afternoon one could replace the bus; check its Hospet departure time first.</p>
+</details>
+
+### The ASI map of Hampi
+
+This is the Archaeological Survey of India's own map of Hampi, from a booklet by the ASI Hampi Circle. Hampi is the one place where I found a map really matters. Numbers in the stop list on the day planner match the numbers here. Tap the map to open it full size.
+
+<a class="shot map" href="{{ '/assets/images/hampi/asi-map.jpg' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/hampi/asi-map.jpg' | relative_url }}" alt="ASI map of Hampi with a numbered list of monuments" loading="lazy"></a>
+
+<details class="ref">
+<summary>All 65 monuments on the map</summary>
+<ol class="monument-key">
+<li>Virupaksha Temple</li>
+<li>Manmatha Honda</li>
+<li>Group of monuments at Hemakuta Hill</li>
+<li>Two Storeyed Mandapa</li>
+<li>Sasivekalu Ganesha</li>
+<li>Kadalekalu Ganesha Temple</li>
+<li>Krishna Temple</li>
+<li>Lakshmi Narasimha Temple (Narasimha Statue)</li>
+<li>Badavilinga Temple</li>
+<li>Chandikeswara Temple</li>
+<li>Uddhana Virabhadra Temple</li>
+<li>Thurtu Kaluve (Canal)</li>
+<li>Hampi Bazaar</li>
+<li>Greenlaw's Photo Gallery</li>
+<li>Kampa Bhupa Marga</li>
+<li>Yeduru Basavanna (Monolithic Bull)</li>
+<li>Matanga Hill</li>
+<li>Achyutaraya (Tiruvengalanatha) Temple</li>
+<li>Soolai Bazaar (Achyutapete)</li>
+<li>Yantrodharak Anjaneya Temple</li>
+<li>Kodanda Rama Temple</li>
+<li>Chakratirtha</li>
+<li>Varaha Temple</li>
+<li>Narasimha Temple</li>
+<li>Sri Raghunandanatirtha Brundavana</li>
+<li>Gateway</li>
+<li>King's Balance</li>
+<li>Purandara Mandapa</li>
+<li>Sri Naraharitirtha Brundavan</li>
+<li>Stone Bridge</li>
+<li>Inscribed Vishnu Temple</li>
+<li>Vitthala Temple</li>
+<li>Brahma Vitthala Temple</li>
+<li>Pushkarni</li>
+<li>Kuduregombe Mandapa</li>
+<li>Gejjala Mandapa</li>
+<li>Talarigatta Gate</li>
+<li>Ahmed Khan's Mosque</li>
+<li>Malyavanta Raghunatha Temple</li>
+<li>Ganagitti Jaina Temple</li>
+<li>Bhima's Gateway</li>
+<li>ASI Museum</li>
+<li>Pattabhirama Temple</li>
+<li>Domed Gate</li>
+<li>Chandrasekhara Temple</li>
+<li>Saraswati Temple</li>
+<li>Octagonal Water Pavilion</li>
+<li>Queen's Bath</li>
+<li>Mahanavami Dibba</li>
+<li>Stepped Tank</li>
+<li>King's Audience Hall</li>
+<li>Hazara Ramachandra Temple</li>
+<li>Pan Supari Bazaar</li>
+<li>Pattana Yellamma Temple</li>
+<li>Palace of Vira Harihara</li>
+<li>Noblemen's Quarter</li>
+<li>Prasanna Virupaksha (Underground Shiva) Temple</li>
+<li>Lotus Mahal</li>
+<li>Elephant's Stable</li>
+<li>Guards' House</li>
+<li>Ranga Temple</li>
+<li>Anjanadri Hill</li>
+<li>Pampa Sarovara</li>
+<li>Chandramouleshwara Temple</li>
+<li>Nava Vrindavana</li>
+</ol>
+</details>
 ### What I'd add to this plan
 
 <div class="callout"><strong>A few things worth adding</strong>, from reading around rather than from my own trip, so check them locally:

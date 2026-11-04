@@ -110,7 +110,7 @@ layout: default
         {% if d.stops.size > 0 %}
         <ol class="stops">
           {% for s in d.stops %}
-          <li class="{% if s.return %}is-return{% endif %}"><span class="num-dot">{{ forloop.index }}</span><span class="stop-name">{% if s.type %}<span class="stop-ico" data-ico="{{ s.type }}" aria-hidden="true"></span>{% endif %}<strong>{{ s.name }}</strong>{% if s.note %}<br><span class="small">{{ s.note }}</span>{% endif %}</span></li>
+          <li class="{% if s.return %}is-return{% endif %}"><span class="num-dot">{{ forloop.index }}</span><span class="stop-name">{% if s.type %}<span class="stop-ico" data-ico="{{ s.type }}" aria-hidden="true"></span>{% endif %}<strong>{{ s.name }}</strong>{% if s.asi %} <span class="small asi">ASI {{ s.asi }}</span>{% endif %}{% if s.note %}<br><span class="small">{{ s.note }}</span>{% endif %}</span></li>
           {% endfor %}
         </ol>
         <p class="legend small"><span>— — Route</span>{% assign has_return = false %}{% for s in d.stops %}{% if s.return %}{% assign has_return = true %}{% endif %}{% endfor %}{% if has_return %}<span>· · · Way back</span>{% endif %}</p>
