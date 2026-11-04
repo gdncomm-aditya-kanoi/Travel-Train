@@ -1,8 +1,9 @@
 {% assign trip = include.trip %}
 {% include trip-total.html trip=trip %}
 <a class="trip-card" href="{{ trip.url | relative_url }}" data-state="{{ trip.state | slugify }}">
-  {% if trip.cover and trip.cover != "" %}
-    <img class="photo" src="{{ trip.cover | relative_url }}" alt="" loading="lazy">
+  {% assign card_img = trip.cover | default: trip.banner %}
+  {% if card_img and card_img != "" %}
+    <img class="photo" src="{{ card_img | relative_url }}" alt="" loading="lazy">
   {% else %}
     <span class="photo ph" aria-hidden="true"></span>
   {% endif %}

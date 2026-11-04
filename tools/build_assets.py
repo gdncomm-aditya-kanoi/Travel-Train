@@ -5,7 +5,7 @@
     python3 tools/build_assets.py                # every trip that has stops filled in
 
 Reads _trips/<slug>.md and writes
-    assets/images/<slug>/cover.svg
+    assets/images/<slug>/banner.svg
     assets/maps/<slug>-guide.pdf
 Needs: pip install reportlab pyyaml
 """
@@ -32,34 +32,72 @@ def load(slug):
 
 # ───────────────────────── banner ─────────────────────────
 def banner(slug, t):
-    W, H = 1260, 540
-    name = t["title"].upper()
-    lines = "".join(f'<line x1="0" y1="{y}" x2="{W}" y2="{y}"/>' for y in range(0, H, 7))
+    """Text-free line-art strip in the site's engraved style: boulders, a gopuram, the stone chariot, a coracle."""
+    W, H, GY = 1260, 420, 352     # width, height, ground line
+    out = []
 
-    def hill(pts, op):
-        d = "M" + " L".join(f"{x},{y}" for x, y in pts) + f" L{W},{H} L0,{H} Z"
-        return f'<path d="{d}" fill="url(#h)" opacity="{op}"/>'
+    def hump(cx, w, h, base=GY, fill="url(#h1)"):
+        out.append(f'<path d="M{cx - w / 2:.0f},{base} C{cx - w / 2:.0f},{base - h * 1.35:.0f} {cx + w / 2:.0f},{base - h * 1.35:.0f} {cx + w / 2:.0f},{base} Z" fill="{fill}" stroke="{GROUND}" stroke-width="3"/>')
 
-    hills = (
-        hill([(0, 400), (180, 330), (330, 380), (520, 300), (700, 370), (900, 310), (1080, 370), (1260, 320)], 0.35)
-        + hill([(0, 450), (220, 395), (430, 440), (640, 385), (860, 445), (1060, 400), (1260, 440)], 0.6)
-        + hill([(0, 500), (300, 470), (600, 505), (900, 468), (1260, 500)], 0.9)
-    )
-    sun = "".join(f'<line x1="{1010 - r}" y1="{y}" x2="{1010 + r}" y2="{y}"/>'
-                  for y in range(95, 215, 6)
-                  for r in [math.sqrt(max(0, 60 ** 2 - (y - 155) ** 2))])
-    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img" aria-label="{t["title"]}, {t["state"]}">
-<defs><pattern id="h" width="8" height="7" patternUnits="userSpaceOnUse"><rect width="8" height="3" y="2" fill="{INK}"/></pattern></defs>
+    # sun
+    sun = "".join(f'<line x1="{1075 - r:.0f}" y1="{y}" x2="{1075 + r:.0f}" y2="{y}"/>'
+                  for y in range(48, 138, 6) for r in [math.sqrt(max(0, 45 ** 2 - (y - 93) ** 2))])
+    out.append(f'<g stroke="{INK}" stroke-width="2.2">{sun}</g>')
+    # far ridge
+    out.append(f'<path d="M0,{GY} L0,300 L110,262 L230,296 L360,248 L500,294 L760,284 L900,240 L1040,290 L1160,262 L{W},290 L{W},{GY} Z" fill="url(#h0)" stroke="{GROUND}" stroke-width="3"/>')
+    # boulder piles, back to front
+    for cx, w, h in [(70, 150, 90), (200, 190, 110), (330, 150, 80), (150, 130, 70), (270, 120, 60)]:
+        hump(cx, w, h, fill="url(#h1)" if h > 70 else "url(#h2)")
+    for cx, w, h in [(1000, 170, 100), (1130, 200, 120), (1230, 130, 70), (1060, 120, 62), (1180, 110, 54)]:
+        hump(cx, w, h, fill="url(#h1)" if h > 70 else "url(#h2)")
+    # gopuram (Virupaksha style): stacked tiers
+    cx = 600
+    tiers = [(190, 40), (162, 36), (136, 34), (112, 32), (90, 30), (70, 28), (52, 26)]
+    y = GY
+    for i, (w, hh) in enumerate(tiers):
+        y -= hh
+        out.append(f'<rect x="{cx - w / 2:.0f}" y="{y}" width="{w}" height="{hh}" fill="url(#h{1 if i % 2 == 0 else 2})" stroke="{INK}" stroke-width="1.6"/>')
+        out.append(f'<rect x="{cx - w / 2 - 4:.0f}" y="{y - 4}" width="{w + 8}" height="6" fill="{GROUND}" stroke="{INK}" stroke-width="1.6"/>')
+    out.append(f'<path d="M{cx - 20},{y - 4} A20,20 0 0 1 {cx + 20},{y - 4} Z" fill="url(#h1)" stroke="{INK}" stroke-width="1.6"/>')
+    out.append(f'<g stroke="{INK}" stroke-width="2"><line x1="{cx - 10}" y1="{y - 22}" x2="{cx - 10}" y2="{y - 34}"/><line x1="{cx}" y1="{y - 24}" x2="{cx}" y2="{y - 40}"/><line x1="{cx + 10}" y1="{y - 22}" x2="{cx + 10}" y2="{y - 34}"/></g>')
+    out.append(f'<rect x="{cx - 24}" y="{GY - 64}" width="48" height="64" fill="{INK}"/>')                      # doorway
+    out.append(f'<path d="M{cx - 24},{GY - 64} A24,24 0 0 1 {cx + 24},{GY - 64}" fill="{INK}"/>')
+    # temple wall either side
+    out.append(f'<rect x="{cx - 330}" y="{GY - 34}" width="{330 - 96}" height="34" fill="url(#h2)" stroke="{INK}" stroke-width="1.6"/>')
+    out.append(f'<rect x="{cx + 96}" y="{GY - 34}" width="{330 - 96}" height="34" fill="url(#h2)" stroke="{INK}" stroke-width="1.6"/>')
+    # stone chariot (Vittala)
+    sx = 860
+    out.append(f'<rect x="{sx - 62}" y="{GY - 16}" width="124" height="16" fill="url(#h1)" stroke="{INK}" stroke-width="1.6"/>')
+    out.append(f'<rect x="{sx - 50}" y="{GY - 52}" width="100" height="36" fill="url(#h2)" stroke="{INK}" stroke-width="1.6"/>')
+    for k, (w, hh) in enumerate([(78, 12), (60, 12), (44, 12), (28, 12)]):
+        yy = GY - 52 - 12 * (k + 1)
+        out.append(f'<rect x="{sx - w / 2:.0f}" y="{yy}" width="{w}" height="{hh}" fill="url(#h1)" stroke="{INK}" stroke-width="1.6"/>')
+    out.append(f'<line x1="{sx}" y1="{GY - 100}" x2="{sx}" y2="{GY - 112}" stroke="{INK}" stroke-width="2"/>')
+    for wx in (sx - 34, sx + 34):
+        out.append(f'<circle cx="{wx}" cy="{GY - 8}" r="15" fill="{GROUND}" stroke="{INK}" stroke-width="2"/><circle cx="{wx}" cy="{GY - 8}" r="4" fill="{INK}"/>'
+                   + "".join(f'<line x1="{wx}" y1="{GY - 8}" x2="{wx + 15 * math.cos(a):.1f}" y2="{GY - 8 + 15 * math.sin(a):.1f}" stroke="{INK}" stroke-width="1.2"/>' for a in [i * math.pi / 4 for i in range(8)]))
+    # river with waves and a coracle
+    out.append(f'<rect x="0" y="{GY}" width="{W}" height="{H - GY}" fill="{GROUND}"/>')
+    for i, yy in enumerate(range(GY + 12, H - 4, 11)):
+        d = f"M0,{yy}"
+        for x in range(0, W, 60):
+            d += f" q15,{-5 if i % 2 else 5} 30,0 t30,0"
+        out.append(f'<path d="{d}" fill="none" stroke="{INK}" stroke-width="1.8" opacity="{0.9 - i * 0.12:.2f}"/>')
+    out.append(f'<path d="M430,{GY + 22} q60,40 120,0 Z" fill="url(#h1)" stroke="{INK}" stroke-width="2"/>')
+    out.append(f'<line x1="470" y1="{GY + 14}" x2="508" y2="{GY - 14}" stroke="{INK}" stroke-width="2.4" stroke-linecap="round"/>')
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img" aria-label="Line drawing of Hampi: boulders, a gopuram, the stone chariot and a coracle on the river">
+<defs>
+<pattern id="h0" width="8" height="6" patternUnits="userSpaceOnUse"><rect width="8" height="1.3" y="2" fill="{INK}" opacity=".45"/></pattern>
+<pattern id="h1" width="8" height="5" patternUnits="userSpaceOnUse"><rect width="8" height="2.2" y="1.4" fill="{INK}"/></pattern>
+<pattern id="h2" width="8" height="5" patternUnits="userSpaceOnUse"><rect width="8" height="1.2" y="2" fill="{INK}" opacity=".7"/></pattern>
+</defs>
 <rect width="{W}" height="{H}" fill="{GROUND}"/>
-<g stroke="{INK}" stroke-width="2.2" opacity=".9">{sun}</g>
-{hills}
-<text x="70" y="250" font-family="Newsreader, Georgia, 'Times New Roman', serif" font-size="150" letter-spacing="6" fill="{NAVY}">{name}</text>
-<text x="76" y="305" font-family="'Instrument Sans', Helvetica, Arial, sans-serif" font-size="26" letter-spacing="6" fill="{INK}">{t["state"].upper()}  ·  TRAVEL TRAIN</text>
+{chr(10).join(out)}
 </svg>
 '''
-    out = os.path.join(ROOT, "assets", "images", slug)
-    os.makedirs(out, exist_ok=True)
-    open(os.path.join(out, "cover.svg"), "w", encoding="utf-8").write(svg)
+    d = os.path.join(ROOT, "assets", "images", slug)
+    os.makedirs(d, exist_ok=True)
+    open(os.path.join(d, "banner.svg"), "w", encoding="utf-8").write(svg)
 
 
 # ───────────────────────── pdf ─────────────────────────

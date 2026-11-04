@@ -19,16 +19,17 @@ layout: default
     </dl>
   </header>
 
+  {% assign show_gallery = false %}{% if page.cover and page.cover != "" %}{% assign show_gallery = true %}{% endif %}{% if page.gallery.size > 0 %}{% assign show_gallery = true %}{% endif %}
+  {% if show_gallery %}
   <div class="gallery">
     {% if page.cover and page.cover != "" %}
-      <img class="gallery-hero" src="{{ page.cover | relative_url }}" alt="{{ page.title }}">
-    {% else %}
-      <div class="gallery-hero ph" aria-hidden="true"></div>
+      <img class="gallery-hero" src="{{ page.cover | relative_url }}" alt="{{ page.cover_alt | default: page.title }}">
     {% endif %}
     {% for img in page.gallery %}
       <img src="{{ img | relative_url }}" alt="Photo from {{ page.title }}" loading="lazy">
     {% endfor %}
   </div>
+  {% endif %}
 
   <div class="trip-body">
     <div class="trip-main">
@@ -85,6 +86,10 @@ layout: default
     </aside>
   </div>
 
+  {% if page.banner and page.banner != "" %}
+  <img class="mid-banner" src="{{ page.banner | relative_url }}" alt="" role="presentation">
+  {% endif %}
+
   {% if page.days.size > 0 %}
   <section id="day-planner" class="planner">
     <h2>{{ page.days.size }}-day planner</h2>
@@ -105,7 +110,7 @@ layout: default
         {% if d.stops.size > 0 %}
         <ol class="stops">
           {% for s in d.stops %}
-          <li class="{% if s.return %}is-return{% endif %}"><span class="num-dot">{{ forloop.index }}</span><span><strong>{{ s.name }}</strong>{% if s.note %}<br><span class="small">{{ s.note }}</span>{% endif %}</span></li>
+          <li class="{% if s.return %}is-return{% endif %}"><span class="num-dot">{{ forloop.index }}</span><span class="stop-name">{% if s.type %}<span class="stop-ico" data-ico="{{ s.type }}" aria-hidden="true"></span>{% endif %}<strong>{{ s.name }}</strong>{% if s.note %}<br><span class="small">{{ s.note }}</span>{% endif %}</span></li>
           {% endfor %}
         </ol>
         <p class="legend small"><span>— — Route</span>{% assign has_return = false %}{% for s in d.stops %}{% if s.return %}{% assign has_return = true %}{% endif %}{% endfor %}{% if has_return %}<span>· · · Way back</span>{% endif %}</p>
@@ -143,6 +148,14 @@ layout: default
     </div>
 
     <script type="application/json" id="trip-days">{{ page.days | jsonify }}</script>
+  </section>
+  {% endif %}
+
+  {% if page.credits.size > 0 %}
+  <section class="credits small no-print">
+    <h2 class="h3">Photo credits</h2>
+    <p>Photos are from Wikimedia Commons until I add my own. Tap a name for the original.</p>
+    <ul>{% for c in page.credits %}<li>{{ c.title }} — <a href="{{ c.source }}" target="_blank" rel="noopener">{{ c.author }}</a>, <a href="{{ c.license_url }}" target="_blank" rel="noopener">{{ c.license }}</a></li>{% endfor %}</ul>
   </section>
   {% endif %}
 
