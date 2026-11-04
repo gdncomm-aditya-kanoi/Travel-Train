@@ -298,14 +298,26 @@ def fit(text, width, font, size):
 
 
 def project(stops, x, y, w, h, pad=34):
-    lat0 = sum(s["lat"] for s in stops) / len(stops)
+    """Fit the stops to the frame. A stop marked far is left out of the fit and parked at the edge in its real direction."""
+    near = [s for s in stops if not s.get("far")]
+    if len(near) < 2:
+        near = stops
+    lat0 = sum(s["lat"] for s in near) / len(near)
     kx, ky = math.cos(math.radians(lat0)) * 111.32, 110.57
-    lngs, lats = [s["lng"] for s in stops], [s["lat"] for s in stops]
+    lngs, lats = [s["lng"] for s in near], [s["lat"] for s in near]
     sx = max((max(lngs) - min(lngs)) * kx, 3)
     sy = max((max(lats) - min(lats)) * ky, 3)
     sc = min((w - 2 * pad) / sx, (h - 2 * pad) / sy)
     ox, oy = x + (w - sx * sc) / 2, y + (h - sy * sc) / 2
-    pts = [(ox + (s["lng"] - min(lngs)) * kx * sc, oy + (s["lat"] - min(lats)) * ky * sc) for s in stops]
+    cx, cy = x + w / 2, y + h / 2
+    pts = []
+    for s in stops:
+        px, py = ox + (s["lng"] - min(lngs)) * kx * sc, oy + (s["lat"] - min(lats)) * ky * sc
+        if not any(s is q for q in near):
+            dx, dy = px - cx, py - cy
+            t = min((w / 2 - pad) / (abs(dx) or 1e-9), (h / 2 - pad) / (abs(dy) or 1e-9), 1)
+            px, py = cx + dx * t, cy + dy * t
+        pts.append((px, py))
     return relax(pts, 17), sc
 
 

@@ -131,18 +131,31 @@
       return out + "</svg>";
     }
 
-    /* Equal-scale projection in kilometres, fitted to the frame */
-    var lat0 = stops.reduce(function (a, s) { return a + Number(s.lat); }, 0) / stops.length;
+    /* Equal-scale projection in kilometres, fitted to the frame. A stop marked "far" is left out of the fit and
+       parked at the frame's edge in its real direction, so one distant place cannot squash the rest into a blob. */
+    var near = stops.filter(function (s) { return !s.far; });
+    if (near.length < 2) near = stops;
+    var lat0 = near.reduce(function (a, s) { return a + Number(s.lat); }, 0) / near.length;
+    var lng0 = near.reduce(function (a, s) { return a + Number(s.lng); }, 0) / near.length;
     var kx = Math.cos(lat0 * Math.PI / 180) * 111.32, ky = 110.57;
-    var lngs = stops.map(function (s) { return Number(s.lng); });
-    var lats = stops.map(function (s) { return Number(s.lat); });
+    var lngs = near.map(function (s) { return Number(s.lng); });
+    var lats = near.map(function (s) { return Number(s.lat); });
     var minLng = Math.min.apply(null, lngs), maxLat = Math.max.apply(null, lats);
     var spanX = Math.max((Math.max.apply(null, lngs) - minLng) * kx, 4);
     var spanY = Math.max((maxLat - Math.min.apply(null, lats)) * ky, 4);
     var scale = Math.min((W - 2 * PAD_X) / spanX, (H - 2 * PAD_Y) / spanY);
     var offX = (W - spanX * scale) / 2, offY = (H - spanY * scale) / 2;
     var pts = stops.map(function (s) {
-      return { x: offX + (Number(s.lng) - minLng) * kx * scale, y: offY + (maxLat - Number(s.lat)) * ky * scale, s: s };
+      var p = { x: offX + (Number(s.lng) - minLng) * kx * scale, y: offY + (maxLat - Number(s.lat)) * ky * scale, s: s, label: s.name };
+      if (near.indexOf(s) < 0) {
+        var dx = p.x - W / 2, dy = p.y - H / 2;
+        var t = Math.min((W / 2 - 60) / (Math.abs(dx) || 1e-9), (H / 2 - 90) / (Math.abs(dy) || 1e-9), 1);
+        p.x = W / 2 + dx * t; p.y = H / 2 + dy * t;
+        var e = (Number(s.lng) - lng0) * kx, n = (Number(s.lat) - lat0) * ky;
+        var dirs = ["E", "NE", "N", "NW", "W", "SW", "S", "SE"];
+        p.label = s.name + " · ~" + Math.round(Math.hypot(e, n)) + " km " + dirs[(Math.round(Math.atan2(n, e) / (Math.PI / 4)) + 8) % 8];
+      }
+      return p;
     });
 
     /* Stops too close to tell apart get pushed apart (exact repeats are left alone) */
@@ -151,7 +164,7 @@
         var moved = false;
         for (var j = 0; j < n; j++) {
           var dx = p.x - pts[j].x, dy = p.y - pts[j].y, d = Math.hypot(dx, dy);
-          if (d >= 6 && d < 34) { p.x = pts[j].x + dx / d * 34; p.y = pts[j].y + dy / d * 34; moved = true; }
+          if (d >= 6 && d < 46) { p.x = pts[j].x + dx / d * 46; p.y = pts[j].y + dy / d * 46; moved = true; }
         }
         if (!moved) break;
       }
@@ -219,7 +232,7 @@
     var hit = function (r, b, pad) { return r.x < b.x + b.w + pad && r.x + r.w + pad > b.x && r.y < b.y + b.h + pad && r.y + r.h + pad > b.y; };
     pts.forEach(function (p, n) {
       if (twin[n] >= 0) return;
-      var ico = ICONS[p.s.type] ? 24 : 0, w = String(p.s.name).length * 9.2 + ico + 8, h = 22;
+      var ico = ICONS[p.s.type] ? 24 : 0, w = String(p.label).length * 9.2 + ico + 8, h = 22;
       var cands = [[18, -h / 2], [-18 - w, -h / 2], [-w / 2, -h - 16], [-w / 2, 16], [18, -h - 8], [-18 - w, -h - 8], [18, 8], [-18 - w, 8], [18, -h - 24], [-18 - w, -h - 24], [18, 24], [-18 - w, 24], [-w / 2, -h - 34], [-w / 2, 34]];
       var best = null;
       cands.forEach(function (c, ci) {
@@ -237,7 +250,7 @@
         out += '<line x1="' + (p.x + (lx - p.x) / ld * 13).toFixed(1) + '" y1="' + (p.y + (ly - p.y) / ld * 13).toFixed(1) + '" x2="' + lx.toFixed(1) + '" y2="' + ly.toFixed(1) + '" stroke="currentColor" stroke-width="1"/>';
       }
       out += icon(p.s.type, best.r.x + 1, best.r.y + 1, 20) +
-        '<text x="' + (best.r.x + ico + 2).toFixed(1) + '" y="' + (best.r.y + 16).toFixed(1) + '" class="m-label">' + esc(p.s.name) + "</text>";
+        '<text x="' + (best.r.x + ico + 2).toFixed(1) + '" y="' + (best.r.y + 16).toFixed(1) + '" class="m-label">' + esc(p.label) + "</text>";
     });
 
     /* Scale bar with a round number of km */

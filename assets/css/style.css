@@ -97,6 +97,7 @@ code { font-size: .9em; background: var(--paper); padding: 1px 6px; border-radiu
 
 /* Trip cards */
 .trip-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 28px 24px; }
+.trip-card[hidden] { display: none; }
 .trip-card { display: flex; flex-direction: column; gap: 12px; text-decoration: none; color: inherit; }
 .trip-card .kicker { margin: 6px 0 0; font-size: 12px; }
 .trip-card .photo { aspect-ratio: 4 / 3; width: 100%; object-fit: cover; border-radius: 6px; display: block; }
@@ -296,3 +297,6 @@ caption { text-align: left; padding-bottom: 8px; color: var(--muted); }
 
 /* Instagram-style 4:5 slides keep their shape */
 .shot.slide img { aspect-ratio: 4 / 5; object-fit: cover; }
+
+/* The embedded brochure */
+.brochure { width: 100%; height: 640px; border: 0; border-radius: 6px; background: #fff; margin-top: 12px; }

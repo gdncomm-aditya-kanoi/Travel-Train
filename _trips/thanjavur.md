@@ -115,7 +115,8 @@ days:
         lng: 79.13593
       - name: Kallanai (Grand Anicut)
         type: waterfall
-        note: "The old dam, about 20 km out. Go for dusk"
+        note: "The old dam, about 48 km by road. Go for dusk"
+        far: true
         lat: 10.83075
         lng: 78.81883
   - title: Kumbakonam and Gangaikonda Cholapuram
@@ -128,7 +129,7 @@ days:
         lng: 79.13967
       - name: Kumbakonam
         type: temple
-        note: "Temple town, about 40 km out"
+        note: "Temple town, about 36 km out"
         lat: 10.95925
         lng: 79.3748
       - name: Gangaikonda Cholapuram
@@ -166,10 +167,10 @@ In town I used autos (₹200 each time, split between us). I hired a bike for �
 
 <details class="ref">
 <summary>Bike rental in Thanjavur</summary>
-<div class="table-scroll"><table class="timetable"><thead><tr><th>Name</th><th>Notes</th><th>Map</th></tr></thead><tbody>
-<tr><td>Bike Rental Thanjavur, TN 49</td><td>The one I used · 09043121949</td><td><a href="https://maps.app.goo.gl/2GLVMq8skVnzHZUg6" target="_blank" rel="noopener">Open</a></td></tr>
-<tr><td>Stay to the bike shop</td><td>The walk from where I stayed</td><td><a href="https://maps.app.goo.gl/SZdBNr8utHr4QRX59" target="_blank" rel="noopener">Open</a></td></tr>
+<div class="table-scroll"><table class="timetable"><thead><tr><th>Name</th><th>Phone</th><th>Map</th></tr></thead><tbody>
+<tr><td>Bike Rental Thanjavur, TN 49</td><td>09043121949</td><td><a href="https://maps.app.goo.gl/2GLVMq8skVnzHZUg6" target="_blank" rel="noopener">Open</a></td></tr>
 </tbody></table></div>
+<p class="small">The shop I used. From my stay, <a href="https://maps.app.goo.gl/SZdBNr8utHr4QRX59" target="_blank" rel="noopener">this is the way to it</a>.</p>
 </details>
 
 ### Day 1: Thanjavur and the Kallanai dam
@@ -178,7 +179,7 @@ Start with the **Brihadeeswarar Temple**, called the Big Temple. Raja Raja Chola
 
 Walk next door to **Sivaganga Park**, a large tank with long walls that is known for its sweet water. Then go on to the **Thanjavur Maratha Palace**, built partly by the Nayaks and partly by the Marathas. It is a big, airy complex with tall halls, painted ceilings and carved pillars, and several things to see in one place: the Durbar Hall, an art gallery of bronzes and stone sculptures, the Saraswathi Mahal Library and the Royal Museum. The palace tickets cost ₹20 and ₹100 for the two of us. Do not skip the Durbar Hall.
 
-Then go out to **Kallanai (the Grand Anicut)**, about 20 km from the city. Karikala Chola built it in the 2nd century to guide the Cauvery into the delta, and it still works. Go for dusk and watch the water rush over the weir.
+Then go out to **Kallanai (the Grand Anicut)**, about 48 km by road from the city (that is the brochure's figure). Karikala Chola built it in the 2nd century to guide the Cauvery into the delta, and it still works. Go for dusk and watch the water rush over the weir.
 
 Save the night for the Big Temple again. Lit up, it is a different place.
 
@@ -204,7 +205,7 @@ Thanjavur is famous for its dancing dolls, clay figures that nod and sway on a r
 
 Pick up the bike early, since this is a long ride. I did Kumbakonam first and Cholapuram after it, and then rode back for the night bus.
 
-- **Kumbakonam**, about 40 km from Thanjavur. A temple town, with big old temples such as Sarangapani, Kumbeswarar, Nageswara and Ramaswamy. It is known for the Mahamaham festival, which comes round once in 12 years.
+- **Kumbakonam**, about 36 km from Thanjavur. A temple town, with big old temples such as Sarangapani, Kumbeswarar, Nageswara and Ramaswamy. It is known for the Mahamaham festival, which comes round once in 12 years.
 - **Gangaikonda Cholapuram.** Rajendra Chola built this one around 1035 after his campaigns, as the temple of his new capital. It is quieter than Thanjavur, with lawns, a calm courtyard and fine carvings on the walls. It is also a World Heritage Site.
 
 Bring water and snacks, keep the petrol in mind (I filled up twice), and give yourself time for the ride back.
@@ -224,7 +225,14 @@ Breakfast was Coffee Palace both mornings, for good coffee and rava dosa (₹250
 
 ### Timings from the brochure
 
-I picked up a Tamil Nadu tourism brochure (printed December 2020), so please check these on the day.
+I picked up a Tamil Nadu tourism brochure (printed December 2020), so please check these on the day. Here is the whole thing.
+
+<p><a class="btn btn-solid" href="{{ '/assets/maps/thanjavur-brochure.pdf' | relative_url }}" download>Download the Thanjavur brochure (PDF)</a></p>
+
+<details class="ref">
+<summary>Read the brochure here</summary>
+<iframe class="brochure" title="Thanjavur tourism brochure" src="{{ '/assets/maps/thanjavur-brochure.pdf' | relative_url }}" loading="lazy"></iframe>
+</details>
 
 <details class="ref">
 <summary>Palace and museum timings</summary>
