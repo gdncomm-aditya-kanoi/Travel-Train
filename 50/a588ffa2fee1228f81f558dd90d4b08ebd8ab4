@@ -1,0 +1,29 @@
+_trips/thanjavur.md
+  s_282d4bd6bc80bc::t_e6d452011c3146 45-46,50,52,88-89,111-117,141,143,160,170,176,178-179,192-195,198,200,203,258
+  s_282d4bd6bc80bc::t_f47267f4b97c64 2,4,6-16,19,23,25-26,28-29,31-41,44,47-49,53-69,72-73,75,77,79-81,83,85-86,91-110,120-123,125-128,130-138,142,144-159,161-169,171-175,177,180-191,196-197,199,201-202,204-249,251-257,259
+  s_282d4bd6bc80bc::t_b789fc9c4b7fda 5
+  s_282d4bd6bc80bc::t_96319e39d2a30d 90
+tools/build_assets.py
+  s_282d4bd6bc80bc::t_cb586e043b3eff 37-38
+  s_282d4bd6bc80bc::t_8a346c07fad194 182-268
+assets/images/thanjavur/banner.svg
+  s_282d4bd6bc80bc::t_ef9796e7763e95 1-170
+assets/maps/thanjavur-guide.pdf
+  s_282d4bd6bc80bc::t_bb2cefb6fb15bb 1-127
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "50a588ffa2fee1228f81f558dd90d4b08ebd8ab4",
+  "prompts": {},
+  "sessions": {
+    "s_282d4bd6bc80bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "38827b07-c1ae-43f1-98f6-81224780f2ad",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
