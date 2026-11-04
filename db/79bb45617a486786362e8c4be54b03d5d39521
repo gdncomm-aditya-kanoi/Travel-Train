@@ -1,0 +1,21 @@
+_trips/thanjavur.md
+  s_282d4bd6bc80bc::t_0e6b715c1e95cb 14,21-26
+_trips/gokarna-murudeshwar.md
+  s_282d4bd6bc80bc::t_0a627268161146 21-23
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "db79bb45617a486786362e8c4be54b03d5d39521",
+  "prompts": {},
+  "sessions": {
+    "s_282d4bd6bc80bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "38827b07-c1ae-43f1-98f6-81224780f2ad",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
