@@ -1,5 +1,5 @@
 ---
-title: Hampi
+title: Hampi and Badami
 state: Karnataka
 date: 2024-07-10            # used to sort trips, newest first
 summary: "Boulders, ruined temples and cycle rides in Hampi, then on to Badami and Pattadakal."
