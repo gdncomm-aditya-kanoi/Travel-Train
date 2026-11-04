@@ -1,0 +1,23 @@
+assets/css/style.css
+  s_282d4bd6bc80bc::t_4b086f107bd567 273-278
+_trips/hampi.md
+  s_282d4bd6bc80bc::t_4b086f107bd567 12-15,212-216,230-232,236-239,244,252-253,255-256
+_includes/trip-card.html
+  s_282d4bd6bc80bc::t_4b086f107bd567 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "9f417341eb495b66cb9313bff638165216bdc1c0",
+  "prompts": {},
+  "sessions": {
+    "s_282d4bd6bc80bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "38827b07-c1ae-43f1-98f6-81224780f2ad",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
