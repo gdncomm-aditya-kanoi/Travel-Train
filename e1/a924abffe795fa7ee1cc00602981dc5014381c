@@ -1,0 +1,27 @@
+_layouts/trip.html
+  s_282d4bd6bc80bc::t_40119962b3c55a 42,58
+assets/css/style.css
+  s_282d4bd6bc80bc::t_40119962b3c55a 76-77,82,84,92
+_includes/footer.html
+  s_282d4bd6bc80bc::t_40119962b3c55a 1,18-20
+_includes/train.html
+  s_282d4bd6bc80bc::t_40119962b3c55a 1,9-24,26-84,87-90
+_data/instagram.yml
+  s_282d4bd6bc80bc::t_40119962b3c55a 2,6-14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "e1a924abffe795fa7ee1cc00602981dc5014381c",
+  "prompts": {},
+  "sessions": {
+    "s_282d4bd6bc80bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "38827b07-c1ae-43f1-98f6-81224780f2ad",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
