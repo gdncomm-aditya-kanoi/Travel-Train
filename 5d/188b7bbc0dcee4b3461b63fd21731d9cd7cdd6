@@ -1,0 +1,28 @@
+tools/build_assets.py
+  s_282d4bd6bc80bc::t_0d0a8dd466c006 301-305,307,312-320
+assets/css/style.css
+  s_282d4bd6bc80bc::t_0d0a8dd466c006 100,300-302
+assets/js/main.js
+  s_282d4bd6bc80bc::t_9fadac0665e489 167
+  s_282d4bd6bc80bc::t_0d0a8dd466c006 134-139,141-142,149-158,235,253
+_trips/thanjavur.md
+  s_282d4bd6bc80bc::t_0d0a8dd466c006 118-119,132,170-171,173,182,208,228-235
+assets/maps/thanjavur-guide.pdf
+  s_282d4bd6bc80bc::t_8e7eda64f1290b 76,94,97,118,126
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "5d188b7bbc0dcee4b3461b63fd21731d9cd7cdd6",
+  "prompts": {},
+  "sessions": {
+    "s_282d4bd6bc80bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "38827b07-c1ae-43f1-98f6-81224780f2ad",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
