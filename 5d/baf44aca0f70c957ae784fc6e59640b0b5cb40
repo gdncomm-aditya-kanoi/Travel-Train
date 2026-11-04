@@ -1,0 +1,21 @@
+_data/instagram.yml
+  s_282d4bd6bc80bc::t_68df1a2325fe7c 4-7
+_includes/footer.html
+  s_282d4bd6bc80bc::t_68df1a2325fe7c 18-19
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "5dbaf44aca0f70c957ae784fc6e59640b0b5cb40",
+  "prompts": {},
+  "sessions": {
+    "s_282d4bd6bc80bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "38827b07-c1ae-43f1-98f6-81224780f2ad",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
