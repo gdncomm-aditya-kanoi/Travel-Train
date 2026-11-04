@@ -1,0 +1,26 @@
+assets/css/style.css
+  s_282d4bd6bc80bc::t_a1974e2edd39de 265-272
+_config.yml
+  s_282d4bd6bc80bc::t_a1974e2edd39de 29-30
+_trips/hampi.md
+  s_282d4bd6bc80bc::t_a1974e2edd39de 14,22,219-220,242-252,264-265,268
+  s_282d4bd6bc80bc::t_87f703f5e12308 269
+_layouts/trip.html
+  s_282d4bd6bc80bc::t_e15076c15afaee 157
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "62b88ded5e75b7b7d97c7399de9a53da60753b03",
+  "prompts": {},
+  "sessions": {
+    "s_282d4bd6bc80bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "38827b07-c1ae-43f1-98f6-81224780f2ad",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
