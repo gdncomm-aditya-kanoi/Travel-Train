@@ -1,0 +1,33 @@
+_trips/hampi.md
+  s_282d4bd6bc80bc::t_eae3439052d507 5,8-9,11-12,14-15,17-18,23,25-26,28-29,31-32,34-38,41-45,47-65,69,71,73-75,79-80,82-83,86-88,90-92,94-95,98-99,102-103,105-106,108-111,113-114,116-117,119-123,126-134,137-139,141-143,145-151,153-155,158,160-164
+assets/js/main.js
+  s_282d4bd6bc80bc::t_2a4578177241e7 65,75-84,125-136,145,148-155,161-162,165-175
+assets/css/style.css
+  s_282d4bd6bc80bc::t_2a4578177241e7 156-160,191-192,232
+tools/build_assets.py
+  s_282d4bd6bc80bc::t_46c5293cafc925 1-83,85-100,102-121,123-253
+  s_282d4bd6bc80bc::t_af053f60102414 84,101,122
+  s_282d4bd6bc80bc::t_ff44caccd41925 254-256
+assets/images/hampi/cover.svg
+  s_282d4bd6bc80bc::t_ad4a59252cd589 1-8
+_includes/trip-card.html
+  s_282d4bd6bc80bc::t_3d1d66ce683543 11
+_layouts/trip.html
+  s_282d4bd6bc80bc::t_bed1767d6fa9a2 17,44,78-83
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "987e79bd14f20bb41febfb184c157c38daf0cd32",
+  "prompts": {},
+  "sessions": {
+    "s_282d4bd6bc80bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "38827b07-c1ae-43f1-98f6-81224780f2ad",
+        "model": "unknown"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
