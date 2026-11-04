@@ -11,7 +11,7 @@ cost_note: "per person"
 # Photos live in assets/images/hampi/. Swap any file for your own and keep the name, or add paths under gallery.
 cover: /assets/images/hampi/collage.jpg
 cover_alt: "A collage of my Hampi trip"
-card: /assets/images/hampi/u-vittala-sunset.jpg
+card: /assets/images/hampi/card.jpg
 banner: /assets/images/hampi/banner.svg
 gallery: []
 
@@ -189,6 +189,11 @@ credits:
     license: "CC BY-SA 3.0"
     license_url: https://creativecommons.org/licenses/by-sa/3.0
     source: https://commons.wikimedia.org/wiki/File:Two_Coracles_and_Tungabhadra_River.jpg
+  - title: "Granite rocks of Matanga Hill"
+    author: "Vyacheslav Argenberg"
+    license: "CC BY 4.0"
+    license_url: https://creativecommons.org/licenses/by/4.0
+    source: https://commons.wikimedia.org/wiki/File:Hampi,_India,_Rocky_landscape_of_Hampi,_Granite_rocks_of_Matanga_Hill.jpg
 ---
 Hampi doesn't feel like a town. It feels like a giant open-air museum dropped between boulders, banana fields and a river. I went for 3 days with one friend: two days cycling around the ruins, then one long, chaotic day to Badami and Pattadakal. This is everything that worked, everything that didn't, and the money side, so you can skip my mistakes.
 
