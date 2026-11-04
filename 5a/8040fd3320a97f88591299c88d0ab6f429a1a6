@@ -1,0 +1,43 @@
+_includes/shot.html
+  s_282d4bd6bc80bc::t_a00a0cc04ac115 1
+assets/js/main.js
+  s_282d4bd6bc80bc::t_6bb370e63a74f8 5-27,109,120,141,144,150,155-158,160-161,163-165,172,175-185,188-197,199-204,211,213-218,220-221,223-225,228-236,243
+  s_282d4bd6bc80bc::t_74d8598b7bcfea 166-171
+  s_282d4bd6bc80bc::t_604669ed20ddb5 173-174
+  s_282d4bd6bc80bc::t_3e69a9d59ebd7f 219
+  s_282d4bd6bc80bc::t_ff7fd9596f260c 222
+  s_282d4bd6bc80bc::t_b3a8f6729d9ec6 226-227
+assets/images/hampi/banner.svg
+  s_282d4bd6bc80bc::t_5687dd34a929c0 1-57
+tools/build_assets.py
+  s_282d4bd6bc80bc::t_5687dd34a929c0 8,35-37,39-40,42-93,95,98-100
+_trips/hampi.md
+  s_282d4bd6bc80bc::t_a00a0cc04ac115 11-14,17,173-214,216-282,284,287,289-294,296-299
+  s_282d4bd6bc80bc::t_c8011ab45c7c7c 86,91,96,100,105,114,119,123,127,131,135,140,149,154,159,164,169
+  s_282d4bd6bc80bc::t_41e4c2cb55f3bd 283,285,295
+_layouts/trip.html
+  s_282d4bd6bc80bc::t_41e4c2cb55f3bd 22-23
+  s_282d4bd6bc80bc::t_fa8fb4638f2091 26,32,89-92,113,154-161
+assets/maps/hampi-guide.pdf
+  s_282d4bd6bc80bc::t_da77b60b2085a8 83,126
+_includes/trip-card.html
+  s_282d4bd6bc80bc::t_39431880918324 4-6
+assets/css/style.css
+  s_282d4bd6bc80bc::t_af2414118e76b0 234-264
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "5a8040fd3320a97f88591299c88d0ab6f429a1a6",
+  "prompts": {},
+  "sessions": {
+    "s_282d4bd6bc80bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "38827b07-c1ae-43f1-98f6-81224780f2ad",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
