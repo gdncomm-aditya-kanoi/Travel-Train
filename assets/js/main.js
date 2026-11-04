@@ -13,6 +13,10 @@
     hill: '<path d="M2 16 L8 6 L11.5 11 L13.5 8.5 L18 16 Z"/>',
     bus: '<rect x="3" y="4" width="14" height="10" rx="2"/><path d="M3 9 H17 M6 17 V14 M14 17 V14"/>',
     town: '<path d="M3 16 V8 H8 V16 M8 16 V5 H13 V16 M13 16 V10 H17 V16 M2 16 H18"/>',
+    beach: '<path d="M2 16 H18 M3 13 q1.5 -1.5 3 0 t3 0 t3 0 t3 0 M10 11 V5 M10 5 q-4 0 -6 3 M10 5 q4 0 6 3"/>',
+    waterfall: '<path d="M3 5 H17 M7 5 Q6 10 7 14 M10 5 Q9 11 10 15 M13 5 Q12 10 13 14 M3 17 q2.5 -2 5 0 t5 0 t4 0"/>',
+    fort: '<path d="M3 16 H17 M4 16 V7 H7 V9 H9 V7 H11 V9 H13 V7 H16 V16 M9 16 V12 H11 V16"/>',
+    train: '<rect x="4" y="3" width="12" height="11" rx="2"/><path d="M4 9 H16 M7 17 L9 14 M13 17 L11 14"/>',
     cave: '<path d="M2 16 L5 7 L10 4 L15 7 L18 16 Z M7.5 16 V12 Q10 8 12.5 12 V16"/>'
   };
   function icon(type, x, y, size) {
@@ -215,7 +219,7 @@
     var hit = function (r, b, pad) { return r.x < b.x + b.w + pad && r.x + r.w + pad > b.x && r.y < b.y + b.h + pad && r.y + r.h + pad > b.y; };
     pts.forEach(function (p, n) {
       if (twin[n] >= 0) return;
-      var ico = ICONS[p.s.type] ? 24 : 0, w = String(p.s.name).length * 8.6 + ico + 6, h = 22;
+      var ico = ICONS[p.s.type] ? 24 : 0, w = String(p.s.name).length * 9.2 + ico + 8, h = 22;
       var cands = [[18, -h / 2], [-18 - w, -h / 2], [-w / 2, -h - 16], [-w / 2, 16], [18, -h - 8], [-18 - w, -h - 8], [18, 8], [-18 - w, 8], [18, -h - 24], [-18 - w, -h - 24], [18, 24], [-18 - w, 24], [-w / 2, -h - 34], [-w / 2, 34]];
       var best = null;
       cands.forEach(function (c, ci) {

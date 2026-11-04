@@ -79,7 +79,7 @@ layout: default
       {% if page.eat.size > 0 %}
       <section class="panel">
         <h2 class="h3">Where to eat</h2>
-        <ul class="eat">{% for e in page.eat %}<li><strong>{{ e.name }}</strong><span class="small">{{ e.note }}</span></li>{% endfor %}</ul>
+        <ul class="eat">{% for e in page.eat %}<li><strong>{{ e.name }}</strong><span class="small">{{ e.note }}{% if e.map %} · <a href="{{ e.map }}" target="_blank" rel="noopener">Map</a>{% endif %}</span></li>{% endfor %}</ul>
       </section>
       {% endif %}
       {% for url in page.instagram %}{% include instagram-embed.html url=url %}{% endfor %}

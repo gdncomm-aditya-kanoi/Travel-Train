@@ -32,6 +32,8 @@ def load(slug):
 
 # ───────────────────────── banner ─────────────────────────
 def banner(slug, t):
+    if t.get("art") == "coast":
+        return banner_coast(slug, t)
     """Text-free line-art strip in the site's engraved style: boulders, a gopuram, the stone chariot, a coracle."""
     W, H, GY = 1260, 420, 352     # width, height, ground line
     out = []
@@ -100,6 +102,82 @@ def banner(slug, t):
     open(os.path.join(d, "banner.svg"), "w", encoding="utf-8").write(svg)
 
 
+def banner_coast(slug, t):
+    """Text-free line art for a coastal trip: Shiva statue, gopuram, palms, a headland and a sailing boat."""
+    W, H, GY = 1260, 420, 330
+    out = []
+    ID = f'stroke="{INK}" stroke-width="1.6"'
+
+    def hump(cx, w, h, base=GY, fill="url(#h1)"):
+        out.append(f'<path d="M{cx - w / 2:.0f},{base} C{cx - w / 2:.0f},{base - h * 1.35:.0f} {cx + w / 2:.0f},{base - h * 1.35:.0f} {cx + w / 2:.0f},{base} Z" fill="{fill}" stroke="{GROUND}" stroke-width="3"/>')
+
+    def palm(x, h, lean):
+        tx, ty = x + lean, GY - h
+        out.append(f'<path d="M{x},{GY} Q{x + lean * 0.2:.0f},{GY - h * 0.55:.0f} {tx},{ty}" fill="none" stroke="{INK}" stroke-width="5" stroke-linecap="round"/>')
+        for a in (-160, -125, -90, -55, -20, 15):
+            r = math.radians(a)
+            ex, ey = tx + 52 * math.cos(r), ty + 40 * math.sin(r) + 14
+            out.append(f'<path d="M{tx},{ty} Q{(tx + ex) / 2:.0f},{ty + 4 * math.sin(r) - 22:.0f} {ex:.0f},{ey:.0f}" fill="none" stroke="{INK}" stroke-width="3" stroke-linecap="round"/>')
+
+    # sun
+    sun = "".join(f'<line x1="{1060 - r:.0f}" y1="{y}" x2="{1060 + r:.0f}" y2="{y}"/>'
+                  for y in range(52, 140, 6) for r in [math.sqrt(max(0, 44 ** 2 - (y - 96) ** 2))])
+    out.append(f'<g stroke="{INK}" stroke-width="2.2">{sun}</g>')
+    # far headlands
+    out.append(f'<path d="M0,{GY} L0,300 L120,270 L260,298 L420,262 L600,296 L820,280 L980,252 L1120,284 L{W},262 L{W},{GY} Z" fill="url(#h0)" stroke="{GROUND}" stroke-width="3"/>')
+    # hill under the statue
+    hump(250, 330, 90, fill="url(#h2)")
+    hump(120, 200, 60, fill="url(#h1)")
+    # Shiva statue (Murudeshwar): plinth, folded legs, torso, head, crown, raised hand
+    sx, sy = 250, GY - 70
+    out.append(f'<path d="M{sx - 70},{sy} L{sx + 70},{sy} L{sx + 56},{sy - 26} L{sx - 56},{sy - 26} Z" fill="url(#h1)" {ID}/>')
+    out.append(f'<path d="M{sx - 52},{sy - 26} Q{sx},{sy - 58} {sx + 52},{sy - 26} Z" fill="url(#h2)" {ID}/>')                 # legs
+    out.append(f'<path d="M{sx - 26},{sy - 44} L{sx - 20},{sy - 118} Q{sx},{sy - 128} {sx + 20},{sy - 118} L{sx + 26},{sy - 44} Z" fill="url(#h1)" {ID}/>')  # torso
+    out.append(f'<path d="M{sx - 22},{sy - 100} Q{sx - 54},{sy - 84} {sx - 44},{sy - 54}" fill="none" stroke="{INK}" stroke-width="5" stroke-linecap="round"/>')
+    out.append(f'<path d="M{sx + 22},{sy - 100} Q{sx + 52},{sy - 118} {sx + 50},{sy - 150}" fill="none" stroke="{INK}" stroke-width="5" stroke-linecap="round"/>')
+    out.append(f'<circle cx="{sx}" cy="{sy - 136}" r="15" fill="{GROUND}" {ID}/>')
+    out.append(f'<path d="M{sx - 14},{sy - 146} L{sx - 8},{sy - 170} L{sx},{sy - 154} L{sx + 8},{sy - 170} L{sx + 14},{sy - 146} Z" fill="{INK}"/>')
+    # gopuram (Murudeshwar: tall, many tiers)
+    cx = 560
+    y = GY
+    for i, (w, hh) in enumerate([(150, 30), (136, 28), (122, 27), (108, 26), (94, 25), (80, 24), (68, 23), (56, 22), (44, 21)]):
+        y -= hh
+        out.append(f'<rect x="{cx - w / 2:.0f}" y="{y}" width="{w}" height="{hh}" fill="url(#h{1 if i % 2 == 0 else 2})" {ID}/>')
+        out.append(f'<rect x="{cx - w / 2 - 4:.0f}" y="{y - 4}" width="{w + 8}" height="5" fill="{GROUND}" {ID}/>')
+    out.append(f'<path d="M{cx - 14},{y - 4} A14,14 0 0 1 {cx + 14},{y - 4} Z" fill="url(#h1)" {ID}/>')
+    out.append(f'<line x1="{cx}" y1="{y - 16}" x2="{cx}" y2="{y - 36}" stroke="{INK}" stroke-width="2"/>')
+    out.append(f'<rect x="{cx - 20}" y="{GY - 56}" width="40" height="56" fill="{INK}"/><path d="M{cx - 20},{GY - 56} A20,20 0 0 1 {cx + 20},{GY - 56}" fill="{INK}"/>')
+    # palms and rocks
+    palm(760, 120, 26); palm(820, 150, -18); palm(1160, 130, 20); palm(1215, 100, -14)
+    hump(960, 120, 44, fill="url(#h1)"); hump(1010, 80, 30, fill="url(#h2)")
+    # sea: waves, and a sailing boat
+    out.append(f'<rect x="0" y="{GY}" width="{W}" height="{H - GY}" fill="{GROUND}"/>')
+    for i, yy in enumerate(range(GY + 12, H - 4, 11)):
+        d = f"M0,{yy}"
+        for x in range(0, W, 60):
+            d += f" q15,{-5 if i % 2 else 5} 30,0 t30,0"
+        out.append(f'<path d="{d}" fill="none" stroke="{INK}" stroke-width="1.8" opacity="{0.9 - i * 0.12:.2f}"/>')
+    bx = 430
+    out.append(f'<path d="M{bx - 40},{GY + 20} L{bx + 44},{GY + 20} L{bx + 32},{GY + 36} L{bx - 28},{GY + 36} Z" fill="url(#h1)" stroke="{INK}" stroke-width="2"/>')
+    out.append(f'<line x1="{bx}" y1="{GY + 20}" x2="{bx}" y2="{GY - 36}" stroke="{INK}" stroke-width="2.4"/>')
+    out.append(f'<path d="M{bx + 4},{GY - 32} L{bx + 36},{GY + 14} L{bx + 4},{GY + 14} Z" fill="url(#h2)" stroke="{INK}" stroke-width="1.6"/>')
+    out.append(f'<path d="M{bx - 4},{GY - 24} L{bx - 26},{GY + 14} L{bx - 4},{GY + 14} Z" fill="url(#h1)" stroke="{INK}" stroke-width="1.6"/>')
+    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img" aria-label="Line drawing of the Karnataka coast: a Shiva statue, a temple tower, palms and a sailing boat">
+<defs>
+<pattern id="h0" width="8" height="6" patternUnits="userSpaceOnUse"><rect width="8" height="1.3" y="2" fill="{INK}" opacity=".45"/></pattern>
+<pattern id="h1" width="8" height="5" patternUnits="userSpaceOnUse"><rect width="8" height="2.2" y="1.4" fill="{INK}"/></pattern>
+<pattern id="h2" width="8" height="5" patternUnits="userSpaceOnUse"><rect width="8" height="1.2" y="2" fill="{INK}" opacity=".7"/></pattern>
+</defs>
+<rect width="{W}" height="{H}" fill="{GROUND}"/>
+{chr(10).join(out)}
+</svg>
+"""
+    d = os.path.join(ROOT, "assets", "images", slug)
+    os.makedirs(d, exist_ok=True)
+    open(os.path.join(d, "banner.svg"), "w", encoding="utf-8").write(svg)
+
+
+
 # ───────────────────────── pdf ─────────────────────────
 def pick_fonts():
     """A serif and sans that have the ₹ sign; fall back to 'Rs'."""
@@ -120,6 +198,14 @@ def pick_fonts():
 
 def rupee(n, ok):
     return "Rs " + f"{int(n):,}"
+
+
+def fit(text, width, font, size):
+    if pdfmetrics.stringWidth(text, font, size) <= width:
+        return text
+    while text and pdfmetrics.stringWidth(text + "…", font, size) > width:
+        text = text[:-1]
+    return text.rstrip(" ,.:;") + "…"
 
 
 def project(stops, x, y, w, h, pad=34):
@@ -170,10 +256,10 @@ def pdf(slug, t):
     # ── page 1 ──
     page_bg()
     # banner: engraved hills
-    bh = 190
+    bh = 165
     c.setFillColor(HexColor(PAPER)); c.rect(0, H - bh, W, bh, stroke=0, fill=1)
     c.setStrokeColor(HexColor(INK)); c.setLineWidth(1)
-    for layer, (base, amp, op) in enumerate([(H - bh + 44, 22, .35), (H - bh + 26, 18, .6), (H - bh + 8, 14, .9)]):
+    for layer, (base, amp, op) in enumerate([(H - bh + 36, 18, .35), (H - bh + 22, 15, .6), (H - bh + 8, 12, .9)]):
         c.saveState(); c.setStrokeAlpha(op)
         for yy in range(int(H - bh), int(base + amp), 4):
             for x in range(0, int(W), 6):
@@ -181,7 +267,10 @@ def pdf(slug, t):
                 if yy < prof:
                     c.line(x, yy, x + 4, yy)
         c.restoreState()
-    c.setFillColor(HexColor(NAVY)); c.setFont("Times-Roman", 52)
+    tsize = 52
+    while pdfmetrics.stringWidth(t["title"], "Times-Roman", tsize) > W - 2 * M and tsize > 24:
+        tsize -= 2
+    c.setFillColor(HexColor(NAVY)); c.setFont("Times-Roman", tsize)
     c.drawString(M, H - 78, t["title"])
     c.setFont(sans, 10); c.setFillColor(HexColor(INK))
     c.drawString(M + 2, H - 100, f'{t["state"].upper()}  ·  {t["days_count"]} DAYS  ·  CHEAT SHEET')
@@ -193,7 +282,7 @@ def pdf(slug, t):
     # stats
     total = sum(e["amount"] for e in t["expenses"])
     y -= 44
-    stats = [("PER PERSON", rupee(total, rup)), ("DAYS", str(t["days_count"])), ("BEST SEASON", t["best_season"]), ("STAY", "Kadirampura")]
+    stats = [("PER PERSON", rupee(total, rup)), ("DAYS", str(t["days_count"])), ("BEST SEASON", t["best_season"]), ("STAY", t.get("stay_short", ""))]
     colw = (W - 2 * M) / len(stats)
     c.setStrokeColor(HexColor(RULE)); c.line(M, y + 28, W - M, y + 28); c.line(M, y - 14, W - M, y - 14)
     for i, (k, v) in enumerate(stats):
@@ -207,7 +296,7 @@ def pdf(slug, t):
     for e in t["expenses"]:
         y -= 20
         c.setFont(sans, 10); c.setFillColor(HexColor(NAVY)); c.drawString(M, y, e["category"])
-        c.setFillColor(HexColor(TEXT)); c.setFont(sans, 8.5); c.drawString(M + 120, y, e["note"][:62])
+        c.setFillColor(HexColor(TEXT)); c.setFont(sans, 8.5); c.drawString(M + 120, y, fit(e["note"], W - 2 * M - 120 - 70, sans, 8.5))
         c.setFont(sans, 10); c.setFillColor(HexColor(NAVY)); c.drawRightString(W - M, y, rupee(e["amount"], rup))
         c.setStrokeColor(HexColor("#D9CCB0")); c.line(M, y - 6, W - M, y - 6)
     y -= 24
@@ -239,12 +328,16 @@ def pdf(slug, t):
         out.append(line)
         return out
 
-    y -= 40
+    y -= 30
     half = (W - 2 * M - 24) / 2
     y_end_l = block("Where to eat", t["eat"], M, y, half, "•")
     y_end_r = block("Skip these", t["things_to_skip"], M + half + 24, y, half, "×")
-    y2 = min(y_end_l, y_end_r) - 28
-    block("Good to know", [f'{d["label"]}: {d["value"]}' for d in t["details"]], M, y2, W - 2 * M, "•")
+    y2 = min(y_end_l, y_end_r) - 20
+    facts = [f'{d["label"]}: {d["value"]}' for d in t["details"]]
+    mid = (len(facts) + 1) // 2
+    c.setFont("Times-Roman", 16); c.setFillColor(HexColor(NAVY)); c.drawString(M, y2, "Good to know")
+    block("", facts[:mid], M, y2 - 6, half, "•")
+    block("", facts[mid:], M + half + 24, y2 - 6, half, "•")
     footer(1); c.showPage()
 
     # ── page 2: the day maps ──
