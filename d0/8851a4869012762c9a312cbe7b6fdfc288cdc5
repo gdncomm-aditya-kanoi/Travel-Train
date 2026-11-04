@@ -1,0 +1,25 @@
+assets/css/style.css
+  s_282d4bd6bc80bc::t_69a62d71100e43 279-292
+_layouts/trip.html
+  s_282d4bd6bc80bc::t_69a62d71100e43 113
+_trips/hampi.md
+  s_282d4bd6bc80bc::t_69a62d71100e43 4,6,25,27-28,70-71,95,101,106,126,131,136,141,146,214,293-393
+assets/maps/hampi-guide.pdf
+  s_282d4bd6bc80bc::t_7d143e1f3abfdc 83,94,97,122,126,134
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "d08851a4869012762c9a312cbe7b6fdfc288cdc5",
+  "prompts": {},
+  "sessions": {
+    "s_282d4bd6bc80bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "38827b07-c1ae-43f1-98f6-81224780f2ad",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
