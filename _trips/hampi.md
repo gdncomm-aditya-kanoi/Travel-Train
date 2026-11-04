@@ -11,7 +11,7 @@ cost_note: "per person"
 # Photos live in assets/images/hampi/. Swap any file for your own and keep the name, or add paths under gallery.
 cover: /assets/images/hampi/01-matanga-hill.jpg
 cover_alt: "Boulders and palms seen from Matanga Hill, Hampi"
-banner: /assets/images/hampi/banner.svg
+banner: /assets/images/hampi/collage.jpg
 gallery: []
 
 # Cheat-sheet PDF and line-art banner are made by tools/build_assets.py
@@ -19,6 +19,7 @@ map_pdf: /assets/maps/hampi-guide.pdf
 
 instagram:
   - https://www.instagram.com/p/DIISz40zrSf/
+  - https://www.instagram.com/p/C9obSeVSdJW/
 
 expenses:                   # rupees per person (the trip was for 2, split in half)
   - category: Getting there
@@ -182,11 +183,6 @@ credits:
     license: "CC BY-SA 4.0"
     license_url: https://creativecommons.org/licenses/by-sa/4.0
     source: https://commons.wikimedia.org/wiki/File:Iconic_Stone_Chariot_@_Vittala_Temple,_Hampi,_Karnataka.jpg
-  - title: "Virupaksha Temple gopuram"
-    author: "Ingo Mehling"
-    license: "CC BY-SA 4.0"
-    license_url: https://creativecommons.org/licenses/by-sa/4.0
-    source: https://commons.wikimedia.org/wiki/File:Virupaksha_-_Gopuram.jpg
   - title: "Lotus Mahal"
     author: "Vyacheslav Argenberg"
     license: "CC BY 4.0"
@@ -202,11 +198,6 @@ credits:
     license: "CC BY-SA 3.0"
     license_url: https://creativecommons.org/licenses/by-sa/3.0
     source: https://commons.wikimedia.org/wiki/File:Two_Coracles_and_Tungabhadra_River.jpg
-  - title: "Cave temple, Badami"
-    author: "Rajeshodayanchal"
-    license: "CC BY-SA 3.0"
-    license_url: https://creativecommons.org/licenses/by-sa/3.0
-    source: https://commons.wikimedia.org/wiki/File:A-cave-temple-at-badami.JPG
   - title: "Temples at Pattadakal"
     author: "Ms Sarah Welch"
     license: "CC BY-SA 4.0"
@@ -225,13 +216,13 @@ I took the overnight Hampi Express (Golgumbaz Express) from Bengaluru. It leaves
 
 ### Getting around
 
+{% include shot.html file="u-cycle.jpg" class="side tall" caption="My ₹100 cycle, heading for Vittala Bazaar." %}
+
 There are no scooter or bike rentals in Hampi, Hospet or Kadirampura (the auto owners have that locked up), so your choices are an auto (about ₹1,500 for a day), a bus that only drops you in Hampi, or a cycle. Take the cycle.
 
 - ₹100 a day for a plain cycle, ₹200 with a basket, ₹300 geared. I took the ₹100 one.
 - Rent in the morning, return at night.
 - Ask the shop to explain the map. Ours did, and it saved us hours.
-
-{% include shot.html file="02-stone-chariot.jpg" caption="The stone chariot at Vittala Temple. It is the picture on the ₹50 note." %}
 
 ### Where to stay
 
@@ -248,7 +239,17 @@ Unless you have your own vehicle, skip it.
 
 **Day 1: temples and the chariot.** Start with a dosa breakfast at Virupaksha, then do the Krishna Temple, the Ganesha statues, Ugra Narasimha and the Shivling. Finish at Vittala Temple for the stone chariot (₹35 ticket).
 
-{% include shot.html file="03-virupaksha.jpg" class="tall" caption="Virupaksha Temple gopuram, the tower you can see from half of Hampi." %}
+<div class="shots">
+{% include shot.html file="u-ganesha-shrine.jpg" class="square" caption="Sasivekalu Ganesha shrine" %}
+{% include shot.html file="u-kadalekalu.jpg" class="square" caption="Inside the giant Ganesha shrine" %}
+</div>
+
+<div class="shots">
+{% include shot.html file="u-virupaksha-tank.jpg" class="square" caption="Virupaksha Temple tower over the tank" %}
+{% include shot.html file="u-vittala-sunset.jpg" class="square" caption="Vittala Temple complex at golden hour" %}
+</div>
+
+{% include shot.html file="02-stone-chariot.jpg" caption="The stone chariot at Vittala Temple. It is the picture on the ₹50 note." %}
 
 **Day 2: the royal enclosure.** Lotus Mahal, Elephant Stable, Queen's Bathhouse, the Victory Palace and Hazara Rama Temple, then Matanga Hill for the view.
 
@@ -260,9 +261,11 @@ Unless you have your own vehicle, skip it.
 **Day 3: Badami and Pattadakal.** Badami Caves, Bhoothnath Temple, the fort and falls, the lakeside, then the Group of Monuments at Pattadakal.
 
 <div class="shots">
-{% include shot.html file="07-badami-caves.jpg" caption="Cave temple, Badami" %}
-{% include shot.html file="08-pattadakal.jpg" caption="Temples at Pattadakal" %}
+{% include shot.html file="u-badami-vishnu.jpg" class="square" caption="Vishnu seated on the serpent Sesha, Badami caves" %}
+{% include shot.html file="u-badami-lake.jpg" class="tall" caption="Agastya Lake, Badami, with the Bhoothnath temples" %}
 </div>
+
+{% include shot.html file="08-pattadakal.jpg" caption="Temples at Pattadakal" %}
 
 ### Food
 

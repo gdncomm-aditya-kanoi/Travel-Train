@@ -262,3 +262,11 @@ caption { text-align: left; padding-bottom: 8px; color: var(--muted); }
 .credits { margin-top: 72px; padding-top: 24px; border-top: 1px solid var(--rule); color: var(--muted); }
 .credits ul { margin: 12px 0 0; padding-left: 18px; display: flex; flex-direction: column; gap: 4px; }
 .credits a { color: var(--muted); }
+
+/* Photo layouts: square and tall crops, and a figure that sits beside the text */
+.shot.square img { aspect-ratio: 1; }
+.shot.tall img { aspect-ratio: 4 / 5; object-position: center; }
+.shot.side { float: right; width: 42%; max-width: 300px; margin: 4px 0 14px 24px; }
+.story h3 { clear: both; }
+@media (max-width: 600px) { .shot.side { float: none; width: 100%; max-width: none; margin: 16px 0; } }
+.mid-banner { border-radius: 8px; }

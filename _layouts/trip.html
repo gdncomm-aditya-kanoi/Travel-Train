@@ -154,7 +154,7 @@ layout: default
   {% if page.credits.size > 0 %}
   <section class="credits small no-print">
     <h2 class="h3">Photo credits</h2>
-    <p>Photos are from Wikimedia Commons until I add my own. Tap a name for the original.</p>
+    <p>The photos with me in them are mine. The rest are from Wikimedia Commons; tap a name for the original.</p>
     <ul>{% for c in page.credits %}<li>{{ c.title }} — <a href="{{ c.source }}" target="_blank" rel="noopener">{{ c.author }}</a>, <a href="{{ c.license_url }}" target="_blank" rel="noopener">{{ c.license }}</a></li>{% endfor %}</ul>
   </section>
   {% endif %}

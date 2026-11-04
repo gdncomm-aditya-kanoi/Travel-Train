@@ -26,3 +26,5 @@ markdown: kramdown
 exclude:
   - README.md
   - .pages.yml
+  - Images
+  - tools
