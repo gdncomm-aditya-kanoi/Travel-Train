@@ -9,9 +9,10 @@ best_season: "Oct – Feb"
 cost_note: "per person"
 
 # Photos live in assets/images/hampi/. Swap any file for your own and keep the name, or add paths under gallery.
-cover: /assets/images/hampi/01-matanga-hill.jpg
-cover_alt: "Boulders and palms seen from Matanga Hill, Hampi"
-banner: /assets/images/hampi/collage.jpg
+cover: /assets/images/hampi/collage.jpg
+cover_alt: "A collage of my Hampi trip"
+card: /assets/images/hampi/u-vittala-sunset.jpg
+banner: /assets/images/hampi/banner.svg
 gallery: []
 
 # Cheat-sheet PDF and line-art banner are made by tools/build_assets.py
@@ -173,16 +174,6 @@ days:
         lng: 75.8160
 
 credits:
-  - title: "Granite rocks of Matanga Hill"
-    author: "Vyacheslav Argenberg"
-    license: "CC BY 4.0"
-    license_url: https://creativecommons.org/licenses/by/4.0
-    source: https://commons.wikimedia.org/wiki/File:Hampi,_India,_Rocky_landscape_of_Hampi,_Granite_rocks_of_Matanga_Hill.jpg
-  - title: "Stone chariot, Vittala Temple"
-    author: "Ram Nagesh Thota"
-    license: "CC BY-SA 4.0"
-    license_url: https://creativecommons.org/licenses/by-sa/4.0
-    source: https://commons.wikimedia.org/wiki/File:Iconic_Stone_Chariot_@_Vittala_Temple,_Hampi,_Karnataka.jpg
   - title: "Lotus Mahal"
     author: "Vyacheslav Argenberg"
     license: "CC BY 4.0"
@@ -198,11 +189,6 @@ credits:
     license: "CC BY-SA 3.0"
     license_url: https://creativecommons.org/licenses/by-sa/3.0
     source: https://commons.wikimedia.org/wiki/File:Two_Coracles_and_Tungabhadra_River.jpg
-  - title: "Temples at Pattadakal"
-    author: "Ms Sarah Welch"
-    license: "CC BY-SA 4.0"
-    license_url: https://creativecommons.org/licenses/by-sa/4.0
-    source: https://commons.wikimedia.org/wiki/File:7th_-_9th_century_Hindu_and_Jain_temples,_Pattadakal_monuments_Karnataka_7.jpg
 ---
 Hampi doesn't feel like a town. It feels like a giant open-air museum dropped between boulders, banana fields and a river. I went for 3 days with one friend: two days cycling around the ruins, then one long, chaotic day to Badami and Pattadakal. This is everything that worked, everything that didn't, and the money side, so you can skip my mistakes.
 
@@ -216,13 +202,17 @@ I took the overnight Hampi Express (Golgumbaz Express) from Bengaluru. It leaves
 
 ### Getting around
 
-{% include shot.html file="u-cycle.jpg" class="side tall" caption="My ₹100 cycle, heading for Vittala Bazaar." %}
 
 There are no scooter or bike rentals in Hampi, Hospet or Kadirampura (the auto owners have that locked up), so your choices are an auto (about ₹1,500 for a day), a bus that only drops you in Hampi, or a cycle. Take the cycle.
 
 - ₹100 a day for a plain cycle, ₹200 with a basket, ₹300 geared. I took the ₹100 one.
 - Rent in the morning, return at night.
 - Ask the shop to explain the map. Ours did, and it saved us hours.
+
+<div class="shots">
+{% include shot.html file="u-cycle.jpg" caption="My ₹100 cycle, heading for Vittala Bazaar" %}
+{% include shot.html file="06-coracles.jpg" caption="Coracles on the Tungabhadra" %}
+</div>
 
 ### Where to stay
 
@@ -237,21 +227,20 @@ Unless you have your own vehicle, skip it.
 
 ### The days
 
-**Day 1: temples and the chariot.** Start with a dosa breakfast at Virupaksha, then do the Krishna Temple, the Ganesha statues, Ugra Narasimha and the Shivling. Finish at Vittala Temple for the stone chariot (₹35 ticket).
+**Day 1: temples and the chariot.** Start with a dosa breakfast at Virupaksha, then do the Krishna Temple, the Ganesha statues, Ugra Narasimha and the Shivling. Finish at Vittala Temple for the stone chariot (₹35 ticket), the one on the ₹50 note.
+
+
+
 
 <div class="shots">
-{% include shot.html file="u-ganesha-shrine.jpg" class="square" caption="Sasivekalu Ganesha shrine" %}
-{% include shot.html file="u-kadalekalu.jpg" class="square" caption="Inside the giant Ganesha shrine" %}
+{% include shot.html file="u-ganesha-shrine.jpg" caption="Sasivekalu Ganesha shrine" %}
+{% include shot.html file="u-kadalekalu.jpg" caption="Inside the giant Ganesha shrine" %}
+{% include shot.html file="u-virupaksha-tank.jpg" caption="Virupaksha Temple tower over the tank" %}
+{% include shot.html file="u-vittala-sunset.jpg" caption="Vittala Temple complex at golden hour" %}
 </div>
-
-<div class="shots">
-{% include shot.html file="u-virupaksha-tank.jpg" class="square" caption="Virupaksha Temple tower over the tank" %}
-{% include shot.html file="u-vittala-sunset.jpg" class="square" caption="Vittala Temple complex at golden hour" %}
-</div>
-
-{% include shot.html file="02-stone-chariot.jpg" caption="The stone chariot at Vittala Temple. It is the picture on the ₹50 note." %}
 
 **Day 2: the royal enclosure.** Lotus Mahal, Elephant Stable, Queen's Bathhouse, the Victory Palace and Hazara Rama Temple, then Matanga Hill for the view.
+
 
 <div class="shots">
 {% include shot.html file="04-lotus-mahal.jpg" caption="Lotus Mahal" %}
@@ -260,12 +249,12 @@ Unless you have your own vehicle, skip it.
 
 **Day 3: Badami and Pattadakal.** Badami Caves, Bhoothnath Temple, the fort and falls, the lakeside, then the Group of Monuments at Pattadakal.
 
-<div class="shots">
-{% include shot.html file="u-badami-vishnu.jpg" class="square" caption="Vishnu seated on the serpent Sesha, Badami caves" %}
-{% include shot.html file="u-badami-lake.jpg" class="tall" caption="Agastya Lake, Badami, with the Bhoothnath temples" %}
-</div>
 
-{% include shot.html file="08-pattadakal.jpg" caption="Temples at Pattadakal" %}
+
+<div class="shots">
+{% include shot.html file="u-badami-vishnu.jpg" caption="Vishnu seated on the serpent Sesha, Badami caves" %}
+{% include shot.html file="u-badami-lake.jpg" caption="Agastya Lake, Badami, with the Bhoothnath temples" %}
+</div>
 
 ### Food
 
@@ -285,7 +274,6 @@ What I learned doing it by bus:
 - Take only **Superfast** buses. The ordinary bus from Ilkal went into every village and took 2 hours for a 30-minute ride.
 - ₹140 and ₹81 for about 230 km is steep compared to Kerala.
 
-{% include shot.html file="06-coracles.jpg" caption="Coracles on the Tungabhadra, the river that runs along Hampi." %}
 
 ### What I'd add to this plan
 

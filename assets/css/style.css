@@ -270,3 +270,9 @@ caption { text-align: left; padding-bottom: 8px; color: var(--muted); }
 .story h3 { clear: both; }
 @media (max-width: 600px) { .shot.side { float: none; width: 100%; max-width: none; margin: 16px 0; } }
 .mid-banner { border-radius: 8px; }
+
+/* Every photo in the article is the same size: square, two to a row */
+.shots { grid-template-columns: repeat(2, 1fr); }
+.shot img, .shot.tall img, .shot.square img { aspect-ratio: 1; object-fit: cover; }
+.gallery > .gallery-hero { aspect-ratio: auto; height: auto; object-fit: contain; }
+@media (max-width: 420px) { .shots { grid-template-columns: 1fr; } }
