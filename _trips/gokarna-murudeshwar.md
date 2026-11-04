@@ -18,7 +18,9 @@ gallery: []
 
 map_pdf: /assets/maps/gokarna-murudeshwar-guide.pdf
 
-instagram: []
+instagram:
+  - https://www.instagram.com/p/DeRvoWdCSMe/?img_index=1
+  - https://www.instagram.com/p/C6xsS7-SSr7/
 
 expenses:                   # rupees per person (the trip was for 2, split in half, from the expense sheet)
   - category: Getting there

@@ -11,14 +11,19 @@ stay_short: "ABM Guest House"
 art: chola                  # which line-art banner tools/build_assets.py draws
 
 cover: /assets/images/thanjavur/cover.jpg
-cover_alt: "The Kallanai dam on the Cauvery at dusk"
+cover_alt: "A collage of my Tanjore trip"
 card: /assets/images/thanjavur/card.jpg
 banner: /assets/images/thanjavur/banner.svg
 gallery: []
 
 map_pdf: /assets/maps/thanjavur-guide.pdf
 
-instagram: []
+instagram:
+  - https://www.instagram.com/p/DTiM9BdiYwv/?img_index=1
+  - https://www.instagram.com/p/DTWxqAMCdON/?img_index=1
+  - https://www.instagram.com/p/DTmUKJfiZa6/?img_index=1
+  - https://www.instagram.com/p/Dc_L6HGCfwq/?img_index=1
+  - https://www.instagram.com/p/Dc81-vpCVTE/?img_index=1
 
 expenses:                   # rupees per person (the trip was for 2, split in half, from the expense sheet)
   - category: Getting there
