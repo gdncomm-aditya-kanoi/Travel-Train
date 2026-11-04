@@ -1,0 +1,19 @@
+_trips/hampi.md
+  s_282d4bd6bc80bc::t_d7df85b8c3a2b9 1-175
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "57b018cb504185dd70e1fae04a016fd817ed47ad",
+  "prompts": {},
+  "sessions": {
+    "s_282d4bd6bc80bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "38827b07-c1ae-43f1-98f6-81224780f2ad",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
