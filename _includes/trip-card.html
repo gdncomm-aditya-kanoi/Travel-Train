@@ -8,5 +8,5 @@
   {% endif %}
   <span class="kicker">{{ trip.state }}</span>
   <span class="trip-card-title">{{ trip.title }}</span>
-  <span class="meta">{{ trip.days_count }} days{% if total > 0 %} · <span data-inr="{{ total }}">₹{{ total }}</span>{% endif %}{% if trip.month %} · {{ trip.month }}{% endif %}</span>
+  <span class="meta">{{ trip.days_count }} days{% if total > 0 %} · <span data-inr="{{ total }}">₹{{ total }}</span>{% if trip.cost_note %} {{ trip.cost_note }}{% endif %}{% endif %}{% if trip.month %} · {{ trip.month }}{% endif %}</span>
 </a>

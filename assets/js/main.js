@@ -62,7 +62,7 @@
     try { days = JSON.parse(dataEl.textContent) || []; } catch (e) { days = []; }
     document.querySelectorAll(".day-map").forEach(function (box) {
       var day = days[Number(box.getAttribute("data-day"))] || {};
-      box.innerHTML = drawMap(day, box.getAttribute("data-title"), Number(box.getAttribute("data-day")));
+      box.innerHTML = drawMap(day, box.getAttribute("data-title"), Number(box.getAttribute("data-day"))) + liveMap(day);
     });
   }
 
@@ -70,6 +70,16 @@
     return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) {
       return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
     });
+  }
+
+  /* A real, zoomable Google map of the same stops (no key needed) */
+  function liveMap(day) {
+    var st = (day.stops || []).filter(function (s) { return isFinite(Number(s.lat)) && isFinite(Number(s.lng)) && s.lat !== null; });
+    if (st.length < 2) return "";
+    var pt = function (s) { return Number(s.lat) + "," + Number(s.lng); };
+    var src = "https://maps.google.com/maps?output=embed&saddr=" + encodeURIComponent(pt(st[0])) +
+      "&daddr=" + st.slice(1).map(function (s) { return encodeURIComponent(pt(s)); }).join("+to:");
+    return '<iframe class="live-map no-print" title="Google map of this day" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="' + src + '"></iframe>';
   }
 
   function drawMap(day, title, idx) {
@@ -112,6 +122,18 @@
       };
     });
 
+    /* Stops that are too close to tell apart get pushed apart (exact repeats are left alone) */
+    pts.forEach(function (p, n) {
+      for (var pass = 0; pass < 6; pass++) {
+        var moved = false;
+        for (var j = 0; j < n; j++) {
+          var dx = p.x - pts[j].x, dy = p.y - pts[j].y, d = Math.hypot(dx, dy);
+          if (d >= 6 && d < 28) { p.x = pts[j].x + dx / d * 28; p.y = pts[j].y + dy / d * 28; moved = true; }
+        }
+        if (!moved) break;
+      }
+    });
+
     /* Route: dashed, dotted for a leg marked "return" */
     for (var i = 1; i < pts.length; i++) {
       var a = pts[i - 1], b = pts[i];
@@ -120,21 +142,37 @@
         (back ? 'stroke-width="2" stroke-dasharray="1 6" stroke-linecap="round"' : 'stroke-width="2.5" stroke-dasharray="9 6"') + "/>";
     }
 
-    /* Markers and labels, nudged apart when they collide */
+    /* Markers and labels. A return stop on top of an earlier stop becomes a ring round it. */
     var placed = [];
     pts.forEach(function (p, n) {
+      var twin = null;
+      for (var j = 0; j < n; j++) {
+        if (Math.hypot(pts[j].x - p.x, pts[j].y - p.y) < 6) { twin = pts[j]; break; }
+      }
+      if (twin) {
+        out += '<circle cx="' + p.x.toFixed(1) + '" cy="' + p.y.toFixed(1) + '" r="18" fill="none" stroke="currentColor" stroke-width="2"/>';
+        return;
+      }
       var hollow = !!p.s.return;
       out += '<circle cx="' + p.x.toFixed(1) + '" cy="' + p.y.toFixed(1) + '" r="12" ' +
         (hollow ? 'fill="#F7F1E4" stroke="currentColor" stroke-width="2.5"' : 'fill="currentColor" stroke="#F7F1E4" stroke-width="3"') + "/>" +
         '<text x="' + p.x.toFixed(1) + '" y="' + (p.y + 4.5).toFixed(1) + '" text-anchor="middle" class="m-num' + (hollow ? " m-num-hollow" : "") + '">' + (n + 1) + "</text>";
 
-      var right = p.x < W - 200;
+      /* Label goes on whichever side has room, then moves down until it is clear of other labels */
+      var right = p.x < W / 2 + 40;
       var lx = right ? p.x + 20 : p.x - 20;
       var ly = p.y + 6;
-      placed.forEach(function (q) {
-        if (Math.abs(q.x - lx) < 150 && Math.abs(q.y - ly) < 22) ly = q.y + 24;
-      });
-      placed.push({ x: lx, y: ly });
+      var w = String(p.s.name).length * 8.5;
+      var tries = 0;
+      var clash = function () {
+        return placed.some(function (q) {
+          var overlapX = right === q.right ? Math.abs(q.x - lx) < Math.max(w, q.w) : Math.abs((right ? lx + w / 2 : lx - w / 2) - (q.right ? q.x + q.w / 2 : q.x - q.w / 2)) < (w + q.w) / 2;
+          return overlapX && Math.abs(q.y - ly) < 20;
+        });
+      };
+      while (clash() && tries++ < 8) ly += 22;
+      ly = Math.min(ly, H - 40);
+      placed.push({ x: lx, y: ly, w: w, right: right });
       out += '<text x="' + lx.toFixed(1) + '" y="' + ly.toFixed(1) + '" text-anchor="' + (right ? "start" : "end") + '" class="m-label">' + esc(p.s.name) + "</text>";
     });
 

@@ -14,7 +14,7 @@ layout: default
     <dl class="trip-stats">
       <div><dt>When</dt><dd>{{ page.month }}</dd></div>
       <div><dt>Days</dt><dd>{{ page.days_count }}</dd></div>
-      <div><dt>Total spent</dt><dd>{% if total > 0 %}<span data-inr="{{ total }}">₹{{ total }}</span>{% else %}—{% endif %}</dd></div>
+      <div><dt>Total spent{% if page.cost_note %} · {{ page.cost_note }}{% endif %}</dt><dd>{% if total > 0 %}<span data-inr="{{ total }}">₹{{ total }}</span>{% else %}—{% endif %}</dd></div>
       <div><dt>Best season</dt><dd>{{ page.best_season }}</dd></div>
     </dl>
   </header>
@@ -41,7 +41,7 @@ layout: default
       <section>
         <h2>Expenses</h2>
         <div class="table-scroll">
-          <table class="expenses">
+          <table class="expenses">{% if page.cost_note %}<caption class="small">All amounts {{ page.cost_note }}.</caption>{% endif %}
             <thead><tr><th scope="col">Category</th><th scope="col">Notes</th><th scope="col" class="num">Amount</th></tr></thead>
             <tbody>
               {% for e in page.expenses %}
@@ -73,6 +73,12 @@ layout: default
         <dl class="details">
           {% for d in page.details %}<div><dt>{{ d.label }}</dt><dd>{{ d.value }}</dd></div>{% endfor %}
         </dl>
+      </section>
+      {% endif %}
+      {% if page.eat.size > 0 %}
+      <section class="panel">
+        <h2 class="h3">Where to eat</h2>
+        <ul class="eat">{% for e in page.eat %}<li><strong>{{ e.name }}</strong><span class="small">{{ e.note }}</span></li>{% endfor %}</ul>
       </section>
       {% endif %}
       {% for url in page.instagram %}{% include instagram-embed.html url=url %}{% endfor %}

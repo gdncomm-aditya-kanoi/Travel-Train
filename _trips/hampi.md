@@ -2,174 +2,163 @@
 title: Hampi
 state: Karnataka
 date: 2025-07-15            # used to sort trips, newest first (approximate, please confirm)
-summary: "Three days of ruins, boulders and cycling around Hampi, then on to Badami and Pattadakal — with every mistake I made so you can skip them."
+summary: "Boulders, ruined temples and cycle rides in Hampi, then on to Badami and Pattadakal."
 month: "Monsoon"
 days_count: 3
-best_season: "Oct – Feb (I went in monsoon: green and cooler)"
+best_season: "Oct – Feb"
+cost_note: "per person"
 
-cover: ""
+# Photos: drop files into assets/images/hampi/ and list them under gallery.
+cover: /assets/images/hampi/cover.svg       # city banner; swap for cover.jpg when you have a photo
 gallery: []
+#  - /assets/images/hampi/01.jpg
+#  - /assets/images/hampi/02.jpg
 
-map_pdf: ""
+# Cheat-sheet PDF (made by tools/build_assets.py)
+map_pdf: /assets/maps/hampi-guide.pdf
 
 instagram:
   - https://www.instagram.com/p/DIISz40zrSf/
 
-expenses:                   # for 2 people, 3 days, Bengaluru → Hampi → Badami → Bengaluru
+expenses:                   # rupees per person (the trip was for 2, split in half)
   - category: Getting there
-    note: "Bengaluru–Hospet train SL ₹260 + Badami–Bengaluru train ₹357 (got upgraded to 3AC)"
-    amount: 617
+    note: "Train both ways: Bengaluru to Hospet, Badami to Bengaluru"
+    amount: 308
   - category: Stay
-    note: "Viru Homestay, Kadirampura — 2 nights for 2 people (booked on Goibibo)"
-    amount: 878
-  - category: Cancelled stay
-    note: "Zostel Hampi booked, then cancelled because it is too far out — lost this much"
-    amount: 411
+    note: "Viru Homestay, Kadirampura, 2 nights"
+    amount: 439
   - category: Food
-    note: "Chai, dosa, rooftop lunch, café dinner, station lunch — about ₹300 a day for two"
-    amount: 923
+    note: "Chai, dosa, rooftop lunch, café dinner"
+    amount: 462
   - category: Local transport
-    note: "Cycles ₹100 a day, local buses, autos, and the Hospet → Ilkal → Badami bus"
-    amount: 675
-  - category: Activities & entry
-    note: "Vittala Temple chariot ticket ₹35, fridge magnet ₹120"
-    amount: 155
+    note: "Cycles, local buses, a few autos"
+    amount: 338
+  - category: Entry
+    note: "Vittala Temple chariot ticket"
+    amount: 18
 
 things_to_do:
-  - "Rent a plain ₹100 cycle in the morning and return it at night — the best way to get around"
-  - "Stay in Kadirampura, 2–2.5 km from the monuments, not in Hampi or Hospet"
-  - "Day 1: Virupaksha Temple, Vittala Temple, Ganesha statues, Krishna Temple, Ugra Narasimha and the Shivling"
-  - "Day 2: Lotus Mahal, Elephant Stable, Queen's Bathhouse, Hazara Rama Temple, then Matanga Hill"
-  - "Day 3: Badami Caves, Bhoothnath Temple, Badami Fort and Falls, then Pattadakal"
-  - "Eat at Happy Hampi Cafe, Gopi Roof Restaurant, Chillout Bamboo, Old Chill Out Ganesh and Shanti Cafe"
-  - "Buy your Hampi to Badami train tickets early (Hospet–Badami 5:45 AM and midnight)"
+  - "Rent a plain ₹100 cycle in the morning and return it at night"
+  - "Day 1: Virupaksha, Krishna Temple, Vittala Temple and its stone chariot"
+  - "Day 2: Hazara Rama, Lotus Mahal, Elephant Stable, Queen's Bath, then Matanga Hill at sunset"
+  - "Day 3: Badami Caves, fort and falls, then Pattadakal"
+  - "Use a map: Hampi is spread out and signs are few"
 things_to_skip:
-  - "Autos outside Hospet station asking ₹600–1,000 — walk 600 m to JSW bus stop and take the ₹15 bus"
-  - "Renting a motorbike — there are none; autos for a day cost about ₹1,500"
-  - "Zostel Hampi unless you have your own vehicle — 30 km from Hospet, uphill, and the road is rough after dark"
-  - "Slow local buses from Ilkal to Badami — take only Superfast buses (the local one took 2 hours for a 30-minute ride)"
-  - "Hampi homestays — overpriced; Kadirampura is far cheaper"
-  - "Expecting non-veg food — it is rare, and cafés are priced for foreign tourists"
+  - "Autos outside Hospet station (₹600–1,000): take the ₹15 bus from JSW bus stop"
+  - "Zostel Hampi without your own vehicle: 30 km out, uphill, rough road"
+  - "Staying in Hampi or Hospet: Kadirampura is cheaper and closer"
+  - "Slow local buses from Ilkal to Badami: take only Superfast"
+  - "Looking for a bike rental: there is none"
+
+eat:
+  - name: Happy Hampi Cafe
+    note: "Breakfast · Kadirampura"
+  - name: Gopi Roof Restaurant
+    note: "Lunch · Hampi"
+  - name: Chillout Bamboo
+    note: "Lunch · Hampi · a bit pricey, lovely setting"
+  - name: Old Chill Out Ganesh
+    note: "Indian food · Hampi"
+  - name: Shanti Cafe
+    note: "Cheap, all meals · Kadirampura"
+  - name: Hotel Paradise
+    note: "Cheap, all meals · Badami"
 
 details:
   - label: Nearest station
-    value: "Hospet Junction (13 km from Hampi)"
+    value: "Hospet Junction, 13 km"
   - label: Nearest airport
-    value: "Hubballi / Vidyanagar (Toranagallu) — I took the train"
+    value: "Hubballi or Toranagallu (JSW)"
   - label: Where I stayed
-    value: "Viru Homestay, Kadirampura (about ₹400 per person per night)"
+    value: "Viru Homestay, Kadirampura (₹400 a night)"
+  - label: Cycle hire
+    value: "₹100 plain · ₹200 basket · ₹300 geared"
   - label: Budget level
     value: "Backpacker"
-  - label: Getting from Hospet
-    value: "JSW bus stop, 600 m from the station — ₹15 to Hampi or Kadirampura"
-  - label: Cycle hire
-    value: "₹100 plain, ₹200 with a basket, ₹300 geared"
 
-# Coordinates are approximate — check them in Google Maps before you rely on them.
+# Coordinates are from OpenStreetMap. Kadirampura is approximate.
+# "route" opens in Google Maps with every stop in order.
 days:
-  - title: Virupaksha, the Ganesha statues, Krishna Temple and Vittala Temple
-    route: https://www.google.com/maps/d/u/0/viewer?entry=yt&mid=1a1yV82zqSiK1fRo_yh8sopmjMbXRFJOt&ll=15.328612435979974%2C76.46914850100666&z=15
+  - title: Temples and the stone chariot
+    route: "https://www.google.com/maps/dir/?api=1&origin=15.3325,76.4520&destination=15.3325,76.4520&waypoints=15.3352,76.4587%7C15.3302,76.4604%7C15.3423,76.4755&travelmode=bicycling"
     stops:
       - name: Kadirampura
-        note: Start, cycle hired here
-        lat: 15.3330
-        lng: 76.4510
+        note: Start. Hire the cycle here
+        lat: 15.3325
+        lng: 76.4520
       - name: Virupaksha Temple
-        note: Dosa breakfast nearby
-        lat: 15.3350
-        lng: 76.4600
+        note: Dosa breakfast in the bazaar
+        lat: 15.3352
+        lng: 76.4587
       - name: Krishna Temple
-        lat: 15.3358
-        lng: 76.4725
+        lat: 15.3302
+        lng: 76.4604
       - name: Vittala Temple
         note: The stone chariot
-        lat: 15.3425
-        lng: 76.4753
+        lat: 15.3423
+        lng: 76.4755
       - name: Kadirampura
         note: Back for the night
-        lat: 15.3330
-        lng: 76.4510
+        lat: 15.3325
+        lng: 76.4520
         return: true
-  - title: The royal enclosure and Matanga Hill
-    route: https://www.google.com/maps/d/u/0/viewer?entry=yt&mid=1a1yV82zqSiK1fRo_yh8sopmjMbXRFJOt&ll=15.328612435979974%2C76.46914850100666&z=15
-    stops:
-      - name: Hazara Rama Temple
-        lat: 15.3305
-        lng: 76.4678
-      - name: Queen's Bathhouse
-        lat: 15.3190
-        lng: 76.4790
-      - name: Lotus Mahal
-        lat: 15.3223
-        lng: 76.4742
-      - name: Elephant Stable
-        lat: 15.3220
-        lng: 76.4750
-      - name: Matanga Hill
-        note: Sunset climb
-        lat: 15.3326
-        lng: 76.4690
-  - title: Hampi to Badami and Pattadakal
-    route: ""
+  - title: Royal enclosure and Matanga Hill
+    route: "https://www.google.com/maps/dir/?api=1&origin=15.3325,76.4520&destination=15.3325,76.4520&waypoints=15.3178,76.4689%7C15.3203,76.4714%7C15.3211,76.4728%7C15.3134,76.4728%7C15.3316,76.4684&travelmode=bicycling"
     stops:
       - name: Kadirampura
-        note: Bus to Hospet, ₹15
-        lat: 15.3330
-        lng: 76.4510
+        note: Start
+        lat: 15.3325
+        lng: 76.4520
+      - name: Hazara Rama Temple
+        lat: 15.3178
+        lng: 76.4689
+      - name: Lotus Mahal
+        lat: 15.3203
+        lng: 76.4714
+      - name: Elephant Stable
+        lat: 15.3211
+        lng: 76.4728
+      - name: Queen's Bath
+        lat: 15.3134
+        lng: 76.4728
+      - name: Matanga Hill
+        note: Sunset climb
+        lat: 15.3316
+        lng: 76.4684
+      - name: Kadirampura
+        note: Back for the night
+        lat: 15.3325
+        lng: 76.4520
+        return: true
+  - title: Bus to Badami and Pattadakal
+    route: "https://www.google.com/maps/dir/?api=1&origin=15.3325,76.4520&destination=15.9484,75.8160&waypoints=15.2752,76.3893%7C15.9598,76.1156%7C15.9184,75.6844&travelmode=driving"
+    stops:
+      - name: Kadirampura
+        note: "Bus to Hospet, ₹15"
+        lat: 15.3325
+        lng: 76.4520
       - name: Hospet bus stand
-        note: Bus to Ilkal, ₹140
-        lat: 15.2689
-        lng: 76.3909
+        note: "Bus to Ilkal, ₹140, about 2.5 hours"
+        lat: 15.2752
+        lng: 76.3893
       - name: Ilkal
-        note: Change to a Superfast bus, ₹81
-        lat: 15.9619
-        lng: 76.1117
-      - name: Badami Caves
-        note: Also Bhoothnath Temple, Fort and Falls
-        lat: 15.9190
-        lng: 75.6860
+        note: "Change to a Superfast bus, ₹81"
+        lat: 15.9598
+        lng: 76.1156
+      - name: Badami
+        note: "Caves, fort, Bhutanatha Temple and falls"
+        lat: 15.9184
+        lng: 75.6844
       - name: Pattadakal
-        lat: 15.9486
-        lng: 75.8156
+        note: Group of monuments
+        lat: 15.9484
+        lng: 75.8160
 ---
 
-Hampi is the ruined city of Vijayanagara in North Karnataka. This is the plan I wish I had before I went: where to eat, how to get around, what it really costs, and the mistakes to avoid. I researched a lot and watched many YouTube videos to plan it, and went with one friend.
+Hampi is the ruined Vijayanagara capital in North Karnataka. I went for 3 days with a friend: two days of cycling around the ruins, then one long bus day to Badami and Pattadakal.
 
-**Getting there.** From Bengaluru I took the Hampi Express (Golgumbaz Express), which leaves at 10 PM and reaches Hospet Junction around 7 AM. Sleeper was ₹260. Outside the station autos will ask ₹600–1,000. Ignore them, walk 600 m to the JSW bus stop and take a ₹15 bus to Hampi or Kadirampura.
-
-**Getting around.** There are no scooter or bike rentals in Hampi, Hospet or Kadirampura, so the options are autos (about ₹1,500 for a day), buses that only take you to Hampi, or a cycle. Rent a cycle: ₹100 for a plain one, ₹200 with a basket, ₹300 geared. In the monsoon the weather made cycling a joy.
-
-**The stay.** I stayed at Viru Homestay in Kadirampura, a small village 2–2.5 km from the monuments. It cost ₹1,750 for two people for two days. The rooms and bathrooms were clean, there was a balcony and terrace, and shops, cafés and breakfast places are 300 m away. Homestays in Hampi are overpriced and hotels in Hospet are far from the sites.
-
-I had booked Zostel Hampi, because I usually stay in Zostels, then cancelled it and lost about ₹800. It is in Gangavati, 30 km from Hospet and 15 km from Hampi, uphill on a rough road that gets risky in rain and after dark. The views of Kishkindha and the riverside setting are lovely, and it has a workspace, campfire and games, but there is nowhere else to eat and no motor transport. Dorms are about ₹1,000 (4 beds) or ₹750 (6–8 beds).
-
-**Food.** Choices are limited and mostly veg or egg. Many places are aimed at foreign tourists, so prices feel high. Places I would go back to:
-
-1. Happy Hampi Cafe, Kadirampura — breakfast, normal prices
-2. Gopi Roof Restaurant, Hampi — lunch, normal prices
-3. Chillout Bamboo Restaurant, Hampi — lunch, slightly high but a great setting
-4. Old Chill Out Ganesh Restaurant, Hampi — Indian food, lunch and dinner
-5. Shanti Cafe, Hampi — low prices, lunch and dinner
-6. Hotel Paradise, Badami — low prices, all meals
-
-**What to see, in groups.**
-
-- Group 1: Hemakuta Hill and temples, Sasivekalu Ganesha, Kadalekalu Ganesha, Virupaksha Temple, Hampi Bazaar
-- Group 2: Achyutaraya Temple, Courtesans' Street, Kodanda Rama Temple, Chakratheertha, Sugriva's Cave
-- Group 3: Purandara Mantapa, ruined bridge, King's Balance, Vittala Temple, Vittala Bazaar
-- Group 4: Laxminarasimha, Badavi Linga, Krishna Temple, Chandikeshwara, Uddana Veerabhadra Temple
-- Group 5: Lotus Mahal, watch tower, Elephant Stable, guards' quarters, underground temple
-- Group 6: Queen's Bath, Mahanavami Dibba, Pushkarni, secret chamber, King's Audience Hall, Hazara Rama Temple
-- Group 7: Bhima's Gate, Ganagitti Jain Temple, Malyavanta Hill, Talarighatta Gate
-- Group 8: Pattabhirama Temple, Archaeology Museum
-
-Hampi is the one place where having a map really matters. I put every pin on a [Google My Map](https://www.google.com/maps/d/u/0/viewer?entry=yt&mid=1a1yV82zqSiK1fRo_yh8sopmjMbXRFJOt&ll=15.328612435979974%2C76.46914850100666&z=15).
-
-**Hampi to Badami.** This is the hard part. There is no direct bus, and cabs ask over ₹3,000. The trains run Hospet to Badami at 5:45 AM and at midnight. By bus: Kadirampura to Hospet (₹15), Hospet to Ilkal (₹140, about 2.5 hours), then Ilkal to Badami (₹81, about 2 hours).
-
-- Eat before you leave. There is little to eat in Ilkal or in Badami's main town.
-- Ilkal has many beggars who will crowd you. Keep your things close while you change buses.
-- Take only Superfast buses. The ordinary bus from Ilkal went into every village and took 2 hours for a 30-minute journey.
-- The MEMU and DEMU trains are worth checking for travelling between Hampi and Badami, and they are not easy to find on the internet or on Google Maps.
-
-**Costs.** The expense table covers 2 people for 3 days including transport, stay and food, and the cancelled Zostel booking. The trip came to about ₹3,659 for two, or roughly ₹1,830 each.
+- **Stay in Kadirampura**, 2 km from the ruins. Homestays there are clean and cheap.
+- **Hire a cycle** for ₹100 a day. There are no bike rentals, and autos cost about ₹1,500 a day.
+- **Skip the autos at Hospet station.** Walk 600 m to JSW bus stop; the bus to Hampi is ₹15.
+- **Hampi to Badami is the hard part.** Take Superfast buses only (Hospet, Ilkal, Badami), or the 5:45 AM train from Hospet.
+- **Food is mostly veg or egg**, and priced for tourists.
