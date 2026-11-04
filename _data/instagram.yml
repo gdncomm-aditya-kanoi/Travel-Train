@@ -1,6 +1,10 @@
 # Your Instagram handle (without the @)
 handle: adi_crayon
 
+# Other profiles shown in the footer
+reddit: https://www.reddit.com/user/adityakanoi/
+pinterest: https://in.pinterest.com/adi_crayon/
+
 # Links to public posts or reels to show on the home page (newest first).
 # Copy a link from Instagram: ••• → Copy link
 posts:
