@@ -322,3 +322,6 @@ caption { text-align: left; padding-bottom: 8px; color: var(--muted); }
   .reel-track { animation: none; }
   .reel-frame[aria-hidden="true"] { display: none; }
 }
+
+/* Photos shown whole, at their own shape (Wayanad) */
+.shots .shot.full img, .shot.full img { aspect-ratio: auto; height: auto; object-fit: contain; }
