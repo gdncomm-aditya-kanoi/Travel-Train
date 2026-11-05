@@ -1,0 +1,24 @@
+_data/reel.yml
+  s_cfb3d9fc65baa6::t_9065f09bc16778 12,21,23
+_trips/chikmagalur.md
+  s_cfb3d9fc65baa6::t_2b7b26997e3637 1-47,49-54,56-137,139-145,152-172,174-186,188-192,194-202,204-245
+  s_cfb3d9fc65baa6::t_9065f09bc16778 48,55,138,146-151,173,187,193,203
+_data/instagram.yml
+  s_cfb3d9fc65baa6::t_9065f09bc16778 14-15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "871d5e9ed19c04a1543c7b725ae5193ea669225c",
+  "prompts": {},
+  "sessions": {
+    "s_cfb3d9fc65baa6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f17aae31-e0db-41bd-9aee-e49907ff7b6a",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
