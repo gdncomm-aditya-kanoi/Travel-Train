@@ -1,0 +1,23 @@
+_includes/trip-card.html
+  s_cfb3d9fc65baa6::t_792a869c90e791 6
+_trips/mysore.md
+  s_cfb3d9fc65baa6::t_6fb322a1e30e1c 4,14
+assets/css/style.css
+  s_cfb3d9fc65baa6::t_3373e5dcf5a764 329-331
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "24278160cb92481d65e9ee8f0000fb0b834a7a37",
+  "prompts": {},
+  "sessions": {
+    "s_cfb3d9fc65baa6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f17aae31-e0db-41bd-9aee-e49907ff7b6a",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
