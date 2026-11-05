@@ -144,11 +144,11 @@ days:
         lat: 13.5530
         lng: 76.0100
 credits:
-  - title: "Mullayanagiri (home page card)"
-    author: "RakeshRaju M"
+  - title: "Mullayangiri peak (home page card)"
+    author: "Avinash Kumar singh"
     license: "CC BY-SA 4.0"
     license_url: https://creativecommons.org/licenses/by-sa/4.0
-    source: https://commons.wikimedia.org/wiki/File:Mullayanagiri,_Chikmagalur_district_of_Karnataka.jpg
+    source: https://commons.wikimedia.org/wiki/File:Mullayangiri_peak_chikkmaglur_karnataka.jpg
 ---
 
 Chikmagalur is Karnataka's coffee country: hills the colour of freshly cut grass, clouds that sit right on the ridges, and waterfalls that only really run in the monsoon. I went for 3 days in August 2024 with a friend, took the train to Kadur and a bus up, stayed two nights at Manu Homestay and covered the peaks and waterfalls on a rented bike. I kept an itinerary, a price list and a story-song list for it, so I put them all here.

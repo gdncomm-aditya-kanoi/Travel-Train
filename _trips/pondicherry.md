@@ -186,11 +186,11 @@ days:
         lat: 11.9340
         lng: 79.8340
 credits:
-  - title: "The Matrimandir in Auroville (home page card)"
-    author: "Matthew T Rader"
+  - title: "Matrimandir, Auroville (home page card)"
+    author: "Mohan Babu V"
     license: "CC BY-SA 4.0"
     license_url: https://creativecommons.org/licenses/by-sa/4.0
-    source: https://commons.wikimedia.org/wiki/File:The_Matrimandir_in_Auroville,_Tamil_Nadu,_India.jpg
+    source: https://commons.wikimedia.org/wiki/File:Matrimandir-auroville-tamilnadu-india.jpg
 ---
 
 Pondicherry is a French colony on the Tamil coast, with yellow houses, quiet beaches and bakeries on every corner. I went for 3 days in March 2024 with friends, took the overnight bus from Bengaluru, rented a bike and spent most of my time on the road between Auroville and the sea. I kept a list of cafés, churches and beaches along the way, so I put them all here.
