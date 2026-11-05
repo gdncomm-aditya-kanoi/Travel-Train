@@ -10,7 +10,7 @@ cost_note: "per person, for the 1 day I did"
 stay_short: "Zostel Mysore"
 
 cover: /assets/images/mysore/cover.jpg
-cover_alt: "A collage of Mysore: the Mysuru Junction sign, the zoo letters, a tiger, a vintage truck, the palace lit up, and two of us"
+cover_alt: "A collage of Mysore: the Mysuru Junction sign, the zoo letters, a tiger, a vintage truck and the two of us, next to the palace lit up at night"
 cover_portrait: true          # show the cover and the card whole, not cropped
 card: /assets/images/mysore/card.jpg
 banner: ""
@@ -144,11 +144,11 @@ days:
         lat: 12.3150
         lng: 76.6420
 credits:
-  - title: "Chamundi Hills (Image 1)"
-    author: "Gpkp"
+  - title: "Chamundi From Karanji"
+    author: "Timothy A. Go"
     license: "CC BY-SA 4.0"
     license_url: https://creativecommons.org/licenses/by-sa/4.0
-    source: https://commons.wikimedia.org/wiki/File:Chamundi_Hills_(Image_1),_Mysore,_Karnataka,_India.jpg
+    source: https://commons.wikimedia.org/wiki/File:Chamundi_From_Karanji_Mysore_Nov23_A7C_08173.jpg
   - title: "Chamundeshwari Temple"
     author: "Arun Mohan"
     license: "CC BY-SA 4.0"
@@ -164,11 +164,11 @@ credits:
     license: "CC BY-SA 4.0"
     license_url: https://creativecommons.org/licenses/by-sa/4.0
     source: https://commons.wikimedia.org/wiki/File:IMG_MYSORE_SAND_ART_MEUSEUM_DSC001.jpg
-  - title: "Tipu's Summer Palace Mysore 01"
-    author: "Harvinder Chandigarh"
-    license: "CC BY 4.0"
-    license_url: https://creativecommons.org/licenses/by/4.0
-    source: https://commons.wikimedia.org/wiki/File:Tipu%27s_Summer_Palace_Mysore_01.jpg
+  - title: "Tipu Sultan’s Summer Palace, Srirangapatna"
+    author: "Ananthmohanram18"
+    license: "CC BY-SA 4.0"
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Tipu_Sultan%E2%80%99s_Summer_Palace,_Srirangapatna,_Karnataka.jpg
   - title: "Payana Museum, Karnataka (2025) 187"
     author: "Gpkp"
     license: "CC BY-SA 4.0"
@@ -212,7 +212,6 @@ This is the day I actually did. Breakfast was dosa and coffee (₹180 for two), 
 {% include shot.html file="market.jpg" class="full" caption="Souvenir stalls, where the magnet came from" %}
 {% include shot.html file="church.jpg" class="full" caption="St. Philomena's Church" %}
 {% include shot.html file="palace-lights.jpg" class="full" caption="The palace lit up for the night show" %}
-{% include shot.html file="night.jpg" class="full" caption="The crowd outside, after dark" %}
 {% include shot.html file="explore.jpg" class="full" caption="Explore, dream, discover" %}
 {% include shot.html file="until-next-time.jpg" class="full" caption="Until next time" %}
 </div>
@@ -222,7 +221,7 @@ This is the day I actually did. Breakfast was dosa and coffee (₹180 for two), 
 Go up Chamundi Hills in the morning for the Chamundeshwari Temple and the huge Nandi bull on the way down, with a view over the city. Then see the Mysore Sand Sculpture Museum. Check the timings and fees for each before you go.
 
 <div class="shots">
-{% include shot.html file="chamundi.jpg" class="full" caption="Chamundi Hills" %}
+{% include shot.html file="chamundi.jpg" class="full" caption="Chamundi Hills, seen from Karanji Lake" %}
 {% include shot.html file="chamundi-temple.jpg" class="full" caption="Chamundeshwari Temple" %}
 {% include shot.html file="nandi.jpg" class="full" caption="The Nandi statue" %}
 {% include shot.html file="sand-museum.jpg" class="full" caption="Mysore Sand Art Museum" %}
@@ -245,36 +244,4 @@ Tipu Sultan's Summer Palace is at Srirangapatna, a short way out of Mysore. The 
 <tr><td>10:00 AM to 5:30 PM</td><td>Mysore Palace</td><td>₹120 per person</td></tr>
 <tr><td>7:00 to 8:00 PM</td><td>Light and Sound show, Mysore Palace</td><td>₹120 night show</td></tr>
 <tr><td>6:00 AM to 8:00 PM</td><td>Church</td><td>Free</td></tr>
-</tbody></table></div>
-
-### The day's full expense sheet
-
-<p class="small">What the two of us paid on the day, before splitting. The ₹100 magnet is not split.</p>
-<div class="table-scroll"><table class="timetable"><thead><tr><th>Item</th><th>Amount</th></tr></thead><tbody>
-<tr><td>Train, Bengaluru to Mysore</td><td>₹302</td></tr>
-<tr><td>Train, Mysore to Bengaluru</td><td>₹302</td></tr>
-<tr><td>Washroom</td><td>₹20</td></tr>
-<tr><td>Majestic to Satellite</td><td>₹20</td></tr>
-<tr><td>Bus</td><td>₹380</td></tr>
-<tr><td>Breakfast, dosa and coffee</td><td>₹180</td></tr>
-<tr><td>Auto, bus stop to Mysore Zoo</td><td>₹50</td></tr>
-<tr><td>Mysore Zoo ticket</td><td>₹200</td></tr>
-<tr><td>Zoo bag ticket</td><td>₹30</td></tr>
-<tr><td>Ice cream</td><td>₹60</td></tr>
-<tr><td>Magnet</td><td>₹100</td></tr>
-<tr><td>Lunch</td><td>₹260</td></tr>
-<tr><td>Palace entry</td><td>₹242</td></tr>
-<tr><td>Shoe keeping</td><td>₹10</td></tr>
-<tr><td>Limca</td><td>₹40</td></tr>
-<tr><td>Auto, palace to church</td><td>₹70</td></tr>
-<tr><td>Bag and shoes, church</td><td>₹30</td></tr>
-<tr><td>Coffee</td><td>₹40</td></tr>
-<tr><td>Masala puri</td><td>₹70</td></tr>
-<tr><td>Palace night show</td><td>₹250</td></tr>
-<tr><td>Auto, palace to railway station</td><td>₹52</td></tr>
-<tr><td>Dinner, railway station</td><td>₹190</td></tr>
-<tr><td>Tea</td><td>₹20</td></tr>
-<tr><td>Cab, KR Puram to Majestic</td><td>₹280</td></tr>
-<tr><td>Bike parking</td><td>₹60</td></tr>
-<tr><td><strong>Total</strong></td><td><strong>₹3,258</strong></td></tr>
 </tbody></table></div>

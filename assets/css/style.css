@@ -327,5 +327,5 @@ caption { text-align: left; padding-bottom: 8px; color: var(--muted); }
 .shots .shot.full img, .shot.full img { aspect-ratio: auto !important; height: auto !important; object-fit: contain !important; }
 
 /* Portrait covers (cover_portrait: true) show whole and centred, never cropped */
-.gallery > .gallery-hero.portrait { aspect-ratio: auto; object-fit: contain; width: min(100%, 780px); height: auto; max-height: none; justify-self: center; }
+.gallery > .gallery-hero.portrait { aspect-ratio: auto; object-fit: contain; width: min(100%, 720px); height: auto; max-height: none; justify-self: center; }
 .trip-card .photo.portrait { object-fit: contain; }
