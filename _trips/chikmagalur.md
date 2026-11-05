@@ -218,8 +218,7 @@ Take the jeep to Jhari Falls (₹330 for two). Baba Budan Giri and the Shri Devi
 
 ### Prices I paid
 
-<details class="ref">
-<summary>Jeeps and entry charges, for two</summary>
+<p class="small">Jeeps and entry charges, for two of us.</p>
 <div class="table-scroll"><table class="timetable"><thead><tr><th>Place</th><th>Type</th><th>Price</th></tr></thead><tbody>
 <tr><td>Hebbe Falls</td><td>Jeep</td><td>₹1,000 (₹500 each)</td></tr>
 <tr><td>Hebbe Falls</td><td>Security</td><td>₹20</td></tr>
@@ -228,18 +227,3 @@ Take the jeep to Jhari Falls (₹330 for two). Baba Budan Giri and the Shri Devi
 <tr><td>Jhari Falls</td><td>Jeep</td><td>₹330 (₹165 each)</td></tr>
 <tr><td>Mahatma Gandhi Park</td><td>Entry</td><td>₹80</td></tr>
 </tbody></table></div>
-</details>
-
-### Story songs
-
-I made a short playlist for the Instagram stories:
-
-- Naina da kya kasoor
-- Gulabi Ankhe (new version)
-- Kamlaye, from Rocket Rani
-- Jeene laga hoon
-- Awara hai
-- Hale dil
-- It's rocking
-- Slowmotion Angreza
-- Ajj dil shayarana
