@@ -324,4 +324,4 @@ caption { text-align: left; padding-bottom: 8px; color: var(--muted); }
 }
 
 /* Photos shown whole, at their own shape (Wayanad) */
-.shots .shot.full img, .shot.full img { aspect-ratio: auto; height: auto; object-fit: contain; }
+.shots .shot.full img, .shot.full img { aspect-ratio: auto !important; height: auto !important; object-fit: contain !important; }
