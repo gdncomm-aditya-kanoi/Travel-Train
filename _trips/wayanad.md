@@ -10,7 +10,7 @@ cost_note: "per person"
 stay_short: "Zostel Plus Wayanad"
 
 cover: /assets/images/wayanad/cover.jpg
-cover_alt: "A cold beer on a wooden rail above the misty Wayanad hills"
+cover_alt: "Wayanad, Monsoon 2024: a strip of photos from the trip"
 card: /assets/images/wayanad/card.jpg
 banner: ""
 gallery: []
@@ -176,8 +176,8 @@ Wayanad is the green, misty corner of Kerala up in the Western Ghats, and in Jun
 <div class="callout"><strong>The short version.</strong> Sleeper bus from Bengaluru, two nights at Zostel Plus Wayanad, zip line and Banasura Dam on Day 1, the glass bridge and Edakkal Caves on Day 2, and a bus to Calicut for the night train home on Day 3.</div>
 
 <div class="shots">
-{% include shot.html file="slide-1.jpg" class="slide" caption="Wayanad, Monsoon 2024" %}
-{% include shot.html file="slide-2.jpg" class="slide" caption="Views from the hostel and the dam" %}
+{% include shot.html file="photo-1-1.jpg" class="slide" caption="A beer above the misty hills" %}
+{% include shot.html file="photo-1-2.jpg" class="slide" caption="The hostel, the dam and the tea estates" %}
 </div>
 
 ### Getting there
@@ -189,8 +189,8 @@ I took the overnight sleeper bus from Bengaluru, which cost ₹1,470 for the two
 Zostel Plus Wayanad. Two nights came to about ₹3,900 for both of us. It sits up in the hills with a long view, a pool and a bonfire at night.
 
 <div class="shots">
-{% include shot.html file="slide-3.jpg" class="slide" caption="A story, in a few frames" %}
-{% include shot.html file="slide-4.jpg" class="slide" caption="Around the hostel" %}
+{% include shot.html file="photo-1-3.jpg" class="slide" caption="Hills, tea and the Zostel at dusk" %}
+{% include shot.html file="photo-1-4.jpg" class="slide" caption="Around the hostel" %}
 </div>
 
 ### Getting around
@@ -206,8 +206,8 @@ Start at the Muddy Boots zip line (₹350). Banasura Sagar Dam is next: parking 
 The glass bridge at 900 Kandi has a ₹250 entry, ₹10 parking and a ₹200 jeep ride up. After that go to the Wildlife Sanctuary or Soochipara Waterfalls, whichever is open, and finish with Edakkal Caves (₹50 entry, ₹10 parking). If the first two are closed, use Plan B: the glass bridge, Likkidi View Point, Pookode Lake and En Ooru Village.
 
 <div class="shots">
-{% include shot.html file="slide-5.jpg" class="slide" caption="900 Kandi" %}
-{% include shot.html file="slide-6.jpg" class="slide" caption="On the road" %}
+{% include shot.html file="photo-2-1.jpg" class="slide" caption="Thatched huts on the hills" %}
+{% include shot.html file="photo-2-2.jpg" class="slide" caption="Cloud views from the rail" %}
 </div>
 
 ### Day 3: Chembra and the way back
@@ -215,7 +215,9 @@ The glass bridge at 900 Kandi has a ₹250 entry, ₹10 parking and a ₹200 jee
 The Chembra Peak trek (₹75) was closed when I went, so I had grape tea at the base and shopped for vegetables in Kalpetta. Then I took the KSRTC bus from Kalpetta to Calicut (₹87 each), an auto to the station, dinner and the night train home. Back in Bengaluru, the metro and a local bus got me home.
 
 <div class="shots">
-{% include shot.html file="slide-7.jpg" class="slide" caption="Around the campfire" %}
+{% include shot.html file="photo-2-3.jpg" class="slide" caption="On the road through the tea" %}
+{% include shot.html file="photo-2-4.jpg" class="slide" caption="Night shadows at the hostel" %}
+{% include shot.html file="photo-2-5.jpg" class="slide" caption="Around the campfire" %}
 </div>
 
 ### Prices I saw
