@@ -1,7 +1,7 @@
 ---
 title: Mysore
 state: Karnataka
-date: 2026-11-06            # placeholder, used to sort trips (newest first). Replace with the real trip date
+date: 2026-11-05            # placeholder, used to sort trips (newest first). Replace with the real trip date
 summary: "The palace, the zoo, a church and the night show in one day by train from Bengaluru, plus a 3-day plan with Chamundi Hills, Tipu Sultan's palace and the museums, staying at Zostel."
 month: "2026"
 days_count: 3
@@ -11,7 +11,7 @@ stay_short: "Zostel Mysore"
 
 cover: /assets/images/mysore/cover.jpg
 cover_alt: "A collage of Mysore: the Mysuru Junction sign, the zoo letters, a tiger, a vintage truck, the palace lit up, and two of us"
-cover_portrait: true
+cover_portrait: true          # show the cover and the card whole, not cropped
 card: /assets/images/mysore/card.jpg
 banner: ""
 gallery: []
