@@ -10,7 +10,8 @@ cost_note: "per person, for the 1 day I did"
 stay_short: "Zostel Mysore"
 
 cover: /assets/images/mysore/cover.jpg
-cover_alt: "Mysore Palace lit up at night"
+cover_alt: "A collage of Mysore: the Mysuru Junction sign, the zoo letters, a tiger, a vintage truck, the palace lit up, and two of us"
+cover_portrait: true
 card: /assets/images/mysore/card.jpg
 banner: ""
 gallery: []
@@ -143,41 +144,6 @@ days:
         lat: 12.3150
         lng: 76.6420
 credits:
-  - title: "Mysuru Palace – Night View (cover)"
-    author: "Ingo Mehling"
-    license: "CC BY-SA 4.0"
-    license_url: https://creativecommons.org/licenses/by-sa/4.0
-    source: https://commons.wikimedia.org/wiki/File:Mysuru_Palace_-_Night_View.jpg
-  - title: "Mysore Palace (home page card)"
-    author: "Pavanaja"
-    license: "CC BY-SA 4.0"
-    license_url: https://creativecommons.org/licenses/by-sa/4.0
-    source: https://commons.wikimedia.org/wiki/File:Mysore_Palace_WLM_2022_India_06.jpg
-  - title: "Mysore Palace – Amba Vilas Palace"
-    author: "Whistleraja"
-    license: "CC BY-SA 4.0"
-    license_url: https://creativecommons.org/licenses/by-sa/4.0
-    source: https://commons.wikimedia.org/wiki/File:Mysore_Palace_-_Amba_Vilas_Palace.jpg
-  - title: "Mysore palace at night 01"
-    author: "Pinakpani"
-    license: "CC BY-SA 4.0"
-    license_url: https://creativecommons.org/licenses/by-sa/4.0
-    source: https://commons.wikimedia.org/wiki/File:Mysore_palace_at_night_01.jpg
-  - title: "Mysore Zoo"
-    author: "Gpkp"
-    license: "CC BY-SA 4.0"
-    license_url: https://creativecommons.org/licenses/by-sa/4.0
-    source: https://commons.wikimedia.org/wiki/File:Sri_Chamarajendra_Zoological_Gardens_(Mysore_Zoo),_Image_(11),_Mysore,_Karnataka,_India.jpg
-  - title: "Entrance of Mysore Zoo"
-    author: "SlowPhoton"
-    license: "CC BY-SA 4.0"
-    license_url: https://creativecommons.org/licenses/by-sa/4.0
-    source: https://commons.wikimedia.org/wiki/File:Entrance_of_Mysore_Zoo.jpg
-  - title: "St. Philomena's Church, Mysore (2025) 02"
-    author: "Gpkp"
-    license: "CC BY-SA 4.0"
-    license_url: https://creativecommons.org/licenses/by-sa/4.0
-    source: https://commons.wikimedia.org/wiki/File:St._Philomena%27s_Church,_Mysore_(2025)_02.jpg
   - title: "Chamundi Hills (Image 1)"
     author: "Gpkp"
     license: "CC BY-SA 4.0"
@@ -220,7 +186,8 @@ Mysore is Karnataka's palace city, and it is close enough to Bengaluru to do in 
 <div class="callout"><strong>The short version.</strong> Day 1 is what I did (zoo, palace, church, night show). Days 2 and 3 are a plan: Chamundi Hills and the Sand Museum, then Tipu Sultan's Summer Palace, the vintage car museum and the Rail Museum. Stay at Zostel Mysore.</div>
 
 <div class="shots">
-{% include shot.html file="palace.jpg" class="full" caption="Mysore Palace (Amba Vilas Palace)" %}
+{% include shot.html file="postcard.jpg" class="full" caption="Postcard from Mysore Palace" %}
+{% include shot.html file="palace.jpg" class="full" caption="Mysore Palace, from the garden" %}
 </div>
 
 ### Getting there
@@ -236,10 +203,18 @@ Zostel Mysore is the stay for the 3-day version. I did not stay there on my one-
 This is the day I actually did. Breakfast was dosa and coffee (₹180 for two), then an auto from the bus stop to the zoo (₹50). The zoo opens 8:30 AM to 5:30 PM and costs ₹100 per person, plus ₹30 for a bag ticket. After an ice cream and lunch (₹260 for two) we went to the palace (10 AM to 5:30 PM, ₹120 per person, ₹10 for shoe keeping). An auto took us to St. Philomena's Church (free, ₹30 to keep bags and shoes), where we had coffee and masala puri. Then back to the palace for the Light and Sound show, 7 to 8 PM.
 
 <div class="shots">
-{% include shot.html file="zoo-entrance.jpg" class="full" caption="Mysore Zoo entrance" %}
-{% include shot.html file="zoo.jpg" class="full" caption="Inside the zoo" %}
+{% include shot.html file="street-food.jpg" class="full" caption="Street food outside the palace" %}
+{% include shot.html file="palace-hall.jpg" class="full" caption="The palace durbar hall" %}
+{% include shot.html file="hall-selfie.jpg" class="full" caption="Us, in the palace hall" %}
+{% include shot.html file="courtyard.jpg" class="full" caption="A palace courtyard" %}
+{% include shot.html file="palace-art.jpg" class="full" caption="Paintings inside the palace" %}
+{% include shot.html file="gopuram.jpg" class="full" caption="A temple gopuram" %}
+{% include shot.html file="market.jpg" class="full" caption="Souvenir stalls, where the magnet came from" %}
 {% include shot.html file="church.jpg" class="full" caption="St. Philomena's Church" %}
-{% include shot.html file="palace-night.jpg" class="full" caption="The palace lit up at night" %}
+{% include shot.html file="palace-lights.jpg" class="full" caption="The palace lit up for the night show" %}
+{% include shot.html file="night.jpg" class="full" caption="The crowd outside, after dark" %}
+{% include shot.html file="explore.jpg" class="full" caption="Explore, dream, discover" %}
+{% include shot.html file="until-next-time.jpg" class="full" caption="Until next time" %}
 </div>
 
 ### Day 2: Chamundi Hills and the Sand Museum (plan)

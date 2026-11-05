@@ -23,7 +23,7 @@ layout: default
   {% if show_gallery %}
   <div class="gallery">
     {% if page.cover and page.cover != "" %}
-      <img class="gallery-hero" src="{{ page.cover | relative_url }}" alt="{{ page.cover_alt | default: page.title }}">
+      <img class="gallery-hero{% if page.cover_portrait %} portrait{% endif %}" src="{{ page.cover | relative_url }}" alt="{{ page.cover_alt | default: page.title }}">
     {% endif %}
     {% for img in page.gallery %}
       <img src="{{ img | relative_url }}" alt="Photo from {{ page.title }}" loading="lazy">
