@@ -9,6 +9,7 @@ frames:
   - { file: gokarna-gopuram.jpg,    trip: gokarna-murudeshwar, line: "Murudeshwar gopuram at night" }
   - { file: pondicherry-arches.jpg,  trip: pondicherry,         line: "Arches in White Town" }
   - { file: hampi-coracles.jpg,     trip: hampi,               line: "Coracles on the water" }
+  - { file: chikmagalur-hill.jpg,    trip: chikmagalur,         line: "A green ridge in the monsoon" }
   - { file: wayanad-rail.jpg,       trip: wayanad,             line: "Cloud views from the rail" }
   - { file: pondicherry-bougainvillea.jpg, trip: pondicherry, line: "A bougainvillea doorway" }
   - { file: thanjavur-flowers.jpg,  trip: thanjavur,           line: "Flowers over water" }
@@ -17,6 +18,8 @@ frames:
   - { file: thanjavur-kallanai.jpg, trip: thanjavur,           line: "Kallanai Dam" }
   - { file: hampi-ganesha.jpg,      trip: hampi,               line: "Kadalekalu Ganesha" }
   - { file: wayanad-huts.jpg,       trip: wayanad,             line: "Thatched huts on the hills" }
+  - { file: chikmagalur-road.jpg,    trip: chikmagalur,         line: "A wet road through the hills" }
   - { file: thanjavur-palace.jpg,   trip: thanjavur,           line: "The Maratha Palace" }
+  - { file: chikmagalur-falls.jpg,   trip: chikmagalur,         line: "At the falls" }
   - { file: hampi-tank.jpg,         trip: hampi,               line: "Virupaksha Temple tank" }
   - { file: wayanad-campfire.jpg,   trip: wayanad,             line: "Around the campfire" }
