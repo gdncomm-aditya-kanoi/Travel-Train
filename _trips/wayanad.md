@@ -169,6 +169,12 @@ days:
         note: "Night train to Bengaluru"
         lat: 11.2480
         lng: 75.7830
+credits:
+  - title: "Chembra Peak Heart Lake (home page card)"
+    author: "Ravi Dwivedi"
+    license: "CC BY-SA 4.0"
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Chembra_Peak_Heart_Lake.jpg
 ---
 
 Wayanad is the green, misty corner of Kerala up in the Western Ghats, and in June the clouds sit right on the tea estates. I went for 3 days with a friend, took the overnight sleeper bus up, rented a bike for the rides between spots and came back by train from Calicut. I kept a plan, a price list and a packing list for it, so I put them here.
