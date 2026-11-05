@@ -1,0 +1,25 @@
+index.html
+  s_cfb3d9fc65baa6::t_35bcd82cf27aac 54-71,82
+assets/css/style.css
+  s_cfb3d9fc65baa6::t_35bcd82cf27aac 121-125,307-324
+_data/reel.yml
+  s_cfb3d9fc65baa6::t_35bcd82cf27aac 1-19
+_includes/instagram-embed.html
+  s_cfb3d9fc65baa6::t_35bcd82cf27aac 3,7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "fe4a1e07083500b2a13aa0ebd2db4047a20b11dc",
+  "prompts": {},
+  "sessions": {
+    "s_cfb3d9fc65baa6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f17aae31-e0db-41bd-9aee-e49907ff7b6a",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
