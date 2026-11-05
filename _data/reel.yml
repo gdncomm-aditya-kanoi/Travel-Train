@@ -1,0 +1,19 @@
+# Photos that scroll across the home page. Each is a 4:5 crop in assets/images/reel/.
+# trip is the file name in _trips/ without .md, so the title, state and link come from the trip itself.
+frames:
+  - { file: gokarna-beach.jpg,      trip: gokarna-murudeshwar, line: "Two of us on the sand" }
+  - { file: hampi-lotus.jpg,        trip: hampi,               line: "Lotus Mahal" }
+  - { file: wayanad-mist.jpg,       trip: wayanad,             line: "A beer above the misty hills" }
+  - { file: thanjavur-temple.jpg,   trip: thanjavur,           line: "The Big Temple at dusk" }
+  - { file: gokarna-gopuram.jpg,    trip: gokarna-murudeshwar, line: "Murudeshwar gopuram at night" }
+  - { file: hampi-coracles.jpg,     trip: hampi,               line: "Coracles on the water" }
+  - { file: wayanad-rail.jpg,       trip: wayanad,             line: "Cloud views from the rail" }
+  - { file: thanjavur-flowers.jpg,  trip: thanjavur,           line: "Flowers over water" }
+  - { file: hampi-badami.jpg,       trip: hampi,               line: "Badami lake" }
+  - { file: wayanad-road.jpg,       trip: wayanad,             line: "On the road through the tea" }
+  - { file: thanjavur-kallanai.jpg, trip: thanjavur,           line: "Kallanai Dam" }
+  - { file: hampi-ganesha.jpg,      trip: hampi,               line: "Kadalekalu Ganesha" }
+  - { file: wayanad-huts.jpg,       trip: wayanad,             line: "Thatched huts on the hills" }
+  - { file: thanjavur-palace.jpg,   trip: thanjavur,           line: "The Maratha Palace" }
+  - { file: hampi-tank.jpg,         trip: hampi,               line: "Virupaksha Temple tank" }
+  - { file: wayanad-campfire.jpg,   trip: wayanad,             line: "Around the campfire" }

@@ -51,6 +51,24 @@ layout: default
 </section>
 
 {% assign ig = "https://www.instagram.com/" | append: site.data.instagram.handle | append: "/" %}
+<section id="reel" class="wrap section section-tight" aria-label="Photos from the trips">
+  <div class="section-head">
+    <div>
+      <h2>Along the way</h2>
+      <p class="section-sub">A few frames from every journey. Tap one to read the trip.</p>
+    </div>
+  </div>
+</section>
+<div class="reel" tabindex="-1">
+  <div class="reel-track">
+    {% for pass in (1..2) %}{% for f in site.data.reel.frames %}{% assign t = site.trips | where: "slug", f.trip | first %}{% if t %}
+    <a class="reel-frame" href="{{ t.url | relative_url }}"{% if pass == 2 %} aria-hidden="true" tabindex="-1"{% endif %}>
+      <img src="{{ '/assets/images/reel/' | append: f.file | relative_url }}" alt="{% if pass == 1 %}{{ f.line }}, {{ t.title }}{% endif %}" width="640" height="800" loading="lazy">
+      <span class="reel-cap"><span class="reel-trip">{{ t.title }} · {{ t.state }}</span><span class="reel-line">{{ f.line }}</span></span>
+    </a>{% endif %}{% endfor %}{% endfor %}
+  </div>
+</div>
+
 <section id="instagram" class="wrap section section-last">
   <div class="section-head">
     <div>
@@ -61,7 +79,7 @@ layout: default
   </div>
   {% if site.data.instagram.posts and site.data.instagram.posts.size > 0 %}
   <div class="ig-grid">
-    {% for url in site.data.instagram.posts limit: 8 %}{% include instagram-embed.html url=url %}{% endfor %}
+    {% for url in site.data.instagram.posts limit: 3 %}{% include instagram-embed.html url=url %}{% endfor %}
   </div>
   {% else %}
   <p>Add post links in <code>_data/instagram.yml</code> to show them here.</p>
