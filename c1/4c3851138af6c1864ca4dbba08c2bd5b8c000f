@@ -1,0 +1,26 @@
+_data/reel.yml
+  s_cfb3d9fc65baa6::t_43de170cb32305 6,10,13
+assets/css/style.css
+  s_cfb3d9fc65baa6::t_43de170cb32305 300
+_data/instagram.yml
+  s_cfb3d9fc65baa6::t_43de170cb32305 11-13
+_trips/pondicherry.md
+  s_cfb3d9fc65baa6::t_aa17a745560725 1-24,26-33,35-189,191-228,230-241,243-277
+  s_cfb3d9fc65baa6::t_86606f00d803e3 25,34,190,229,242
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "c14c3851138af6c1864ca4dbba08c2bd5b8c000f",
+  "prompts": {},
+  "sessions": {
+    "s_cfb3d9fc65baa6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f17aae31-e0db-41bd-9aee-e49907ff7b6a",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
