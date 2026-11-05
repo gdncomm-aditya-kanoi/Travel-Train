@@ -151,7 +151,7 @@ credits:
     source: https://commons.wikimedia.org/wiki/File:Mullayangiri_peak_chikkmaglur_karnataka.jpg
 ---
 
-Chikmagalur is Karnataka's coffee country: hills the colour of freshly cut grass, clouds that sit right on the ridges, and waterfalls that only really run in the monsoon. I went for 3 days in August 2024 with a friend, took the train to Kadur and a bus up, stayed two nights at Manu Homestay and covered the peaks and waterfalls on a rented bike. I kept an itinerary, a price list and a story-song list for it, so I put them all here.
+Chikmagalur is Karnataka's coffee country: hills the colour of freshly cut grass, clouds that sit right on the ridges, and waterfalls that only really run in the monsoon. I went for 3 days in August 2024 with a friend, took the train to Kadur and a bus up, stayed two nights at Manu Homestay and covered the peaks and waterfalls on a rented bike. I kept an itinerary and a price list for it, so I put them here.
 
 <div class="callout"><strong>The short version.</strong> Train from Bengaluru to Kadur, two nights at Manu Homestay, Mullayangiri and Hirekolale Lake on Day 1, Z Point and Hebbe Falls on Day 2, and Jhari Falls and Baba Budan Giri on Day 3 before the train home.</div>
 
