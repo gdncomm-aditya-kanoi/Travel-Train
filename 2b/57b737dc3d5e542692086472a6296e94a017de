@@ -1,0 +1,22 @@
+_trips/wayanad.md
+  s_cfb3d9fc65baa6::t_c07fbfc16ecfd9 1-49,51-54,56-99,101-104,106-128,130-152,154-157,159-188,190-245
+  s_cfb3d9fc65baa6::t_ed2adfa6c65445 50,55,100,105,129,153,158,189,246
+_data/instagram.yml
+  s_cfb3d9fc65baa6::t_8e74d1291f8dff 11-13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "2b57b737dc3d5e542692086472a6296e94a017de",
+  "prompts": {},
+  "sessions": {
+    "s_cfb3d9fc65baa6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f17aae31-e0db-41bd-9aee-e49907ff7b6a",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
