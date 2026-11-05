@@ -1,0 +1,22 @@
+assets/css/style.css
+  s_cfb3d9fc65baa6::t_432549efb793c0 332-334
+_trips/mysore.md
+  s_cfb3d9fc65baa6::t_432549efb793c0 183-191,193,195-199,205,207,209-213,219,221,223-227,231
+  s_cfb3d9fc65baa6::t_806b39212eaa7c 232
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "d011d6f84d735ff04996ae12a183c1a4fb239fd2",
+  "prompts": {},
+  "sessions": {
+    "s_cfb3d9fc65baa6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f17aae31-e0db-41bd-9aee-e49907ff7b6a",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
