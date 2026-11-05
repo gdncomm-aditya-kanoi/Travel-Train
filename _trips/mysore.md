@@ -149,21 +149,11 @@ credits:
     license: "CC BY-SA 4.0"
     license_url: https://creativecommons.org/licenses/by-sa/4.0
     source: https://commons.wikimedia.org/wiki/File:Chamundi_From_Karanji_Mysore_Nov23_A7C_08173.jpg
-  - title: "Chamundeshwari Temple"
-    author: "Arun Mohan"
-    license: "CC BY-SA 4.0"
-    license_url: https://creativecommons.org/licenses/by-sa/4.0
-    source: https://commons.wikimedia.org/wiki/File:Chamundeshwari_Temple,_Mysuru,_Karnataka,_India_Temple.jpg
   - title: "Colossal Bull at the Chamundeswari Temple"
     author: "RaghavendraDorai"
     license: "CC BY-SA 4.0"
     license_url: https://creativecommons.org/licenses/by-sa/4.0
     source: https://commons.wikimedia.org/wiki/File:Colossal_Bull_at_the_Chamundeswari_Temple,_Mysuru,_Karnataka,_India_(2018).jpg
-  - title: "Mysore Sand Art Museum"
-    author: "Kunalsaxena2109"
-    license: "CC BY-SA 4.0"
-    license_url: https://creativecommons.org/licenses/by-sa/4.0
-    source: https://commons.wikimedia.org/wiki/File:IMG_MYSORE_SAND_ART_MEUSEUM_DSC001.jpg
   - title: "Tipu Sultan’s Summer Palace, Srirangapatna"
     author: "Ananthmohanram18"
     license: "CC BY-SA 4.0"
@@ -174,21 +164,11 @@ credits:
     license: "CC BY-SA 4.0"
     license_url: https://creativecommons.org/licenses/by-sa/4.0
     source: https://commons.wikimedia.org/wiki/File:Payana_Museum,_Karnataka_(2025)_187.jpg
-  - title: "Mysuru Rail Museum – Locomotive ES 506"
-    author: "Ingo Mehling"
-    license: "CC BY-SA 4.0"
-    license_url: https://creativecommons.org/licenses/by-sa/4.0
-    source: https://commons.wikimedia.org/wiki/File:Mysuru_Rail_Museum_-_Locomotive_ES_506.jpg
 ---
 
 Mysore is Karnataka's palace city, and it is close enough to Bengaluru to do in a day. I did exactly that: train in, zoo, palace, a church, and the palace night show before the train home. This page has what I spent on that day, plus a 3-day plan for doing it properly with Chamundi Hills, Tipu Sultan's palace and the museums, staying at Zostel Mysore.
 
 <div class="callout"><strong>The short version.</strong> Day 1 is what I did (zoo, palace, church, night show). Days 2 and 3 are a plan: Chamundi Hills and the Sand Museum, then Tipu Sultan's Summer Palace, the vintage car museum and the Rail Museum. Stay at Zostel Mysore.</div>
-
-<div class="shots">
-{% include shot.html file="postcard.jpg" class="full" caption="Postcard from Mysore Palace" %}
-{% include shot.html file="palace.jpg" class="full" caption="Mysore Palace, from the garden" %}
-</div>
 
 ### Getting there
 
@@ -200,42 +180,55 @@ Zostel Mysore is the stay for the 3-day version. I did not stay there on my one-
 
 ### Day 1: Zoo, palace, church and the night show
 
-This is the day I actually did. Breakfast was dosa and coffee (₹180 for two), then an auto from the bus stop to the zoo (₹50). The zoo opens 8:30 AM to 5:30 PM and costs ₹100 per person, plus ₹30 for a bag ticket. After an ice cream and lunch (₹260 for two) we went to the palace (10 AM to 5:30 PM, ₹120 per person, ₹10 for shoe keeping). An auto took us to St. Philomena's Church (free, ₹30 to keep bags and shoes), where we had coffee and masala puri. Then back to the palace for the Light and Sound show, 7 to 8 PM.
+This is the day I actually did. Breakfast was dosa and coffee (₹180 for two), then an auto from the bus stop to the zoo (₹50). The zoo is open 8:30 AM to 5:30 PM and costs ₹100 per person, plus ₹30 for a bag ticket. After an ice cream and lunch (₹260 for two) we went to the palace.
 
-<div class="shots">
-{% include shot.html file="street-food.jpg" class="full" caption="Street food outside the palace" %}
-{% include shot.html file="palace-hall.jpg" class="full" caption="The palace durbar hall" %}
-{% include shot.html file="hall-selfie.jpg" class="full" caption="Us, in the palace hall" %}
-{% include shot.html file="courtyard.jpg" class="full" caption="A palace courtyard" %}
-{% include shot.html file="palace-art.jpg" class="full" caption="Paintings inside the palace" %}
-{% include shot.html file="gopuram.jpg" class="full" caption="A temple gopuram" %}
-{% include shot.html file="market.jpg" class="full" caption="Souvenir stalls, where the magnet came from" %}
+The palace is open 10 AM to 5:30 PM and costs ₹120 per person, plus ₹10 for shoe keeping.
+
+<div class="shots one">
+{% include shot.html file="palace.jpg" class="full" caption="Mysore Palace, from the garden" %}
+</div>
+
+An auto took us to St. Philomena's Church (free, ₹30 to keep bags and shoes), where we had coffee and masala puri.
+
+<div class="shots one">
 {% include shot.html file="church.jpg" class="full" caption="St. Philomena's Church" %}
+</div>
+
+Then back to the palace for the Light and Sound show, 7 to 8 PM. It is worth staying for.
+
+<div class="shots one">
 {% include shot.html file="palace-lights.jpg" class="full" caption="The palace lit up for the night show" %}
-{% include shot.html file="explore.jpg" class="full" caption="Explore, dream, discover" %}
-{% include shot.html file="until-next-time.jpg" class="full" caption="Until next time" %}
 </div>
 
 ### Day 2: Chamundi Hills and the Sand Museum (plan)
 
-Go up Chamundi Hills in the morning for the Chamundeshwari Temple and the huge Nandi bull on the way down, with a view over the city. Then see the Mysore Sand Sculpture Museum. Check the timings and fees for each before you go.
+Go up Chamundi Hills in the morning for the Chamundeshwari Temple, with a view over the city.
 
-<div class="shots">
+<div class="shots one">
 {% include shot.html file="chamundi.jpg" class="full" caption="Chamundi Hills, seen from Karanji Lake" %}
-{% include shot.html file="chamundi-temple.jpg" class="full" caption="Chamundeshwari Temple" %}
+</div>
+
+On the way down you pass the huge Nandi bull. After that, see the Mysore Sand Sculpture Museum. Check the timings and fees for each before you go.
+
+<div class="shots one">
 {% include shot.html file="nandi.jpg" class="full" caption="The Nandi statue" %}
-{% include shot.html file="sand-museum.jpg" class="full" caption="Mysore Sand Art Museum" %}
 </div>
 
 ### Day 3: Tipu Sultan's palace, vintage cars and the Rail Museum (plan)
 
-Tipu Sultan's Summer Palace is at Srirangapatna, a short way out of Mysore. The Payana Vintage Museum, a car museum, is also near Srirangapatna on the Bengaluru–Mysore expressway, so the two fit one trip. Come back for the Rail Museum before the train to Bengaluru. Check timings and fees for all three.
+Tipu Sultan's Summer Palace is at Srirangapatna, a short way out of Mysore.
 
-<div class="shots">
+<div class="shots one">
 {% include shot.html file="tipu.jpg" class="full" caption="Tipu Sultan's Summer Palace" %}
-{% include shot.html file="car-museum.jpg" class="full" caption="A vintage car at the Payana Museum" %}
-{% include shot.html file="railway-museum.jpg" class="full" caption="A locomotive at the Rail Museum" %}
 </div>
+
+The Payana Vintage Museum, a car museum, is also near Srirangapatna on the Bengaluru–Mysore expressway, so the two fit one trip.
+
+<div class="shots one">
+{% include shot.html file="car-museum.jpg" class="full" caption="A vintage car at the Payana Museum" %}
+</div>
+
+Come back for the Rail Museum before the train to Bengaluru. Check timings and fees for all three.
 
 ### Prices and timings
 

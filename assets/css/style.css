@@ -329,3 +329,6 @@ caption { text-align: left; padding-bottom: 8px; color: var(--muted); }
 /* Portrait covers (cover_portrait: true) show whole and centred, never cropped */
 .gallery > .gallery-hero.portrait { aspect-ratio: auto; object-fit: contain; width: min(100%, 720px); height: auto; max-height: none; justify-self: center; }
 .trip-card .photo.portrait { object-fit: contain; }
+
+/* One photo per block (class="shots one"): same width every time */
+.shots.one { grid-template-columns: minmax(0, 480px); }
