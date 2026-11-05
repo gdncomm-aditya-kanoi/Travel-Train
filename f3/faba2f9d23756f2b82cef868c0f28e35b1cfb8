@@ -1,0 +1,19 @@
+_trips/mysore.md
+  s_cfb3d9fc65baa6::t_28972e7fae555f 36-40,42-44,53-54,71,73-74,101-102,129-130,177,181,183,185,187,189,191,193,195-199,202,204-206,209,211-213,216,218,220-222,233-244
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "f3faba2f9d23756f2b82cef868c0f28e35b1cfb8",
+  "prompts": {},
+  "sessions": {
+    "s_cfb3d9fc65baa6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f17aae31-e0db-41bd-9aee-e49907ff7b6a",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
