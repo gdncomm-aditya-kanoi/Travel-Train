@@ -16,7 +16,6 @@ card: /assets/images/mangalore/card.jpg
 banner: ""
 gallery: []
 
-hide_home: true              # shown under the Mulki trip, not as its own card
 series: mulki-trip
 series_order: 2
 series_title: "The Mulki trip"

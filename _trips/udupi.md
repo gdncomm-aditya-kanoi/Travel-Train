@@ -16,7 +16,6 @@ card: /assets/images/udupi/card.jpg
 banner: ""
 gallery: []
 
-hide_home: true              # shown under the Mulki trip, not as its own card
 series: mulki-trip
 series_order: 3
 series_title: "The Mulki trip"
