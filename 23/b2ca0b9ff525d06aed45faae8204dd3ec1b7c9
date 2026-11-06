@@ -1,0 +1,29 @@
+_trips/mulki.md
+  s_cfb3d9fc65baa6::t_2fdeedcb7b6e24 5,9,14,19-23,30,35-36,118-130,132-139,145-148,151,153,155-158,161,163,165-168,171,173-179,192-194,212-213
+assets/css/style.css
+  s_cfb3d9fc65baa6::t_b81fe7f6cedad8 338-349
+_trips/mangalore.md
+  s_cfb3d9fc65baa6::t_2fdeedcb7b6e24 5,14,19-24,103,107,110,112,116,118-119,126-130,133-134,137,140-144,151-152,166,169
+_layouts/trip.html
+  s_cfb3d9fc65baa6::t_b81fe7f6cedad8 11-18,34
+index.html
+  s_cfb3d9fc65baa6::t_b81fe7f6cedad8 4
+_trips/udupi.md
+  s_cfb3d9fc65baa6::t_2fdeedcb7b6e24 5,14,19-24,34,81,104,106,110,112-114,121-124,131-139,141,144,146-154,171
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "23b2ca0b9ff525d06aed45faae8204dd3ec1b7c9",
+  "prompts": {},
+  "sessions": {
+    "s_cfb3d9fc65baa6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f17aae31-e0db-41bd-9aee-e49907ff7b6a",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
