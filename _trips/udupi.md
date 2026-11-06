@@ -10,7 +10,7 @@ cost_note: "per person"
 stay_short: "Mulki surf stay"
 
 cover: /assets/images/udupi/cover.jpg
-cover_alt: "The Udupi entry gate and the temple chariot at the Krishna Matha"
+cover_alt: "The golden gopuram and temple chariots of the Udupi Krishna Temple"
 cover_strip: true             # show the cover whole at full width
 card: /assets/images/udupi/card.jpg
 banner: ""
@@ -88,6 +88,11 @@ days:
         return: true
 
 credits:
+  - title: "Udupi Krishna Temple gopuram from the west"
+    author: "Starstuffseyyon"
+    license: "CC BY-SA 4.0"
+    license_url: https://creativecommons.org/licenses/by-sa/4.0
+    source: https://commons.wikimedia.org/wiki/File:Udupi_Krishna_Temple_gopuram_from_the_west.jpg
   - title: "St. Mary's island, Udupi 3"
     author: "Nativeplants garden"
     license: "CC BY-SA 4.0"
