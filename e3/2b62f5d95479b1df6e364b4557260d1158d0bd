@@ -1,0 +1,25 @@
+_trips/udupi.md
+  s_cfb3d9fc65baa6::t_3517fc01740721 1-155
+assets/css/style.css
+  s_cfb3d9fc65baa6::t_584756aea4caab 335-337
+_trips/mulki.md
+  s_cfb3d9fc65baa6::t_f49c070d38cdd0 1-185
+_trips/mangalore.md
+  s_cfb3d9fc65baa6::t_f29d0b32d0ff6b 1-157
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "e32b62f5d95479b1df6e364b4557260d1158d0bd",
+  "prompts": {},
+  "sessions": {
+    "s_cfb3d9fc65baa6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f17aae31-e0db-41bd-9aee-e49907ff7b6a",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
