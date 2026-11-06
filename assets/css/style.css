@@ -332,3 +332,6 @@ caption { text-align: left; padding-bottom: 8px; color: var(--muted); }
 
 /* One photo per block (class="shots one"): same width every time */
 .shots.one { grid-template-columns: minmax(0, 480px); }
+
+/* 9:16 story photos (class="story") show whole in uniform tiles */
+.shot.story img { aspect-ratio: 9 / 16; object-position: center; }
