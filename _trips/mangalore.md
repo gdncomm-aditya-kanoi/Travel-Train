@@ -2,7 +2,7 @@
 title: Mangalore
 state: Karnataka
 date: 2025-03-07            # used to sort trips, newest first (the trip ran 6 to 9 March 2025)
-summary: "A one-day bike ride around Mangalore from Mulki: beaches, St Aloysius Chapel, a lit-up temple and seafood for dinner, as part of a 4-day coast trip."
+summary: "Day 1 of the Mulki trip: a bike day in Mangalore, 7 March, with beaches, St Aloysius Chapel, a lit-up temple and seafood for dinner."
 month: "March 2025"
 days_count: 1
 best_season: "Oct – Mar"
@@ -11,10 +11,16 @@ stay_short: "Mulki surf stay"
 
 cover: /assets/images/mangalore/cover.jpg
 cover_alt: "St Aloysius Chapel and the Kudroli Gokarnath Temple in Mangalore"
-cover_portrait: true          # show the cover and the card whole, not cropped
+cover_strip: true             # show the cover whole at full width
 card: /assets/images/mangalore/card.jpg
 banner: ""
 gallery: []
+
+hide_home: true              # shown under the Mulki trip, not as its own card
+series: mulki-trip
+series_order: 2
+series_title: "The Mulki trip"
+series_label: "Day 1 · Mangalore"
 
 instagram:
   - https://www.instagram.com/p/DHI3ng0zSJl/?img_index=1
@@ -94,50 +100,56 @@ days:
         return: true
 
 credits:
-  - title: "Tannirbhavi Beach in Mangalore - 1"
+  - title: "Near the entrance of Tannirbhavi Beach in Mangalore"
     author: "Aviator423"
     license: "CC BY-SA 4.0"
     license_url: https://creativecommons.org/licenses/by-sa/4.0
-    source: https://commons.wikimedia.org/wiki/File:Tannirbhavi_Beach_in_Mangalore_-_1.jpg
+    source: https://commons.wikimedia.org/wiki/File:Near_the_entrance_of_Tannirbhavi_Beach_in_Mangalore.jpg
 ---
 
-Mangalore is the big city next to the surf village, and I did it in one day from Mulki: bus in, rent a bike, a few beaches and a church, a lit-up temple, and seafood for dinner. This is the second page of a 4-day coast trip. It starts at [Mulki]({{ '/trips/mulki/' | relative_url }}), the surfing page, and the afternoon on the Udupi side is on the [Udupi page]({{ '/trips/udupi/' | relative_url }}).
+This is **Day 1 of the [Mulki trip]({{ '/trips/mulki/' | relative_url }})**. We were based in Mulki, reached it on the morning of 7 March, and spent the day in Mangalore, about an hour south by bus. The surfing, the stay and the full 4-day plan are on the [Mulki page]({{ '/trips/mulki/' | relative_url }}), and Day 2 in Udupi is on the [Udupi page]({{ '/trips/udupi/' | relative_url }}).
 
-<div class="callout"><strong>The short version.</strong> Take the bus from Mulki in the morning, rent a bike, do Suratkal, the chapel, Tannirbhavi and the Kudroli temple in that order, eat at Vanas and go back to Mulki late at night.</div>
+<div class="callout"><strong>The short version.</strong> Take the bus from Mulki after brunch, rent a bike, do Suratkal, the chapel, Tannirbhavi and the Kudroli temple in that order, eat at Vanas and go back to Mulki late at night. You miss the first surf session doing this, which is why Day 2 has two.</div>
 
 ### Getting there
 
-We reached Mulki by the morning of 7 March, freshened up and had brunch at the stay. From there we took the bus to Mangalore. We rented a bike in the city so we could cover several places in one day, and kept it until the last evening of the trip, when we returned it before the train home. You need a driving licence for it, so keep it in your bag.
+We reached Mulki by the morning of 7 March, freshened up and had brunch at the stay. From there we took the bus to Mangalore and rented a bike in the city, so we could cover several places in one day. We kept it until the last evening of the trip, when we returned it before the train home (Day 3). You need a driving licence for it, so keep it in your bag.
 
-<div class="shots">
-{% include shot.html file="route.jpg" class="story" caption="The route: Suratkal, Mangalore, Mulki, Udupi" %}
+<div class="shots stories">
+{% include shot.html file="route.jpg" class="full" caption="The route: Suratkal, Mangalore, Mulki, Udupi" %}
 </div>
 
 ### The day
 
 **Morning: Suratkal Beach.** It is on the way into the city, so we stopped here first. The lighthouse nearby is worth a look, especially in the evening light.
 
-**Afternoon: St Aloysius Chapel.** The inside of the chapel is covered in paintings from the floor to the ceiling, so go inside.
-
-<div class="shots">
-{% include shot.html file="aloysius.jpg" class="story" caption="St Aloysius Chapel" %}
-{% include shot.html file="lighthouse.jpg" class="story" caption="The lighthouse" %}
+<div class="shots stories">
+{% include shot.html file="lighthouse.jpg" class="full" caption="The lighthouse" %}
+{% include shot.html file="lighthouse-night.jpg" class="full" caption="The lighthouse at night" %}
 </div>
 
-**Evening: Tannirbhavi Beach and the Kudroli Gokarnath Temple.** We wanted Tannirbhavi for the sunset and Natural ice cream afterwards. The Kudroli Gokarnath Temple is the one to see lit up, for its golden view.
+**Afternoon: St Aloysius Chapel.** The inside of the chapel is covered in paintings from the floor to the ceiling, so go inside.
+
+<div class="shots stories">
+{% include shot.html file="aloysius.jpg" class="full" caption="St Aloysius Chapel" %}
+</div>
+
+**Evening: Tannirbhavi Beach and the Kudroli Gokarnath Temple.** Tannirbhavi is the evening beach, and then Natural ice cream. The Kudroli Gokarnath Temple is the one to see lit up, for its golden view.
 
 <div class="shots">
-{% include shot.html file="tannirbhavi.jpg" caption="Tannirbhavi Beach" %}
-{% include shot.html file="kudroli.jpg" class="story" caption="Kudroli Gokarnath Temple, lit up at night" %}
+{% include shot.html file="tannirbhavi.jpg" class="full" caption="Near the entrance of Tannirbhavi Beach" %}
+</div>
+
+<div class="shots stories">
+{% include shot.html file="kudroli.jpg" class="full" caption="Kudroli Gokarnath Temple, lit up at night" %}
 </div>
 
 ### Food
 
 Giri Manji for breakfast or lunch, depending on timings, then Pabba's ice cream and Natural Sundae in the evening. For dinner we went to Vanas for seafood, then took the bus back to Mulki.
 
-<div class="shots">
-{% include shot.html file="vanas.jpg" class="story" caption="Seafood at Vanas" %}
-{% include shot.html file="lighthouse-night.jpg" class="tall" caption="The lighthouse at night" %}
+<div class="shots stories">
+{% include shot.html file="vanas.jpg" class="full" caption="Seafood at Vanas" %}
 </div>
 
 ### The map
@@ -151,7 +163,7 @@ I saved every place for this day on one Google map, with all the pins marked: [o
 <li><strong>Start early.</strong> The bus from Mulki and the rented bike eat a lot of the day, so leave right after brunch.</li>
 <li><strong>Fill the tank before the beaches.</strong> The coast roads have fewer petrol pumps than the city.</li>
 <li><strong>Check the chapel and temple timings.</strong> Both can close for part of the afternoon.</li>
-<li><strong>Do not ride back at night if you can avoid it.</strong> We came back late, so plan the last bus to Mulki before you start the evening.</li>
+<li><strong>Plan the last bus to Mulki</strong> before you start the evening, because we came back late.</li>
 </ul></div>
 
-Next stop: the afternoon on the [Udupi page]({{ '/trips/udupi/' | relative_url }}), and the surf days on the [Mulki page]({{ '/trips/mulki/' | relative_url }}).
+**Next:** Day 2, two surf sessions in [Mulki]({{ '/trips/mulki/' | relative_url }}) and then [Udupi]({{ '/trips/udupi/' | relative_url }}).

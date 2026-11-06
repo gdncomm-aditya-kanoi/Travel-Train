@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% assign trips = site.trips | sort: "date" | reverse %}
+{% assign trips = site.trips | where_exp: "t", "t.hide_home != true" | sort: "date" | reverse %}
 {% assign states = site.trips | map: "state" | uniq | sort %}
 
 <section class="hero wrap">

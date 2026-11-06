@@ -2,7 +2,7 @@
 title: Udupi
 state: Karnataka
 date: 2025-03-08            # used to sort trips, newest first (the trip ran 6 to 9 March 2025)
-summary: "An afternoon in Udupi after surfing in Mulki: the Krishna Matha, its temple chariot, Tulunadu architecture and the beaches, with a shortlist of what else to fit in."
+summary: "Day 2 of the Mulki trip: an afternoon in Udupi after two surf sessions, with the Krishna Matha, the temple chariot, Malpe Beach and St Mary's Island."
 month: "March 2025"
 days_count: 1
 best_season: "Oct – Mar"
@@ -11,10 +11,16 @@ stay_short: "Mulki surf stay"
 
 cover: /assets/images/udupi/cover.jpg
 cover_alt: "The Udupi entry gate and the temple chariot at the Krishna Matha"
-cover_portrait: true          # show the cover and the card whole, not cropped
+cover_strip: true             # show the cover whole at full width
 card: /assets/images/udupi/card.jpg
 banner: ""
 gallery: []
+
+hide_home: true              # shown under the Mulki trip, not as its own card
+series: mulki-trip
+series_order: 3
+series_title: "The Mulki trip"
+series_label: "Day 2 · Udupi"
 
 instagram:
   - https://www.instagram.com/p/DHNcYmATaIe/?img_index=1
@@ -25,6 +31,7 @@ things_to_do:
   - "Walk around the old streets for Tulunadu architecture, pottery shops and flower vendors"
   - "Have lunch at Fisherman's Bay"
   - "Finish at Malpe Beach and the sea walk in the evening"
+  - "St Mary's Island is a ferry from Malpe: ask at the jetty about the last boat"
 things_to_skip:
   - "Doing every beach: there is one every 2 to 3 km, so pick two"
   - "Going out in the midday heat without water: I got tired and dehydrated"
@@ -71,7 +78,7 @@ days:
         lng: 74.7060
       - name: St Mary's Island
         type: beach
-        note: "By ferry from Malpe, best in the morning, so a different day"
+        note: "By ferry from Malpe. Check the last boat at the jetty"
         lat: 13.3830
         lng: 74.6900
       - name: Mulki
@@ -94,53 +101,62 @@ credits:
     source: https://commons.wikimedia.org/wiki/File:Malpe_Beach-01.jpg
 ---
 
-Udupi is called the Mathura of South India, and it has a lot more than one afternoon can hold: a famous temple, old streets, and a beach every 2 to 3 km. We came here from Mulki after two surf sessions on Day 2 of a 4-day coast trip. See the [Mulki page]({{ '/trips/mulki/' | relative_url }}) for the surfing and the [Mangalore page]({{ '/trips/mangalore/' | relative_url }}) for the city day.
+This is **Day 2 of the [Mulki trip]({{ '/trips/mulki/' | relative_url }})**. We did two surf sessions in Mulki in the morning, got ready and drove up to Udupi, which is about an hour north of Mulki. Day 1 was [Mangalore]({{ '/trips/mangalore/' | relative_url }}) to the south, and the stay, surfing and full plan are on the [Mulki page]({{ '/trips/mulki/' | relative_url }}).
 
-<div class="callout"><strong>The short version.</strong> Surf in the morning, get ready, come to Udupi in the afternoon, see the Krishna Matha, have lunch at Fisherman's Bay and end at Malpe Beach. Keep St Mary's Island for another morning.</div>
+<div class="callout"><strong>The short version.</strong> Surf in the morning, get ready, come to Udupi in the afternoon, see the Krishna Matha, have lunch at Fisherman's Bay, and end at Malpe Beach. If you want St Mary's Island, go from Malpe by ferry and check the last boat at the jetty.</div>
 
 ### Getting there
 
-From Mulki it is a drive up the coast. We went after the two morning surf sessions, once we had got ready and eaten. Plan for the afternoon, not the whole day.
+Udupi is called the Mathura of South India. It is a drive up the coast from Mulki, and we went after the two morning surf sessions, once we had got ready and eaten. Plan for the afternoon and evening, not the whole day.
 
-<div class="shots">
-{% include shot.html file="gate.jpg" class="tall" caption="The Udupi entry gate" %}
-{% include shot.html file="tired.jpg" class="tall" caption="Me, tired and dehydrated" %}
+<div class="shots stories">
+{% include shot.html file="gate.jpg" class="full" caption="The Udupi entry gate" %}
+{% include shot.html file="tired.jpg" class="full" caption="Me, tired and dehydrated" %}
 </div>
 
 ### The Krishna Matha and the old streets
 
 The Udupi Shri Krishna Temple is the centre of the town. The lanes around it have Tulunadu-style wooden architecture, pottery shops and flower vendors, and a temple chariot parked in the street.
 
-<div class="shots">
-{% include shot.html file="krishna-matha.jpg" class="tall" caption="Sri Krishna Matha" %}
-{% include shot.html file="chariot.jpg" class="tall" caption="The temple chariot" %}
-{% include shot.html file="tulunadu.jpg" class="tall" caption="Tulunadu architecture" %}
-{% include shot.html file="flowers.jpg" class="tall" caption="A local flower vendor" %}
+<div class="shots stories">
+{% include shot.html file="krishna-matha.jpg" class="full" caption="Sri Krishna Matha" %}
+{% include shot.html file="chariot.jpg" class="full" caption="The temple chariot" %}
+{% include shot.html file="tulunadu.jpg" class="full" caption="Tulunadu architecture" %}
 </div>
 
 ### Food
 
 Fisherman's Bay for lunch. Between the sights we stopped for pani puri on the street.
 
-<div class="shots">
-{% include shot.html file="pani-puri.jpg" class="tall" caption="Pani puri" %}
+<div class="shots stories">
+{% include shot.html file="pani-puri.jpg" class="full" caption="Pani puri" %}
+{% include shot.html file="flowers.jpg" class="full" caption="A local flower vendor" %}
 </div>
 
-### The beaches and the shortlist
+### Malpe Beach and the sea walk
 
-Udupi has many places and a beach every 2 to 3 km. These are the most famous ones, and I am still choosing the best combination:
+Malpe is the evening stop: the beach, the sea walk and the sunset.
 
-- **Malpe Beach and the sea walk:** an evening spot
-- **St Mary's Island:** by ferry, best in the morning
+<div class="shots">
+{% include shot.html file="malpe.jpg" class="full" caption="Malpe Beach" %}
+</div>
+
+### St Mary's Island
+
+St Mary's Island is reached by ferry from Malpe. It is known for its columns of dark volcanic rock along the shore (from reading around, so check it locally). In my notes it is a morning trip, which does not fit Day 2 when the mornings are for surfing, so I treat it as the extra: if you want it, take the first surf slot, reach Malpe by lunch and ask at the jetty for the last ferry. Otherwise keep it for another visit.
+
+<div class="shots">
+{% include shot.html file="st-marys.jpg" class="full" caption="St Mary's Island" %}
+</div>
+
+### The rest of the shortlist
+
+Udupi has a beach every 2 to 3 km. These are the other famous ones, and I am still choosing the best combination:
+
 - **Kemmannu hanging bridge**
 - **Kapu Beach**
 - **Marwanthe Beach**
 - **Hasta Shilpa Heritage Village**
-
-<div class="shots">
-{% include shot.html file="malpe.jpg" caption="Malpe Beach" %}
-{% include shot.html file="st-marys.jpg" caption="St Mary's Island" %}
-</div>
 
 ### What I'd add to this plan
 
@@ -152,4 +168,4 @@ Udupi has many places and a beach every 2 to 3 km. These are the most famous one
 <li><strong>Drink water.</strong> After a morning of surfing the afternoon sun is hard, and I learnt this the tired way.</li>
 </ul></div>
 
-Back to the [Mulki page]({{ '/trips/mulki/' | relative_url }}) for the last surf session and the journey home.
+**Next:** Day 3, the last surf session and the journey home, on the [Mulki page]({{ '/trips/mulki/' | relative_url }}). Day 1 was [Mangalore]({{ '/trips/mangalore/' | relative_url }}).

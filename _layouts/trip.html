@@ -8,6 +8,14 @@ layout: default
     <a href="{{ '/#journeys' | relative_url }}">Journeys</a> / <a href="{{ '/#states' | relative_url }}">{{ page.state }}</a> / <span aria-current="page">{{ page.title }}</span>
   </nav>
 
+  {% if page.series %}
+  {% assign siblings = site.trips | where: "series", page.series | sort: "series_order" %}
+  <nav class="series" aria-label="Pages in this trip">
+    <span class="series-label">{{ page.series_title }}</span>
+    {% for s in siblings %}{% if s.url == page.url %}<span class="series-item current" aria-current="page">{{ s.series_label }}</span>{% else %}<a class="series-item" href="{{ s.url | relative_url }}">{{ s.series_label }}</a>{% endif %}{% endfor %}
+  </nav>
+  {% endif %}
+
   <header class="trip-head">
     <h1 class="page-title">{{ page.title }}</h1>
     {% if page.summary %}<p class="lede">{{ page.summary }}</p>{% endif %}
@@ -23,7 +31,7 @@ layout: default
   {% if show_gallery %}
   <div class="gallery">
     {% if page.cover and page.cover != "" %}
-      <img class="gallery-hero{% if page.cover_portrait %} portrait{% endif %}" src="{{ page.cover | relative_url }}" alt="{{ page.cover_alt | default: page.title }}">
+      <img class="gallery-hero{% if page.cover_portrait %} portrait{% endif %}{% if page.cover_strip %} strip{% endif %}" src="{{ page.cover | relative_url }}" alt="{{ page.cover_alt | default: page.title }}">
     {% endif %}
     {% for img in page.gallery %}
       <img src="{{ img | relative_url }}" alt="Photo from {{ page.title }}" loading="lazy">

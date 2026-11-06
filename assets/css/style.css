@@ -335,3 +335,15 @@ caption { text-align: left; padding-bottom: 8px; color: var(--muted); }
 
 /* 9:16 story photos (class="story") show whole in uniform tiles */
 .shot.story img { aspect-ratio: 9 / 16; object-position: center; }
+
+/* Cover strip (cover_strip: true): several photos side by side, shown whole at full width */
+.gallery > .gallery-hero.strip { aspect-ratio: auto; object-fit: contain; width: 100%; height: auto; max-height: none; }
+/* Portrait photo groups: three across, original proportions */
+.shots.stories { grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: start; }
+@media (max-width: 600px) { .shots.stories { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+/* Links between the pages of one trip */
+.series { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; margin: 0 0 22px; font-size: 14px; }
+.series-label { color: var(--muted); text-transform: uppercase; letter-spacing: .08em; font-size: 12px; margin-right: 4px; }
+.series-item { padding: 6px 14px; border: 1px solid var(--line); border-radius: 999px; text-decoration: none; color: var(--ink); background: var(--paper); }
+.series-item.current { background: var(--ink); border-color: var(--ink); color: #fff; }
+a.series-item:hover { outline: 2px solid var(--ink); outline-offset: 2px; }
