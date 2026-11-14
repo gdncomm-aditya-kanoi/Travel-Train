@@ -273,4 +273,30 @@
     s.src = "https://www.instagram.com/embed.js";
     document.body.appendChild(s);
   }
+
+  /* Fill the sidebar with Instagram posts only as far as the story is long, so it never ends early or runs past it */
+  (function () {
+    var main = document.querySelector(".trip-main"), side = document.querySelector(".trip-side");
+    if (!main || !side) return;
+    var extras = Array.prototype.slice.call(side.querySelectorAll(".ig-card.ig-extra"));
+    if (!extras.length) return;
+    var busy = false;
+    function fit() {
+      if (busy) return;
+      busy = true;
+      extras.forEach(function (c) { c.classList.remove("fit"); });
+      for (var i = 0; i < extras.length; i++) {
+        extras[i].classList.add("fit");
+        if (side.offsetHeight > main.offsetHeight) { extras[i].classList.remove("fit"); break; }
+      }
+      busy = false;
+    }
+    fit();
+    window.addEventListener("load", function () { fit(); setTimeout(fit, 1500); setTimeout(fit, 4000); });
+    window.addEventListener("resize", fit);
+    if (window.ResizeObserver) {
+      var t;
+      new ResizeObserver(function () { clearTimeout(t); t = setTimeout(fit, 200); }).observe(main);
+    }
+  })();
 })();

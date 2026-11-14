@@ -348,7 +348,6 @@ caption { text-align: left; padding-bottom: 8px; color: var(--muted); }
 .series-item.current { background: var(--ink); border-color: var(--ink); color: #fff; }
 a.series-item:hover { outline: 2px solid var(--ink); outline-offset: 2px; }
 
-/* Instagram posts beyond the first four sit in a full-width grid below the story */
-.ig-more { margin: 56px 0 8px; }
-.ig-more h2 { margin-bottom: 20px; }
-.ig-more .ig-grid { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); max-width: none; }
+/* Posts after the first four stay hidden until the script finds they fit beside the story */
+.ig-card.ig-extra { display: none; }
+.ig-card.ig-extra.fit { display: block; }

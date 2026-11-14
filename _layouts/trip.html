@@ -90,18 +90,9 @@ layout: default
         <ul class="eat">{% for e in page.eat %}<li><strong>{{ e.name }}</strong><span class="small">{{ e.note }}{% if e.map %} · <a href="{{ e.map }}" target="_blank" rel="noopener">Map</a>{% endif %}</span></li>{% endfor %}</ul>
       </section>
       {% endif %}
-      {% for url in page.instagram limit: 4 %}{% include instagram-embed.html url=url %}{% endfor %}
+      {% for url in page.instagram %}{% assign more = false %}{% if forloop.index > 4 %}{% assign more = true %}{% endif %}{% include instagram-embed.html url=url extra=more %}{% endfor %}
     </aside>
   </div>
-
-  {% if page.instagram.size > 4 %}
-  <section id="instagram-more" class="ig-more no-print">
-    <h2>More from the trip</h2>
-    <div class="ig-grid">
-      {% for url in page.instagram offset: 4 %}{% include instagram-embed.html url=url %}{% endfor %}
-    </div>
-  </section>
-  {% endif %}
 
   {% if page.banner and page.banner != "" %}
   <img class="mid-banner" src="{{ page.banner | relative_url }}" alt="" role="presentation">
