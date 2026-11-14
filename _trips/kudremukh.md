@@ -21,6 +21,12 @@ series_order: 1
 series_title: "The Kudremukh trip"
 series_label: "Overview and trek"
 
+instagram:
+  - https://www.instagram.com/p/DdHAH-oifVP/?img_index=1
+  - https://www.instagram.com/p/DdOskKGicri/?img_index=1
+  - https://www.instagram.com/p/DdMJ7XjiViA/?img_index=1
+  - https://www.instagram.com/p/DdJpRbSiUZU/?img_index=1
+
 expenses:                   # rupees per person (2 of us, split evenly, from my sheet; the Belur part is on the Belur page)
   - category: Trek pass
     note: "Aranya Vihaara booking, ₹1,160 for two"

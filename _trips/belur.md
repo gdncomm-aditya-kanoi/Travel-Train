@@ -21,6 +21,9 @@ series_order: 2
 series_title: "The Kudremukh trip"
 series_label: "Day 1 · Belur"
 
+instagram:
+  - https://www.instagram.com/p/DdEaMqqCWWr/?img_index=1
+
 expenses:                   # rupees per person (2 of us, split evenly, from my sheet)
   - category: Bus from Bengaluru
     note: "Bengaluru to Belur, ₹1,280 for two"
