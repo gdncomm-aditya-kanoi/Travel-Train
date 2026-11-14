@@ -1,0 +1,21 @@
+_trips/belur.md
+  s_cfb3d9fc65baa6::t_b6ed7d07c9d699 24-26
+_trips/kudremukh.md
+  s_cfb3d9fc65baa6::t_70529ef2cd63ef 24-29
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "5ffb5245111506b6bc08cf7f0bfccbb3b67b548d",
+  "prompts": {},
+  "sessions": {
+    "s_cfb3d9fc65baa6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f17aae31-e0db-41bd-9aee-e49907ff7b6a",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
