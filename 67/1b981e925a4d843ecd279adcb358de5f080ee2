@@ -1,0 +1,53 @@
+assets/images/belur/banner.svg
+  s_cfb3d9fc65baa6::t_063807ecc5a280 1-64
+assets/images/pondicherry/banner.svg
+  s_cfb3d9fc65baa6::t_063807ecc5a280 1-47
+assets/images/mulki/banner.svg
+  s_cfb3d9fc65baa6::t_063807ecc5a280 1-48
+assets/images/chikmagalur/banner.svg
+  s_cfb3d9fc65baa6::t_063807ecc5a280 1-34
+assets/images/udupi/banner.svg
+  s_cfb3d9fc65baa6::t_063807ecc5a280 1-78
+assets/images/mysore/banner.svg
+  s_cfb3d9fc65baa6::t_063807ecc5a280 1-65
+assets/images/kudremukh/banner.svg
+  s_cfb3d9fc65baa6::t_063807ecc5a280 1-31
+assets/images/mangalore/banner.svg
+  s_cfb3d9fc65baa6::t_063807ecc5a280 1-55
+assets/images/wayanad/banner.svg
+  s_cfb3d9fc65baa6::t_063807ecc5a280 1-36
+_trips/belur.md
+  s_cfb3d9fc65baa6::t_4059e0e45a2613 16
+_trips/chikmagalur.md
+  s_cfb3d9fc65baa6::t_42793b9e5ef6ba 15
+_trips/kudremukh.md
+  s_cfb3d9fc65baa6::t_bec0ed60f20f3d 16
+_trips/mangalore.md
+  s_cfb3d9fc65baa6::t_e80995cef22bd1 16
+_trips/mulki.md
+  s_cfb3d9fc65baa6::t_8bf1e2e2e33b4a 16
+_trips/mysore.md
+  s_cfb3d9fc65baa6::t_f054e5e89aa657 16
+_trips/pondicherry.md
+  s_cfb3d9fc65baa6::t_1e481a2b1dfcd9 15
+_trips/udupi.md
+  s_cfb3d9fc65baa6::t_9049426e18d736 16
+_trips/wayanad.md
+  s_cfb3d9fc65baa6::t_1b321d58b74fb1 15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "671b981e925a4d843ecd279adcb358de5f080ee2",
+  "prompts": {},
+  "sessions": {
+    "s_cfb3d9fc65baa6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f17aae31-e0db-41bd-9aee-e49907ff7b6a",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
