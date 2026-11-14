@@ -1,0 +1,21 @@
+_layouts/trip.html
+  s_cfb3d9fc65baa6::t_82c018d36edbd5 93,97-105
+assets/css/style.css
+  s_cfb3d9fc65baa6::t_a725f6554d34a6 350-354
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "cc19a748770054f819bf5c274a0ba6105fb67bff",
+  "prompts": {},
+  "sessions": {
+    "s_cfb3d9fc65baa6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f17aae31-e0db-41bd-9aee-e49907ff7b6a",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
