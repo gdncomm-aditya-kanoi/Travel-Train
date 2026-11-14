@@ -10,8 +10,8 @@ cost_note: "per person"
 stay_short: "None, moved on to Samse"
 
 cover: /assets/images/belur/cover.jpg
-cover_alt: "A carved lion and the yellow gopuram at the Chennakeshava temple in Belur"
-cover_portrait: true          # show the cover whole
+cover_alt: "Carved gods and musicians on the outer wall of the Hoysala temple"
+cover_strip: true             # show the cover whole at full width
 card: /assets/images/belur/card.jpg
 banner: ""
 gallery: []
