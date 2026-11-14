@@ -2,22 +2,39 @@
 # trip is the file name in _trips/ without .md, so the title, state and link come from the trip itself.
 frames:
   - { file: gokarna-beach.jpg,      trip: gokarna-murudeshwar, line: "Two of us on the sand" }
+  - { file: mysore-palace.jpg, trip: mysore, line: "The palace from the garden" }
   - { file: hampi-lotus.jpg,        trip: hampi,               line: "Lotus Mahal" }
+  - { file: mysore-lights.jpg, trip: mysore, line: "The palace lit up at night" }
   - { file: pondicherry-dome.jpg,    trip: pondicherry,         line: "The Matrimandir through the trees" }
+  - { file: mysore-hall.jpg, trip: mysore, line: "Inside the palace hall" }
   - { file: wayanad-mist.jpg,       trip: wayanad,             line: "A beer above the misty hills" }
+  - { file: mulki-surf.jpg, trip: mulki, line: "Boards on the beach at Mulki" }
   - { file: thanjavur-temple.jpg,   trip: thanjavur,           line: "The Big Temple at dusk" }
+  - { file: mulki-sunset.jpg, trip: mulki, line: "Sunsets by the tents" }
   - { file: gokarna-gopuram.jpg,    trip: gokarna-murudeshwar, line: "Murudeshwar gopuram at night" }
+  - { file: mulki-ice.jpg, trip: mulki, line: "The ice bath after the surf" }
   - { file: pondicherry-arches.jpg,  trip: pondicherry,         line: "Arches in White Town" }
+  - { file: mangalore-lighthouse.jpg, trip: mangalore, line: "The lighthouse at night" }
   - { file: hampi-coracles.jpg,     trip: hampi,               line: "Coracles on the water" }
+  - { file: udupi-chariot.jpg, trip: udupi, line: "The temple chariot" }
   - { file: chikmagalur-hill.jpg,    trip: chikmagalur,         line: "A green ridge in the monsoon" }
+  - { file: udupi-tulunadu.jpg, trip: udupi, line: "Tulunadu architecture" }
   - { file: wayanad-rail.jpg,       trip: wayanad,             line: "Cloud views from the rail" }
+  - { file: kudremukh-ridge.jpg, trip: kudremukh, line: "Grass ridges under cloud" }
   - { file: pondicherry-bougainvillea.jpg, trip: pondicherry, line: "A bougainvillea doorway" }
+  - { file: belur-hoysala.jpg, trip: belur, line: "Hoysala architecture" }
   - { file: thanjavur-flowers.jpg,  trip: thanjavur,           line: "Flowers over water" }
+  - { file: belur-carving.jpg, trip: belur, line: "Gajasurasamhara" }
   - { file: hampi-badami.jpg,       trip: hampi,               line: "Badami lake" }
+  - { file: belur-maiden.jpg, trip: belur, line: "A celestial maiden" }
   - { file: wayanad-road.jpg,       trip: wayanad,             line: "On the road through the tea" }
+  - { file: fort-kochi-dogs.jpg, trip: fort-kochi, line: "Two friends at the beach café" }
   - { file: thanjavur-kallanai.jpg, trip: thanjavur,           line: "Kallanai Dam" }
+  - { file: fort-kochi-cycle.jpg, trip: fort-kochi, line: "Lost cycle?" }
   - { file: hampi-ganesha.jpg,      trip: hampi,               line: "Kadalekalu Ganesha" }
+  - { file: fort-kochi-church.jpg, trip: fort-kochi, line: "After Sunday prayers" }
   - { file: wayanad-huts.jpg,       trip: wayanad,             line: "Thatched huts on the hills" }
+  - { file: fort-kochi-nets.jpg, trip: fort-kochi, line: "Chinese fishing nets" }
   - { file: chikmagalur-road.jpg,    trip: chikmagalur,         line: "A wet road through the hills" }
   - { file: thanjavur-palace.jpg,   trip: thanjavur,           line: "The Maratha Palace" }
   - { file: chikmagalur-falls.jpg,   trip: chikmagalur,         line: "At the falls" }
