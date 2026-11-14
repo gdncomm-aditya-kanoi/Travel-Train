@@ -13,7 +13,7 @@ cover: /assets/images/belur/cover.jpg
 cover_alt: "Carved gods and musicians on the outer wall of the Hoysala temple"
 cover_strip: true             # show the cover whole at full width
 card: /assets/images/belur/card.jpg
-banner: ""
+banner: /assets/images/belur/banner.svg
 gallery: []
 
 series: kudremukh-trip

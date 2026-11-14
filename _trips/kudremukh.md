@@ -13,7 +13,7 @@ cover: /assets/images/kudremukh/cover.jpg
 cover_alt: "Green grassland ridges of Kudremukh under heavy cloud"
 cover_strip: true             # show the cover whole at full width
 card: /assets/images/kudremukh/card.jpg
-banner: ""
+banner: /assets/images/kudremukh/banner.svg
 gallery: []
 
 series: kudremukh-trip

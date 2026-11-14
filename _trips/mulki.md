@@ -13,7 +13,7 @@ cover: /assets/images/mulki/cover.jpg
 cover_alt: "Mulki: a collage of the railway sign, a surf board, a camper van and friends on the beach, next to a surfer in small waves"
 cover_strip: true             # show the cover whole at full width
 card: /assets/images/mulki/card.jpg
-banner: ""
+banner: /assets/images/mulki/banner.svg
 gallery: []
 
 series: mulki-trip

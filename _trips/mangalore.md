@@ -13,7 +13,7 @@ cover: /assets/images/mangalore/cover.jpg
 cover_alt: "St Aloysius Chapel and the Kudroli Gokarnath Temple in Mangalore"
 cover_strip: true             # show the cover whole at full width
 card: /assets/images/mangalore/card.jpg
-banner: ""
+banner: /assets/images/mangalore/banner.svg
 gallery: []
 
 series: mulki-trip

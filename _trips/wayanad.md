@@ -12,7 +12,7 @@ stay_short: "Zostel Plus Wayanad"
 cover: /assets/images/wayanad/cover.jpg
 cover_alt: "Wayanad, Monsoon 2024: a strip of photos from the trip"
 card: /assets/images/wayanad/card.jpg
-banner: ""
+banner: /assets/images/wayanad/banner.svg
 gallery: []
 
 map_pdf: /assets/maps/wayanad-tourist-map.pdf

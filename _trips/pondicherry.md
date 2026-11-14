@@ -12,7 +12,7 @@ stay_short: "Zostel Pondicherry"
 cover: /assets/images/pondicherry/cover.jpg
 cover_alt: "A row of cycle rickshaws on a French street in Pondicherry, March 2024"
 card: /assets/images/pondicherry/card.jpg
-banner: ""
+banner: /assets/images/pondicherry/banner.svg
 gallery: []
 
 instagram:

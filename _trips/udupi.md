@@ -13,7 +13,7 @@ cover: /assets/images/udupi/cover.jpg
 cover_alt: "The golden gopuram and temple chariots of the Udupi Krishna Temple"
 cover_strip: true             # show the cover whole at full width
 card: /assets/images/udupi/card.jpg
-banner: ""
+banner: /assets/images/udupi/banner.svg
 gallery: []
 
 series: mulki-trip

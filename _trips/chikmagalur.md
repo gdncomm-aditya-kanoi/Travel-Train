@@ -12,7 +12,7 @@ stay_short: "Manu Homestay"
 cover: /assets/images/chikmagalur/cover.jpg
 cover_alt: "Five photos from the Chikmagalur trip: a valley, a green ridge, a waterfall, grassy hills and a hand holding corn"
 card: /assets/images/chikmagalur/card.jpg
-banner: ""
+banner: /assets/images/chikmagalur/banner.svg
 gallery: []
 
 instagram:

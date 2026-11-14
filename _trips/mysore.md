@@ -13,7 +13,7 @@ cover: /assets/images/mysore/cover.jpg
 cover_alt: "A collage of Mysore: the Mysuru Junction sign, the zoo letters, a tiger, a vintage truck and the two of us, next to the palace lit up at night"
 cover_portrait: true          # show the cover and the card whole, not cropped
 card: /assets/images/mysore/card.jpg
-banner: ""
+banner: /assets/images/mysore/banner.svg
 gallery: []
 
 instagram: []
