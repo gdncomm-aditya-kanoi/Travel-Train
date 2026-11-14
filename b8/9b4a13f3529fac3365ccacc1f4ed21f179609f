@@ -1,0 +1,19 @@
+_data/reel.yml
+  s_cfb3d9fc65baa6::t_8341b62bbac62b 5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "b89b4a13f3529fac3365ccacc1f4ed21f179609f",
+  "prompts": {},
+  "sessions": {
+    "s_cfb3d9fc65baa6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f17aae31-e0db-41bd-9aee-e49907ff7b6a",
+        "model": "unknown"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
