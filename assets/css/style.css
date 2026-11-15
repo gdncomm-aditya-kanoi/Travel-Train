@@ -129,15 +129,18 @@ code { font-size: .9em; background: var(--paper); padding: 1px 6px; border-radiu
 .ig-open { display: flex; align-items: center; gap: 8px; min-height: 48px; padding: 0 16px; font-weight: 600; font-size: 15px; text-decoration: none; }
 
 /* Footer */
-.site-footer { border-top: 1px solid var(--line); color: var(--ink); }
-.footer-grid { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 48px; padding-top: 72px; padding-bottom: 48px; color: var(--text); }
+.site-footer { background: #1D45CB; color: #DCE6FF; margin-top: 64px; overflow: hidden; }
+.footer-grid { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 48px; padding-top: 56px; padding-bottom: 56px; }
 .footer-about { flex: 1 1 320px; max-width: 420px; display: flex; flex-direction: column; gap: 18px; }
-.footer-name { font-family: var(--serif); font-size: 36px; font-weight: 500; color: var(--ink); }
-.footer-cols { display: flex; flex-wrap: wrap; gap: 40px 80px; }
-.footer-cols nav { display: flex; flex-direction: column; gap: 10px; }
-.footer-cols a { color: var(--text); text-decoration: none; min-height: 32px; display: inline-flex; align-items: center; }
-.footer-cols a:hover { color: var(--ink); text-decoration: underline; }
-.footer-head { font-family: var(--serif); font-size: 20px; color: var(--navy); }
+.footer-name { font-family: var(--serif); font-size: 36px; font-weight: 500; color: #fff; }
+.footer-about p { margin: 0; color: #C9D8FF; font-size: 18px; line-height: 1.6; }
+.footer-cols { display: flex; flex-wrap: wrap; gap: 40px 96px; }
+.footer-cols nav { display: flex; flex-direction: column; gap: 6px; }
+.footer-cols a { color: #C9D8FF; text-decoration: none; min-height: 36px; display: inline-flex; align-items: center; }
+.footer-cols a:hover { color: #fff; text-decoration: underline; }
+.footer-head { font-family: var(--serif); font-size: 20px; color: #fff; margin-bottom: 8px; }
+.footer-bar { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; padding-top: 24px; padding-bottom: 28px; border-top: 1px solid rgba(220,230,255,.28); color: #fff; font-size: 16px; }
+.footer-art { display: block; width: 100%; height: auto; margin-top: -24px; }
 
 /* Trip page */
 .trip { padding-top: 40px; padding-bottom: 96px; }

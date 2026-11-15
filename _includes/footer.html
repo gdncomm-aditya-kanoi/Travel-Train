@@ -4,7 +4,6 @@
     <div class="footer-about">
       <span class="footer-name">Travel Train</span>
       <p>{{ site.description }}</p>
-      <p class="small">© {{ site.time | date: "%Y" }} Travel Train · by Aditya Kanoi</p>
     </div>
     <div class="footer-cols">
       <nav aria-label="Journeys">
@@ -20,4 +19,9 @@
       </nav>
     </div>
   </div>
+  <div class="wrap footer-bar">
+    <span>Made on the road by Aditya Kanoi</span>
+    <span>Travel Train ©{{ site.time | date: "%Y" }}. All rights reserved</span>
+  </div>
+  <img class="footer-art" src="{{ '/assets/images/site/footer.jpg' | relative_url }}" alt="" aria-hidden="true" loading="lazy">
 </footer>
