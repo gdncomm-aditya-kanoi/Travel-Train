@@ -21,7 +21,9 @@ series_order: 1
 series_title: "The Himachal trip"
 series_label: "Manali"
 
-instagram: []
+instagram:
+  - https://www.instagram.com/p/DQa1xFHCdoe/?img_index=1
+  - https://www.instagram.com/p/DQgLUQVk8SY/?img_index=1
 
 expenses:                   # rupees per person (from the group sheet and my own sheet)
   - category: Hostel, first two nights
@@ -38,6 +40,7 @@ things_to_do:
   - "Eat Tibetan: momos, thukpa and soups at the small places near the stay"
   - "Walk the Old Manali streets after sunset, the cafés light up"
   - "Keep a night spare after a trek: a hot meal and a real bed matter"
+  - "Add the Manu Temple, the Vashisht hot springs and Jogini Waterfall if you have a spare half day"
 things_to_skip:
   - "The Mall Road for sightseeing: it is for eating and shopping, not for views"
   - "Renting a bike without checking the brakes and fuel first"
@@ -164,11 +167,11 @@ The streets of Old Manali are just as much a part of the trip: painted walls, ca
 
 I rented a bike for the next day to ride to [Naggar and Jana]({{ '/trips/naggar-jana/' | relative_url }}). Three rental places I had saved are listed below, and I did not log the price, so ask at each one.
 
-| Rental | Map |
-|---|---|
-| Himalayan Inder Motors | [Open in Maps](https://maps.app.goo.gl/yRwuU7RVsUxYF3Ui6) |
-| Two Wheel Himalayas | [Open in Maps](https://maps.app.goo.gl/L4sXS7Yrcq4gNXbJ9) |
-| Biker Point Manali | [Open in Maps](https://maps.app.goo.gl/Jtpc9c9GJgN3VGne9) |
+<div class="table-scroll"><table class="timetable"><thead><tr><th>Rental</th><th>Map</th></tr></thead><tbody>
+<tr><td>Himalayan Inder Motors</td><td><a href="https://maps.app.goo.gl/yRwuU7RVsUxYF3Ui6" target="_blank" rel="noopener">Open in Maps</a></td></tr>
+<tr><td>Two Wheel Himalayas</td><td><a href="https://maps.app.goo.gl/L4sXS7Yrcq4gNXbJ9" target="_blank" rel="noopener">Open in Maps</a></td></tr>
+<tr><td>Biker Point Manali</td><td><a href="https://maps.app.goo.gl/Jtpc9c9GJgN3VGne9" target="_blank" rel="noopener">Open in Maps</a></td></tr>
+</tbody></table></div>
 
 <div class="shots stories">
 {% include shot.html file="offroads.jpg" class="full" caption="Real offroads" %}
@@ -180,17 +183,17 @@ I rented a bike for the next day to ride to [Naggar and Jana]({{ '/trips/naggar-
 
 The cafés in Old Manali are good but expensive, and a simple dhaba is cheaper and just as good. Tibetan food was my favourite: momos and thukpa, with hot tea.
 
-| Place | Area | Good for | Notes | Map |
-|---|---|---|---|---|
-| Krishna Dhaba | Old Manali | Breakfast | Near the stay | [Maps](https://maps.app.goo.gl/cGaoS5n6DM7EA569A) |
-| Rocky Cafe | Old Manali | Any meal | Expensive, a view, near the stay | [Maps](https://maps.app.goo.gl/zVxGB5u29XdX4FXo8) |
-| Backyard Cafe | Old Manali, riverside | Evening snack | Expensive, river view | [Maps](https://maps.app.goo.gl/mwm4t9NArbhe7ASV6) |
-| Sabali Cafe | Old Manali | Snack | Expensive, river view | [Maps](https://maps.app.goo.gl/jyUA2VVi5V1tbJwf6) |
-| Hangout 2020 Cafe | Old Manali | Meal | Lunch special | [Maps](https://maps.app.goo.gl/fHPsGSLiDRVPmyX66) |
-| Woodo Cafe | Near Social Stays | Momos and soups | Tibetan food | [Maps](https://maps.app.goo.gl/f9tqFNW8xfjqjoEd8) |
-| Babumoshai Multi Cuisine Food Joint | Mall Road | Meal | On the main road | [Maps](https://maps.app.goo.gl/HZaGctHwRBxRVAGt8) |
-| Tasty Bite Mandiwala | Mall Road | Meal | On the main road | [Maps](https://maps.app.goo.gl/afT8oxp6NgRUKtsM6) |
-| Sanju Dhaba | Sissu | Meal and tea | Roadside, on the Sissu trip | [Maps](https://maps.app.goo.gl/TYBB9vRHVguxyWVm9) |
+<div class="table-scroll"><table class="timetable"><thead><tr><th>Place</th><th>Area</th><th>Good for</th><th>Notes</th><th>Map</th></tr></thead><tbody>
+<tr><td>Krishna Dhaba</td><td>Old Manali</td><td>Breakfast</td><td>Near the stay</td><td><a href="https://maps.app.goo.gl/cGaoS5n6DM7EA569A" target="_blank" rel="noopener">Maps</a></td></tr>
+<tr><td>Rocky Cafe</td><td>Old Manali</td><td>Any meal</td><td>Expensive, a view, near the stay</td><td><a href="https://maps.app.goo.gl/zVxGB5u29XdX4FXo8" target="_blank" rel="noopener">Maps</a></td></tr>
+<tr><td>Backyard Cafe</td><td>Old Manali, riverside</td><td>Evening snack</td><td>Expensive, river view</td><td><a href="https://maps.app.goo.gl/mwm4t9NArbhe7ASV6" target="_blank" rel="noopener">Maps</a></td></tr>
+<tr><td>Sabali Cafe</td><td>Old Manali</td><td>Snack</td><td>Expensive, river view</td><td><a href="https://maps.app.goo.gl/jyUA2VVi5V1tbJwf6" target="_blank" rel="noopener">Maps</a></td></tr>
+<tr><td>Hangout 2020 Cafe</td><td>Old Manali</td><td>Meal</td><td>Lunch special</td><td><a href="https://maps.app.goo.gl/fHPsGSLiDRVPmyX66" target="_blank" rel="noopener">Maps</a></td></tr>
+<tr><td>Woodo Cafe</td><td>Near Social Stays</td><td>Momos and soups</td><td>Tibetan food</td><td><a href="https://maps.app.goo.gl/f9tqFNW8xfjqjoEd8" target="_blank" rel="noopener">Maps</a></td></tr>
+<tr><td>Babumoshai Multi Cuisine Food Joint</td><td>Mall Road</td><td>Meal</td><td>On the main road</td><td><a href="https://maps.app.goo.gl/HZaGctHwRBxRVAGt8" target="_blank" rel="noopener">Maps</a></td></tr>
+<tr><td>Tasty Bite Mandiwala</td><td>Mall Road</td><td>Meal</td><td>On the main road</td><td><a href="https://maps.app.goo.gl/afT8oxp6NgRUKtsM6" target="_blank" rel="noopener">Maps</a></td></tr>
+<tr><td>Sanju Dhaba</td><td>Sissu</td><td>Meal and tea</td><td>Roadside, on the Sissu trip</td><td><a href="https://maps.app.goo.gl/TYBB9vRHVguxyWVm9" target="_blank" rel="noopener">Maps</a></td></tr>
+</tbody></table></div>
 
 <div class="shots stories">
 {% include shot.html file="breakfast.jpg" class="full" caption="Breakfast: poha, a paratha and tea" %}
@@ -208,14 +211,15 @@ After the trek we got back to Manali in the afternoon and I took a cheap Zostel 
 <div class="shots stories">
 {% include shot.html file="masks.jpg" class="full" caption="Tibetan masks and script" %}
 {% include shot.html file="husky.jpg" class="full" caption="Meet our husky" %}
+{% include shot.html file="see-you.jpg" class="full" caption="See you tomorrow" %}
 </div>
 
 ### Places to visit
 
-| Place | Area | Timings | Ticket | Map |
-|---|---|---|---|---|
-| Hidimba Devi Temple | Old Manali | 8 AM to 6 PM | Free | [Maps](https://maps.app.goo.gl/nZSujbYUb6FCnB3p6) |
-| Himalayan Nyingmapa Buddhist Monastery | Manali | 6 AM to 7 PM | Free | [Maps](https://share.google/X4cfTruaqJPLyq5a1) |
+<div class="table-scroll"><table class="timetable"><thead><tr><th>Place</th><th>Area</th><th>Timings</th><th>Ticket</th><th>Map</th></tr></thead><tbody>
+<tr><td>Hidimba Devi Temple</td><td>Old Manali</td><td>8 AM to 6 PM</td><td>Free</td><td><a href="https://maps.app.goo.gl/nZSujbYUb6FCnB3p6" target="_blank" rel="noopener">Maps</a></td></tr>
+<tr><td>Himalayan Nyingmapa Buddhist Monastery</td><td>Manali</td><td>6 AM to 7 PM</td><td>Free</td><td><a href="https://share.google/X4cfTruaqJPLyq5a1" target="_blank" rel="noopener">Maps</a></td></tr>
+</tbody></table></div>
 
 ### The plan
 
@@ -224,6 +228,19 @@ After the trek we got back to Manali in the afternoon and I took a cheap Zostel 
 - [Manali to the Hampta trek base camp](https://maps.app.goo.gl/ZhnFdBiAwGF45bbX7)
 - [Manali to Sissu](https://maps.app.goo.gl/4EaFdzzGfmC9xkK66)
 - [Manali to Delhi ISBT](https://maps.app.goo.gl/BRGSkhkoVqDiCsxKA)
+
+### More places worth adding
+
+From reading around rather than from my own trip, so check the timings locally.
+
+<div class="table-scroll"><table class="timetable"><thead><tr><th>Place</th><th>Area</th><th>Why go</th></tr></thead><tbody>
+<tr><td>Manu Temple</td><td>Old Manali</td><td>The old temple to the sage Manu, a short walk up from the cafés</td></tr>
+<tr><td>Vashisht Temple and hot springs</td><td>Vashisht, about 3 km</td><td>A hillside village with a stone temple and natural hot water baths</td></tr>
+<tr><td>Jogini Waterfall</td><td>Above Vashisht</td><td>A short, easy walk from the village to a waterfall</td></tr>
+<tr><td>Solang Valley</td><td>About 13 km</td><td>Open meadows with a view of the snow peaks</td></tr>
+<tr><td>Rahala Falls</td><td>On the Rohtang road</td><td>A roadside waterfall on the way up</td></tr>
+<tr><td>Atal Tunnel</td><td>Towards Sissu</td><td>The long tunnel under the Rohtang pass, on the way to Lahaul</td></tr>
+</tbody></table></div>
 
 ### What I'd add to this plan
 

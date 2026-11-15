@@ -21,7 +21,9 @@ series_order: 2
 series_title: "The Himachal trip"
 series_label: "Day 2 · Naggar and Jana"
 
-instagram: []
+instagram:
+  - https://www.instagram.com/p/DR09wATCR7X/?img_index=1
+  - https://www.instagram.com/p/DQis9BviRvg/?img_index=1
 
 expenses:                   # rupees per person
   - category: Naggar Castle ticket
@@ -140,7 +142,6 @@ Nearby are the Nicholas Roerich Art Gallery (10 AM to 5 PM, ₹50), a Krishna Te
 {% include shot.html file="temple-1.jpg" class="full" caption="A wooden temple" %}
 {% include shot.html file="temple-2.jpg" class="full" caption="Think inside the box" %}
 {% include shot.html file="temple-pagoda.jpg" class="full" caption="At the pagoda temple, with a guide" %}
-{% include shot.html file="terrace.jpg" class="full" caption="The terrace of the castle" %}
 </div>
 
 ### Cake at Naggar Delight Café
@@ -183,20 +184,31 @@ The Jana waterfall is a short walk from the village, with a small bridge over th
 
 ### Places to visit
 
-| Place | Area | Timings | Ticket | Map |
-|---|---|---|---|---|
-| Naggar Castle | Naggar | 9 AM to 6 PM | ₹50 | [Maps](https://maps.app.goo.gl/ncaRw96JdCZvvoYy7) |
-| Nicholas Roerich Art Gallery | Naggar | 10 AM to 5 PM | ₹50 | [Maps](https://maps.app.goo.gl/KhmVo4wmofTMoj3o9) |
-| Krishna Temple | Naggar | 9 AM to 8 PM | Free | [Maps](https://maps.app.goo.gl/X37BJ7XcsLcwRzc89) |
-| Tripura Sundari Temple | Naggar | 9 AM to 8 PM | Free | [Maps](https://maps.app.goo.gl/j2FiincDxUw2J5Co7) |
-| Jana Waterfall | Jana | Open | Free | |
+<div class="table-scroll"><table class="timetable"><thead><tr><th>Place</th><th>Area</th><th>Timings</th><th>Ticket</th><th>Map</th></tr></thead><tbody>
+<tr><td>Naggar Castle</td><td>Naggar</td><td>9 AM to 6 PM</td><td>₹50</td><td><a href="https://maps.app.goo.gl/ncaRw96JdCZvvoYy7" target="_blank" rel="noopener">Maps</a></td></tr>
+<tr><td>Nicholas Roerich Art Gallery</td><td>Naggar</td><td>10 AM to 5 PM</td><td>₹50</td><td><a href="https://maps.app.goo.gl/KhmVo4wmofTMoj3o9" target="_blank" rel="noopener">Maps</a></td></tr>
+<tr><td>Krishna Temple</td><td>Naggar</td><td>9 AM to 8 PM</td><td>Free</td><td><a href="https://maps.app.goo.gl/X37BJ7XcsLcwRzc89" target="_blank" rel="noopener">Maps</a></td></tr>
+<tr><td>Tripura Sundari Temple</td><td>Naggar</td><td>9 AM to 8 PM</td><td>Free</td><td><a href="https://maps.app.goo.gl/j2FiincDxUw2J5Co7" target="_blank" rel="noopener">Maps</a></td></tr>
+<tr><td>Jana Waterfall</td><td>Jana</td><td>Open</td><td>Free</td><td></td></tr>
+</tbody></table></div>
 
 ### Where to eat
 
-| Place | Area | Good for | Map |
-|---|---|---|---|
-| Naggar Delight Café | Naggar | Cakes and pastries | [Maps](https://maps.app.goo.gl/JCQ44hYzKDqsCYs58) |
-| Sagar Thakur Dhaba | Jana village | A home meal | [Maps](https://maps.app.goo.gl/viMoNJYRjdryXzei7) |
+<div class="table-scroll"><table class="timetable"><thead><tr><th>Place</th><th>Area</th><th>Good for</th><th>Map</th></tr></thead><tbody>
+<tr><td>Naggar Delight Café</td><td>Naggar</td><td>Cakes and pastries</td><td><a href="https://maps.app.goo.gl/JCQ44hYzKDqsCYs58" target="_blank" rel="noopener">Maps</a></td></tr>
+<tr><td>Sagar Thakur Dhaba</td><td>Jana village</td><td>A home meal</td><td><a href="https://maps.app.goo.gl/viMoNJYRjdryXzei7" target="_blank" rel="noopener">Maps</a></td></tr>
+</tbody></table></div>
+
+### More places worth adding
+
+From reading around rather than from my own trip, so check the timings locally.
+
+<div class="table-scroll"><table class="timetable"><thead><tr><th>Place</th><th>Area</th><th>Why go</th></tr></thead><tbody>
+<tr><td>Urusvati Himalayan Folk Art Museum</td><td>Roerich Estate, Naggar</td><td>Folk art and crafts of the region, in the same estate as the gallery</td></tr>
+<tr><td>Gauri Shankar Temple</td><td>Naggar</td><td>An old stone temple with carved walls, close to the castle</td></tr>
+<tr><td>Chandrakhani Pass trek</td><td>From Naggar</td><td>A one-day trek above Naggar for a bigger view of the valley</td></tr>
+<tr><td>Rumsu village</td><td>Above Naggar</td><td>A small wooden village with apple orchards, for a longer ride</td></tr>
+</tbody></table></div>
 
 ### What I'd add to this plan
 
