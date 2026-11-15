@@ -1,0 +1,27 @@
+_trips/manali.md
+  s_cfb3d9fc65baa6::t_aeecdaec3a8728 92,115
+  s_cfb3d9fc65baa6::t_37eac5d8380191 1-91,93-114,116-238
+assets/images/manali/banner.svg
+  s_cfb3d9fc65baa6::t_7f9adbbe8b3210 1-76
+_trips/naggar-jana.md
+  s_cfb3d9fc65baa6::t_aeecdaec3a8728 81,106,135
+  s_cfb3d9fc65baa6::t_e8a731a95aab76 1-80,82-105,107-134,136-211
+assets/images/naggar-jana/banner.svg
+  s_cfb3d9fc65baa6::t_7f9adbbe8b3210 1-65
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "cce8b6b98600a65e9f93e0df9864d650baa69872",
+  "prompts": {},
+  "sessions": {
+    "s_cfb3d9fc65baa6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f17aae31-e0db-41bd-9aee-e49907ff7b6a",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
