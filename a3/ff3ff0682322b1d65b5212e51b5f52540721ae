@@ -1,0 +1,22 @@
+_trips/manali.md
+  s_cfb3d9fc65baa6::t_d6e6d694538b50 24-26,43,170-174,186-196,214,219-222,232-243
+  s_cfb3d9fc65baa6::t_9947de63df4ad8 244
+_trips/naggar-jana.md
+  s_cfb3d9fc65baa6::t_d6e6d694538b50 24-26,187-193,197-211
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "a3ff3ff0682322b1d65b5212e51b5f52540721ae",
+  "prompts": {},
+  "sessions": {
+    "s_cfb3d9fc65baa6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f17aae31-e0db-41bd-9aee-e49907ff7b6a",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
