@@ -379,3 +379,11 @@ a.series-item:hover { outline: 2px solid var(--ink); outline-offset: 2px; }
   .planned-num { font-size: 26px; }
   .planned-title { font-size: 24px; }
 }
+
+/* Finder: state chips and city search */
+.finder { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 28px 40px; }
+.finder-search { flex: 0 1 380px; min-width: 260px; display: flex; flex-direction: column; gap: 14px; }
+.finder-search label { display: block; margin: 0; }
+.finder-search input { width: 100%; min-height: 48px; padding: 0 18px; border: 1px solid var(--rule); border-radius: 999px; background: var(--paper); font: 16px var(--sans); color: var(--navy); }
+.finder-search input:focus { outline: 2px solid var(--ink); outline-offset: 2px; border-color: var(--ink); }
+.trip-empty { margin-top: 24px; color: var(--muted); }

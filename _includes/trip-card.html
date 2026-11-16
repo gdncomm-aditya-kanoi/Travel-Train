@@ -1,6 +1,7 @@
 {% assign trip = include.trip %}
 {% include trip-total.html trip=trip %}
-<a class="trip-card" href="{{ trip.url | relative_url }}" data-state="{{ trip.state | slugify }}">
+{% capture hay %}{{ trip.title }} {{ trip.state }} {{ trip.month }} {{ trip.summary }}{% for d in trip.days %}{% for st in d.stops %} {{ st.name }}{% endfor %}{% endfor %}{% endcapture %}
+<a class="trip-card" href="{{ trip.url | relative_url }}" data-state="{{ trip.state | slugify }}" data-search="{{ hay | strip_newlines | downcase | escape }}">
   {% assign card_img = trip.card | default: trip.cover | default: trip.banner %}
   {% if card_img and card_img != "" %}
     <img class="photo{% if trip.cover_portrait %} portrait{% endif %}" src="{{ card_img | relative_url }}" alt="" loading="lazy">

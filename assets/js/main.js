@@ -35,20 +35,34 @@
     if (!isNaN(n)) el.textContent = "₹" + n.toLocaleString("en-IN");
   });
 
-  /* State filter on the home page */
+  /* State filter and city search on the home page */
   var chips = document.querySelectorAll(".chip[data-filter]");
   var cards = document.querySelectorAll("#trip-grid .trip-card");
+  var search = document.getElementById("trip-search");
+  var empty = document.getElementById("trip-empty");
+  var state = "all";
+  function plain(x) { return (x || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ""); }
+  function applyFilters() {
+    var q = plain(search ? search.value : "").trim();
+    var shown = 0;
+    cards.forEach(function (card) {
+      var okState = state === "all" || card.getAttribute("data-state") === state;
+      var okText = !q || plain(card.getAttribute("data-search")).indexOf(q) !== -1;
+      card.hidden = !(okState && okText);
+      if (!card.hidden) shown++;
+    });
+    if (empty) empty.hidden = shown !== 0;
+  }
   chips.forEach(function (chip) {
     chip.addEventListener("click", function () {
-      var f = chip.getAttribute("data-filter");
+      state = chip.getAttribute("data-filter");
       chips.forEach(function (c) { c.setAttribute("aria-pressed", String(c === chip)); });
-      cards.forEach(function (card) {
-        card.hidden = f !== "all" && card.getAttribute("data-state") !== f;
-      });
+      applyFilters();
       var grid = document.getElementById("journeys");
       if (grid) grid.scrollIntoView({ behavior: "smooth", block: "start" });
     });
   });
+  if (search) search.addEventListener("input", applyFilters);
 
   /* Day planner tabs (arrow keys move between days) */
   var tabs = Array.prototype.slice.call(document.querySelectorAll(".day-tabs [role=tab]"));

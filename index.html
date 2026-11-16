@@ -16,6 +16,22 @@ layout: default
   </div>
 </section>
 
+<section id="states" class="wrap section section-tight">
+  <div class="finder">
+    <div>
+      <h2 class="h3">Browse by state</h2>
+      <div class="chips" role="group" aria-label="Filter journeys by state">
+        <button type="button" class="chip" data-filter="all" aria-pressed="true">All</button>
+        {% for s in states %}<button type="button" class="chip" data-filter="{{ s | slugify }}" aria-pressed="false">{{ s }}</button>{% endfor %}
+      </div>
+    </div>
+    <div class="finder-search">
+      <label class="h3" for="trip-search">Search a city or place</label>
+      <input id="trip-search" type="search" placeholder="Try Hampi, Naggar, Fort Kochi…" autocomplete="off">
+    </div>
+  </div>
+</section>
+
 <section id="journeys" class="wrap section">
   <div class="section-head">
     <h2>Latest journeys</h2>
@@ -24,20 +40,11 @@ layout: default
   <div class="trip-grid" id="trip-grid">
     {% for trip in trips %}{% include trip-card.html trip=trip %}{% endfor %}
   </div>
+  <p id="trip-empty" class="trip-empty" hidden>No journey matches that yet. Try another city or clear the search.</p>
   {% else %}
   <p>No journeys yet. Add your first one in the <code>_trips</code> folder.</p>
   {% endif %}
 </section>
-
-{% if states.size > 0 %}
-<section id="states" class="wrap section section-tight">
-  <h2 class="h3">Browse by state</h2>
-  <div class="chips" role="group" aria-label="Filter journeys by state">
-    <button type="button" class="chip" data-filter="all" aria-pressed="true">All</button>
-    {% for s in states %}<button type="button" class="chip" data-filter="{{ s | slugify }}" aria-pressed="false">{{ s }}</button>{% endfor %}
-  </div>
-</section>
-{% endif %}
 
 {% assign ig_dm = "https://ig.me/m/" | append: site.data.instagram.handle %}
 <section id="planned" class="wrap section">
