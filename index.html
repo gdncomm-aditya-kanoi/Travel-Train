@@ -108,7 +108,7 @@ layout: default
   </div>
   {% if site.data.instagram.posts and site.data.instagram.posts.size > 0 %}
   <div class="ig-grid">
-    {% for url in site.data.instagram.posts limit: 3 %}{% include instagram-embed.html url=url %}{% endfor %}
+    {% for url in site.data.instagram.posts limit: 5 %}{% include instagram-embed.html url=url %}{% endfor %}
   </div>
   {% else %}
   <p>Add post links in <code>_data/instagram.yml</code> to show them here.</p>

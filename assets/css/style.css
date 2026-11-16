@@ -118,11 +118,13 @@ code { font-size: .9em; background: var(--paper); padding: 1px 6px; border-radiu
 .covers-title { font-family: var(--serif); font-size: 26px; color: var(--navy); }
 
 /* Instagram */
-.ig-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: stretch; }
+.ig-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; align-items: start; }
 .ig-grid .ig-card { display: flex; flex-direction: column; }
-.ig-grid .ig-clip { height: 520px; overflow: hidden; }
-.ig-grid .ig-open { margin-top: auto; border-top: 1px solid var(--line); }
-@media (max-width: 860px) { .ig-grid { grid-template-columns: 1fr; max-width: 420px; } }
+.ig-grid .ig-clip { height: 360px; overflow: hidden; position: relative; }
+.ig-grid .ig-clip .instagram-media { width: 326px !important; min-width: 326px !important; max-width: 326px !important; transform-origin: 0 0; transform: scale(var(--s, .6)); }
+.ig-grid .ig-open { margin-top: auto; border-top: 1px solid var(--line); min-height: 40px; padding: 0 10px; font-size: 13px; }
+@media (max-width: 1000px) { .ig-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .ig-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .ig-card { background: var(--paper); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
 .ig-card .instagram-media { margin: 0 !important; min-width: 0 !important; width: 100% !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; }
 .ig-card blockquote.instagram-media { padding: 48px 16px; text-align: center; background: var(--ph); }

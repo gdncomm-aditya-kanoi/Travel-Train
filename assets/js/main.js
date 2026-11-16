@@ -299,4 +299,19 @@
       new ResizeObserver(function () { clearTimeout(t); t = setTimeout(fit, 200); }).observe(main);
     }
   })();
+  /* Home page: scale the small Instagram embeds to the width of their card */
+  (function () {
+    var clips = document.querySelectorAll(".ig-grid .ig-clip");
+    if (!clips.length) return;
+    function scale() {
+      clips.forEach(function (clip) {
+        var s = Math.min(1, clip.clientWidth / 326);
+        clip.style.setProperty("--s", s.toFixed(3));
+        clip.style.height = Math.round(590 * s) + "px";
+      });
+    }
+    scale();
+    window.addEventListener("load", function () { scale(); setTimeout(scale, 1500); setTimeout(scale, 4000); });
+    window.addEventListener("resize", scale);
+  })();
 })();
