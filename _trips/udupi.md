@@ -12,7 +12,7 @@ stay_short: "Mulki surf stay"
 cover: /assets/images/udupi/cover.jpg
 cover_alt: "The golden gopuram and temple chariots of the Udupi Krishna Temple"
 cover_strip: true             # show the cover whole at full width
-card: /assets/images/udupi/card.jpg
+card: /assets/images/udupi/card-home.jpg
 banner: /assets/images/udupi/banner.svg
 gallery: []
 
