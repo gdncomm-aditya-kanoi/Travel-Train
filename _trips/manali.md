@@ -12,7 +12,7 @@ stay_short: "Social Stays, Old Manali"
 cover: /assets/images/manali/cover.jpg
 cover_alt: "Manali valley at dusk with the town lights below an orange sky"
 cover_strip: true             # show the cover whole at full width
-card: /assets/images/manali/card-title.jpg
+card: /assets/images/manali/card-bike.jpg
 banner: /assets/images/manali/banner.svg
 gallery: []
 
