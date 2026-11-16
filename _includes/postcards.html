@@ -1,0 +1,11 @@
+{% comment %}A slow-moving strip of postcards. items = "file|caption;;file|caption". Photos come from /assets/images/<page slug>/.{% endcomment %}
+{% assign pcs = include.items | split: ";;" %}
+<div class="reel postcards no-print" tabindex="-1" aria-label="{{ include.label | default: 'Postcards' }}">
+  <div class="reel-track">
+    {% for pass in (1..2) %}{% for pc in pcs %}{% assign parts = pc | split: "|" %}
+    <figure class="reel-frame postcard"{% if pass == 2 %} aria-hidden="true"{% endif %}>
+      <img src="{{ '/assets/images/' | append: page.slug | append: '/' | append: parts[0] | relative_url }}" alt="{% if pass == 1 %}{{ parts[1] }}{% endif %}" width="640" height="800" loading="lazy">
+      <figcaption class="reel-cap"><span class="reel-line">{{ parts[1] }}</span></figcaption>
+    </figure>{% endfor %}{% endfor %}
+  </div>
+</div>
