@@ -97,19 +97,21 @@ layout: default
   </div>
 </div>
 
-<section id="instagram" class="wrap section section-last">
+<section id="instagram" class="wrap section section-tight">
   <div class="section-head">
     <div>
       <h2>From the platform, on Instagram</h2>
-      <p class="section-sub">Tap any post to open it in Instagram.</p>
+      <p class="section-sub">Every post, drifting by. Hover to pause, tap any post to open it in Instagram.</p>
     </div>
     <a href="{{ ig }}" target="_blank" rel="noopener">@{{ site.data.instagram.handle }}</a>
   </div>
-  {% if site.data.instagram.posts and site.data.instagram.posts.size > 0 %}
-  <div class="ig-grid">
-    {% for url in site.data.instagram.posts limit: 5 %}{% include instagram-embed.html url=url %}{% endfor %}
-  </div>
-  {% else %}
-  <p>Add post links in <code>_data/instagram.yml</code> to show them here.</p>
-  {% endif %}
 </section>
+{% if site.data.instagram.posts and site.data.instagram.posts.size > 0 %}
+<div class="ig-reel section-last" tabindex="-1">
+  <div class="ig-track">
+    {% for url in site.data.instagram.posts %}{% include instagram-embed.html url=url %}{% endfor %}
+  </div>
+</div>
+{% else %}
+<p class="wrap">Add post links in <code>_data/instagram.yml</code> to show them here.</p>
+{% endif %}
