@@ -65,9 +65,23 @@ layout: default
         <h3 class="planned-title">{{ p.title }}</h3>
         {% if p.when %}<span class="planned-when">{{ p.when }}</span>{% endif %}
       </div>
+      {% if p.routes %}
+      <div class="route-set">
+        {% for r in p.routes %}
+        <div class="route-option">
+          <span class="route-label">{{ r.label }}</span>
+          <ol class="route" aria-label="{{ r.label }}: {{ r.stops | join: ', ' }}">
+            {% for stop in r.stops %}<li><span class="route-dot"></span><span class="route-name">{{ stop }}</span></li>{% endfor %}
+          </ol>
+        </div>
+        {% if forloop.last == false %}<span class="route-or">or</span>{% endif %}
+        {% endfor %}
+      </div>
+      {% else %}
       <ol class="route" aria-label="Stops: {{ p.stops | join: ', ' }}">
         {% for stop in p.stops %}<li><span class="route-dot"></span><span class="route-name">{{ stop }}</span></li>{% endfor %}
       </ol>
+      {% endif %}
     </li>
     {% endfor %}
   </ol>

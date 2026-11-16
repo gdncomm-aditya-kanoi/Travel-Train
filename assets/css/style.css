@@ -398,3 +398,9 @@ a.series-item:hover { outline: 2px solid var(--ink); outline-offset: 2px; }
 .postcards .reel-cap { padding: 28px 10px 10px; }
 .postcards .reel-line { font-size: 15px; }
 .postcards .reel-track { animation-duration: 90s; }
+
+/* Planned trip with two route options */
+.route-set { display: flex; flex-direction: column; gap: 6px; }
+.route-option { display: flex; flex-direction: column; gap: 10px; }
+.route-label { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; font-weight: 600; color: var(--ink); text-align: left; }
+.route-or { align-self: center; font-family: var(--serif); font-style: italic; color: var(--muted); padding: 6px 0; }

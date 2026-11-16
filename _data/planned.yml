@@ -15,9 +15,13 @@
 - title: "North East Trail"
   region: "North East"
   stops: ["Meghalaya", "Assam", "Nagaland"]
-- title: "Island Escape"
+- title: "Island Escape: Sri Lanka or Bali"
   region: "Abroad"
-  stops: ["Colombo", "Kandy", "Ella", "Nilwella", "Mirissa", "Galle"]
+  routes:
+    - label: "Sri Lanka"
+      stops: ["Colombo", "Kandy", "Ella", "Nilwella", "Mirissa", "Galle"]
+    - label: "Bali"
+      stops: ["Denpasar", "Ubud", "Sidemen", "Nusa Penida", "Uluwatu", "Canggu"]
 - title: "Himachal Hill Villages"
   region: "Himachal Pradesh"
   stops: ["Delhi", "Shangarh", "Shoja", "Raghupur Fort", "Bir Billing"]
