@@ -29,8 +29,8 @@ instagram:
 
 expenses:                   # rupees per person (2 of us, split evenly, from my sheet; the Belur part is on the Belur page)
   - category: Trek pass
-    note: "Aranya Vihaara booking, ₹1,160 for two"
-    amount: 580
+    note: "Aranya Vihaara booking, ₹1,150 for two"
+    amount: 575
   - category: Homestay
     note: "River Edge homestay in Samse, ₹2,400 for two"
     amount: 1200
@@ -155,6 +155,22 @@ Kudremukh is a peak in the Western Ghats, in Kudremukh National Park, Chikkamaga
 ### The permit, first
 
 The trek only runs through the Aranya Vihaara portal (aranyavihaara.karnataka.gov.in). Daily numbers are capped, weekend slots go fast, every trekker needs a government ID on the booking, and it is non-refundable. My slot was 6 AM to 11 AM on 31 August, so I had to be at the checkpost early. Do not rely on any blog for the exact fee, because it changes every year. Check the portal.
+
+<div class="shots one">
+{% include shot.html file="permit-ticket.jpg" class="full" caption="My Aranya Vihaara trekking ticket (ticket number, order ID, names, ID numbers and QR code hidden)" %}
+</div>
+
+<div class="table-scroll"><table class="timetable"><thead><tr><th>On the ticket</th><th>Mine</th></tr></thead><tbody>
+<tr><td>Trek</td><td>Kudremukha Trek</td></tr>
+<tr><td>Check-in date</td><td>31 August 2026</td></tr>
+<tr><td>Timeslot</td><td>6:00 AM to 11:00 AM (be at the checkpost inside this window)</td></tr>
+<tr><td>Visitors</td><td>2</td></tr>
+<tr><td>Amount</td><td>₹1,150 for two (₹575 each)</td></tr>
+<tr><td>Booked on</td><td>24 August 2026, a week before the trek</td></tr>
+<tr><td>Each visitor listed with</td><td>Name, age, gender, government ID type and ID number</td></tr>
+</tbody></table></div>
+
+<div class="callout"><strong>Carry the ticket and the same ID.</strong> The ticket lists each trekker with a government ID, and it says it is not transferable. Take a printout (or a saved PDF) and the original ID you booked with.</div>
 
 <div class="shots stories">
 {% include shot.html file="itinerary.jpg" class="full" caption="The route: Samse, base camp, stream, peak" %}
