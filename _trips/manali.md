@@ -9,10 +9,10 @@ best_season: "Sep – Nov (autumn, clear skies) and Mar – Jun"
 cost_note: "per person, the hostel and the Delhi bus only (food and bike not logged)"
 stay_short: "Social Stays, Old Manali"
 
-cover: /assets/images/manali/cover-title.jpg
-cover_alt: "Manali, Naggar and Jana: a man in a checked shirt facing a painted brick wall in Old Manali"
+cover: /assets/images/manali/cover.jpg
+cover_alt: "Manali valley at dusk with the town lights below an orange sky"
 cover_strip: true             # show the cover whole at full width
-card: /assets/images/manali/card.jpg
+card: /assets/images/manali/card-title.jpg
 banner: /assets/images/manali/banner.svg
 gallery: []
 

@@ -9,9 +9,8 @@ best_season: "Oct – Feb"
 cost_note: "per person"
 
 # Photos live in assets/images/hampi/. Swap any file for your own and keep the name, or add paths under gallery.
-cover: /assets/images/hampi/cover-title.jpg
-cover_alt: "Hampi, city of ruins: a cyclist on the dirt road leading to the Vittala temple gopuram at sunset"
-cover_strip: true             # show the cover whole at full width
+cover: /assets/images/hampi/collage.jpg
+cover_alt: "A collage of my Hampi trip"
 card: /assets/images/hampi/card-title.jpg
 banner: /assets/images/hampi/banner.svg
 gallery: []
