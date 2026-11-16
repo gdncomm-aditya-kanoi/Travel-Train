@@ -1,0 +1,19 @@
+_trips/kudremukh.md
+  s_cfb3d9fc65baa6::t_f788430d31e92d 32-33,159-174
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "70d6b22e2ca7e7435645c629395c126c79476139",
+  "prompts": {},
+  "sessions": {
+    "s_cfb3d9fc65baa6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f17aae31-e0db-41bd-9aee-e49907ff7b6a",
+        "model": "unknown"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
