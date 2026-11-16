@@ -17,7 +17,7 @@
   stops: ["Meghalaya", "Assam", "Nagaland"]
 - title: "Island Escape"
   region: "Abroad"
-  stops: ["Sri Lanka"]
+  stops: ["Colombo", "Kandy", "Ella", "Nilwella", "Mirissa", "Galle"]
 - title: "Himachal Hill Villages"
   region: "Himachal Pradesh"
   stops: ["Delhi", "Shangarh", "Shoja", "Raghupur Fort", "Bir Billing"]
