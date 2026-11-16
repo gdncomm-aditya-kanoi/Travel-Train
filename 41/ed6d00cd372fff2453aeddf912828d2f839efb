@@ -1,0 +1,20 @@
+_trips/ooty.md
+  s_cfb3d9fc65baa6::t_575314569f4666 10,13,72-75,77,98-99,103,108-109,111,114,117,119-122,125-128,130-135,137-139,142-148,151-152,154,157-162,165-166,168-170,172-174,177,182,187,190-191,193-196,213,215-220,223-230,233,237,251,253,255,267,269,280,282,304,306-307,310,372-428
+  s_cfb3d9fc65baa6::t_c350fb0bcb4f32 429
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "41ed6d00cd372fff2453aeddf912828d2f839efb",
+  "prompts": {},
+  "sessions": {
+    "s_cfb3d9fc65baa6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f17aae31-e0db-41bd-9aee-e49907ff7b6a",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
