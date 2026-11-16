@@ -39,6 +39,35 @@ layout: default
 </section>
 {% endif %}
 
+{% assign ig_dm = "https://ig.me/m/" | append: site.data.instagram.handle %}
+<section id="planned" class="wrap section">
+  <div class="section-head">
+    <div>
+      <p class="kicker">January to December 2027</p>
+      <h2>Planned for 2027</h2>
+      <p class="section-sub">Trips I want to take next year. Dates are not fixed yet. If you want to join one, tell me.</p>
+    </div>
+    <a class="btn btn-solid" href="{{ ig_dm }}" target="_blank" rel="noopener">Join a trip</a>
+  </div>
+  <ol class="planned">
+    {% for p in site.data.planned %}
+    <li class="planned-item">
+      <span class="planned-num">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
+      <div class="planned-body">
+        <span class="planned-region">{{ p.region }}</span>
+        <h3 class="planned-title">{{ p.title }}</h3>
+        <p class="planned-places">{{ p.places }}</p>
+      </div>
+      <div class="planned-meta">
+        <span>{{ p.length }}</span>
+        <span class="planned-when">{% if p.when %}{{ p.when }}{% else %}Dates to be decided{% endif %}</span>
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+  <p class="planned-note">Want company, a split of the costs, or have a better idea for a route? <a href="{{ ig_dm }}" target="_blank" rel="noopener">Message me on Instagram</a>.</p>
+</section>
+
 <section id="notes" class="wrap section">
   <h2>What every journey covers</h2>
   <p class="section-sub">Each trip post follows the same four parts, so you can plan your own from it.</p>

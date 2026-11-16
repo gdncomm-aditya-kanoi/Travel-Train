@@ -354,3 +354,20 @@ a.series-item:hover { outline: 2px solid var(--ink); outline-offset: 2px; }
 /* Posts after the first four stay hidden until the script finds they fit beside the story */
 .ig-card.ig-extra { display: none; }
 .ig-card.ig-extra.fit { display: block; }
+
+/* Planned for 2027 */
+.planned { list-style: none; margin: 32px 0 0; padding: 0; border-top: 1px solid var(--rule); }
+.planned-item { display: grid; grid-template-columns: 64px minmax(0, 1fr) 200px; gap: 8px 24px; align-items: start; padding: 24px 0; border-bottom: 1px dashed var(--rule); }
+.planned-num { font-family: var(--serif); font-size: 32px; line-height: 1; color: var(--ink); }
+.planned-region { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.planned-title { font-family: var(--serif); font-size: 28px; line-height: 1.15; font-weight: 500; color: var(--navy); margin: 4px 0 6px; }
+.planned-places { margin: 0; color: var(--text); font-size: 16px; }
+.planned-meta { display: flex; flex-direction: column; gap: 6px; align-items: flex-start; color: var(--navy); font-weight: 600; }
+.planned-when { display: inline-block; font-weight: 400; font-size: 13px; color: var(--muted); border: 1px dashed var(--rule); border-radius: 999px; padding: 3px 12px; }
+.planned-note { margin-top: 24px; color: var(--text); }
+@media (max-width: 700px) {
+  .planned-item { grid-template-columns: 44px minmax(0, 1fr); }
+  .planned-meta { grid-column: 2; flex-direction: row; flex-wrap: wrap; align-items: center; gap: 8px 14px; }
+  .planned-num { font-size: 26px; }
+  .planned-title { font-size: 24px; }
+}
