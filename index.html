@@ -56,12 +56,11 @@ layout: default
       <div class="planned-body">
         <span class="planned-region">{{ p.region }}</span>
         <h3 class="planned-title">{{ p.title }}</h3>
-        <p class="planned-places">{{ p.places }}</p>
+        {% if p.when %}<span class="planned-when">{{ p.when }}</span>{% endif %}
       </div>
-      <div class="planned-meta">
-        <span>{{ p.length }}</span>
-        <span class="planned-when">{% if p.when %}{{ p.when }}{% else %}Dates to be decided{% endif %}</span>
-      </div>
+      <ol class="route" aria-label="Stops: {{ p.stops | join: ', ' }}">
+        {% for stop in p.stops %}<li><span class="route-dot"></span><span class="route-name">{{ stop }}</span></li>{% endfor %}
+      </ol>
     </li>
     {% endfor %}
   </ol>

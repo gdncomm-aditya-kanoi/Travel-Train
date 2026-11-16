@@ -1,30 +1,23 @@
-# Trips planned for 2027, shown on the home page. Add months or dates here once they are fixed.
-# when: leave empty to show "Dates to be decided".
-- title: "Rameshwaram, Kanyakumari and Dhanushkodi"
+# Trips planned for 2027, shown on the home page. Each trip has a name, a region and its stops in order.
+# Add `when: "March 2027"` to a trip once its dates are fixed.
+- title: "Land's End Temple Circuit"
   region: "Tamil Nadu"
-  places: "Rameshwaram · Dhanushkodi · Kanyakumari"
-  length: "4 days"
-- title: "Thiruvananthapuram and Varkala"
+  stops: ["Rameshwaram", "Dhanushkodi", "Kanyakumari"]
+- title: "Temples and Surf"
   region: "Kerala"
-  places: "Padmanabhaswamy Temple · Thiruvananthapuram · Jatayu Earth's Center · Varkala"
-  length: "3 days"
-- title: "Munnar"
+  stops: ["Thiruvananthapuram", "Jatayu Earth's Center", "Varkala"]
+- title: "Munnar Tea Hills"
   region: "Kerala"
-  places: "Tea hills and the Western Ghats"
-  length: "3 days"
-- title: "Ponmudi"
+  stops: ["Munnar"]
+- title: "Ponmudi Hill Escape"
   region: "Kerala"
-  places: "Hill station near Thiruvananthapuram"
-  length: "2 to 3 days"
-- title: "Meghalaya, Assam and Nagaland"
+  stops: ["Ponmudi"]
+- title: "North East Trail"
   region: "North East"
-  places: "Three states in one long trip"
-  length: "Length to be decided"
-- title: "Sri Lanka"
+  stops: ["Meghalaya", "Assam", "Nagaland"]
+- title: "Island Escape"
   region: "Abroad"
-  places: "My first trip outside India"
-  length: "Length to be decided"
-- title: "Himachal: Shangarh, Shoja, Raghupur Fort and Bir Billing"
+  stops: ["Sri Lanka"]
+- title: "Himachal Hill Villages"
   region: "Himachal Pradesh"
-  places: "Delhi · Shangarh · Shoja · Raghupur Fort · Bir Billing"
-  length: "Length to be decided"
+  stops: ["Delhi", "Shangarh", "Shoja", "Raghupur Fort", "Bir Billing"]
