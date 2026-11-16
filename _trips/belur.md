@@ -12,7 +12,7 @@ stay_short: "None, moved on to Samse"
 cover: /assets/images/belur/cover.jpg
 cover_alt: "Carved gods and musicians on the outer wall of the Hoysala temple"
 cover_strip: true             # show the cover whole at full width
-card: /assets/images/belur/card.jpg
+card: /assets/images/belur/card-home.jpg
 banner: /assets/images/belur/banner.svg
 gallery: []
 
