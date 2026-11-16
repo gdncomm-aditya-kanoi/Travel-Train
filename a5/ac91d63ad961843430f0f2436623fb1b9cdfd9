@@ -1,0 +1,27 @@
+_includes/postcards.html
+  s_cfb3d9fc65baa6::t_188d6ce955fce2 1-11
+assets/images/ooty/banner.svg
+  s_cfb3d9fc65baa6::t_892b5555483aca 46,72
+  s_cfb3d9fc65baa6::t_2d2cd5dffb652c 1-45,47-71,73-80
+assets/css/style.css
+  s_cfb3d9fc65baa6::t_188d6ce955fce2 393-400
+_trips/ooty.md
+  s_cfb3d9fc65baa6::t_f4d49c084073b2 1-181,185-188,190-224,226-267,269-332,334-336
+  s_cfb3d9fc65baa6::t_916906e0659011 182-184,189,225,268,333
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "a5ac91d63ad961843430f0f2436623fb1b9cdfd9",
+  "prompts": {},
+  "sessions": {
+    "s_cfb3d9fc65baa6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f17aae31-e0db-41bd-9aee-e49907ff7b6a",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
