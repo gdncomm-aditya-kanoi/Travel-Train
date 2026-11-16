@@ -1,0 +1,25 @@
+_includes/trip-card.html
+  s_cfb3d9fc65baa6::t_6a50f52fb2a28e 3-4
+assets/css/style.css
+  s_cfb3d9fc65baa6::t_30933e6607577f 382-389
+assets/js/main.js
+  s_cfb3d9fc65baa6::t_20311ae8f2f442 38,41-55,58,60,65
+index.html
+  s_cfb3d9fc65baa6::t_175d4984446011 19-34,43
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "3b682533481f8ddace4445d7db925583aabccbba",
+  "prompts": {},
+  "sessions": {
+    "s_cfb3d9fc65baa6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f17aae31-e0db-41bd-9aee-e49907ff7b6a",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
