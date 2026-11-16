@@ -12,7 +12,7 @@ cost_note: "per person"
 cover: /assets/images/hampi/cover-title.jpg
 cover_alt: "Hampi, city of ruins: a cyclist on the dirt road leading to the Vittala temple gopuram at sunset"
 cover_strip: true             # show the cover whole at full width
-card: /assets/images/hampi/card.jpg
+card: /assets/images/hampi/card-title.jpg
 banner: /assets/images/hampi/banner.svg
 gallery: []
 
