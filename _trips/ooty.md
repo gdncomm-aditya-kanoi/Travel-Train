@@ -92,7 +92,7 @@ details:
   - label: Budget level
     value: "Backpacker"
 
-# Coordinates are approximate, picked by eye from the map. Check them in Google Maps before you rely on them.
+# Coordinates are approximate. Only the 9th Mile and Pykara Waterfall come from a source (a plus code and my photo's geotag); the rest are placed by eye along the road. Check them in Google Maps.
 # "route" opens in Google Maps with every stop in order.
 days:
   - title: Coimbatore to Zostel Ooty, then the lake, tea and gardens (2 September)
@@ -109,14 +109,18 @@ days:
       - name: Zostel Ooty, Pudumund
         type: home
         note: "Auto from the bus stand (₹250), breakfast at the Zostel, a rest"
+        lat: 11.417
+        lng: 76.667
       - name: Ooty Lake
         type: town
         note: "Pedal boating (₹550 for three) and samosas"
-        lat: 11.4020
-        lng: 76.6880
+        lat: 11.402
+        lng: 76.688
       - name: Tea Factory and Tea Museum
         type: hill
         note: "Entry ₹60, then the tea garden (₹60 entry)"
+        lat: 11.3993
+        lng: 76.7241
       - name: Government Botanical Garden
         type: hill
         note: "Entry ₹200 for three, groundnuts at the gate"
@@ -125,30 +129,46 @@ days:
       - name: De Jones Tea Bar
         type: food
         note: "Tea"
+        lat: 11.409
+        lng: 76.699
       - name: Moody's and Varkey
         type: food
         note: "Hot chocolate, croissant and puffs at Moody's, and Ooty varkey from the Adduppu Varkey factory"
+        lat: 11.4105
+        lng: 76.6965
       - name: Zostel Ooty, Pudumund
         type: home
         note: "Auto back to the hostel (₹250)"
+        lat: 11.417
+        lng: 76.667
   - title: Pykara and the pine forests, from the Zostel (3 September)
     route: "https://www.google.com/maps/dir/?api=1&origin=Zostel+Ooty+Pudumund&destination=Zostel+Ooty+Pudumund&waypoints=Pine+Forest+Ooty%7C8th+Mile+Ooty%7C9th+Mile+Ooty%7C6th+Mile+Shooting+Point+Ooty%7CPykara+Waterfall%7CPykara+Lake&travelmode=driving"
     stops:
       - name: Zostel Ooty, Pudumund
         type: home
         note: "Breakfast, then the cab for the day (₹2,000 for the car)"
+        lat: 11.417
+        lng: 76.667
       - name: Pine Forest
         type: hill
         note: "Entry ₹120 for three"
+        lat: 11.4339
+        lng: 76.6433
       - name: 8th Mile
         type: hill
         note: "A roadside viewpoint stop on the way up"
+        lat: 11.4382
+        lng: 76.6339
       - name: 9th Mile
         type: hill
         note: "Another stop on the same road"
+        lat: 11.4431
+        lng: 76.6231
       - name: 6th Mile Shooting Point
         type: hill
         note: "Entry ₹120 for three, a film shooting spot with open meadows"
+        lat: 11.4299
+        lng: 76.6519
       - name: Pykara Waterfall
         type: waterfall
         note: "Lunch near the falls (₹420), falls entry ₹120"
@@ -157,26 +177,36 @@ days:
       - name: Pykara Lake
         type: waterfall
         note: "Car entry ₹100, a boat on the water and a bench with a view"
+        lat: 11.4665
+        lng: 76.6075
       - name: Pine Forest, second stop
         type: hill
         note: "Entry ₹120 for three"
+        lat: 11.4339
+        lng: 76.6433
       - name: Cosmic Cups
         type: food
         note: "Chai, ₹120 for three"
+        lat: 11.426
+        lng: 76.657
       - name: Zostel Ooty, Pudumund
         type: home
         note: "Dinner at the Zostel (₹486) and a campfire at 12 degrees"
+        lat: 11.417
+        lng: 76.667
   - title: Toy train to Coonoor, then home (4 September)
     route: "https://www.google.com/maps/dir/?api=1&origin=Zostel+Ooty+Pudumund&destination=Coimbatore+Railway+Station&waypoints=Ooty+Railway+Station%7CCoonoor+Railway+Station%7CDolphin%27s+Nose+Coonoor%7CLa+Bella+Vie+Coonoor&travelmode=driving"
     stops:
       - name: Zostel Ooty, Pudumund
         type: home
         note: "Auto to the Ooty railway station (₹250)"
+        lat: 11.417
+        lng: 76.667
       - name: Ooty Railway Station (UAM)
         type: train
         note: "Chai (₹55), then the 9:15 toy train, second sitting"
         lat: 11.4088
-        lng: 76.6990
+        lng: 76.699
       - name: Coonoor Railway Station (ONR)
         type: train
         note: "Arrives 10:20, about 19 km. Then a Coonoor auto for the day (₹1,200)"
@@ -185,12 +215,18 @@ days:
       - name: Dolphin's Nose
         type: hill
         note: "Entry ₹120 for three"
+        lat: 11.348
+        lng: 76.824
       - name: La Bella Vie
         type: food
         note: "Lunch and chai (₹1,523 and ₹315 for three), the house from Kapoor and Sons"
+        lat: 11.3525
+        lng: 76.794
       - name: Coonoor bus stand
         type: bus
         note: "A short bus from La Bella Vie, then the bus to Coimbatore (₹183 for three)"
+        lat: 11.35
+        lng: 76.792
       - name: Coimbatore
         type: town
         note: "Auto to the station, the AC waiting hall (₹150), dinner at Valarmathi Mess"
