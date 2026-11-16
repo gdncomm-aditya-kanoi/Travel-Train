@@ -12,7 +12,7 @@ stay_short: "None, back in Manali by evening"
 cover: /assets/images/naggar-jana/cover.jpg
 cover_alt: "A collage of Jana village, a home-cooked meal, a woman cooking and apples"
 cover_strip: true             # show the cover whole at full width
-card: /assets/images/naggar-jana/card.jpg
+card: /assets/images/naggar-jana/card-home.jpg
 banner: /assets/images/naggar-jana/banner.svg
 gallery: []
 
