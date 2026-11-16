@@ -16,7 +16,10 @@ card: /assets/images/mysore/card.jpg
 banner: /assets/images/mysore/banner.svg
 gallery: []
 
-instagram: []
+instagram:
+  - https://www.instagram.com/p/DDYq2oLz_lx/?img_index=1
+  - https://www.instagram.com/p/DZEW6nziTMq/?img_index=1
+  - https://www.instagram.com/p/DDDCXoBTKs6/
 
 expenses:                   # rupees per person, for the one day I did (the sheet's shared items split in half; the souvenir magnet is left out)
   - category: Getting there
