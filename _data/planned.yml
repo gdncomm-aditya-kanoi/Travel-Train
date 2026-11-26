@@ -19,7 +19,9 @@
   region: "Abroad"
   routes:
     - label: "Sri Lanka"
-      stops: ["Colombo", "Kandy", "Ella", "Nilwella", "Mirissa", "Galle"]
+      when: "14 to 22 March 2027"
+      url: "/plans/sri-lanka/"
+      stops: ["Colombo", "Sigiriya", "Kandy", "Nuwara Eliya", "Ella", "Mirissa", "Galle"]
     - label: "Bali"
       stops: ["Denpasar", "Ubud", "Sidemen", "Nusa Penida", "Uluwatu", "Canggu"]
 - title: "Himachal Hill Villages"

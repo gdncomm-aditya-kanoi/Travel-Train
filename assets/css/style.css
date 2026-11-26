@@ -404,3 +404,6 @@ a.series-item:hover { outline: 2px solid var(--ink); outline-offset: 2px; }
 .route-option { display: flex; flex-direction: column; gap: 10px; }
 .route-label { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; font-weight: 600; color: var(--ink); text-align: left; }
 .route-or { align-self: center; font-family: var(--serif); font-style: italic; color: var(--muted); padding: 6px 0; }
+.route-when { font-weight: 400; letter-spacing: 0; text-transform: none; font-size: 13px; color: var(--muted); border: 1px dashed var(--rule); border-radius: 999px; padding: 2px 10px; margin-left: 6px; }
+.route-link { font-weight: 600; letter-spacing: 0; text-transform: none; font-size: 14px; margin-left: 10px; }
+.plan .story h3 { margin-top: 40px; }

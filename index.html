@@ -69,7 +69,7 @@ layout: default
       <div class="route-set">
         {% for r in p.routes %}
         <div class="route-option">
-          <span class="route-label">{{ r.label }}</span>
+          <span class="route-label">{{ r.label }}{% if r.when %} <span class="route-when">{{ r.when }}</span>{% endif %}{% if r.url %} <a class="route-link" href="{{ r.url | relative_url }}">See the plan</a>{% endif %}</span>
           <ol class="route" aria-label="{{ r.label }}: {{ r.stops | join: ', ' }}">
             {% for stop in r.stops %}<li><span class="route-dot"></span><span class="route-name">{{ stop }}</span></li>{% endfor %}
           </ol>
