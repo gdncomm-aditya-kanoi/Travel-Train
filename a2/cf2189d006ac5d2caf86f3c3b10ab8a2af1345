@@ -1,0 +1,21 @@
+assets/css/style.css
+  s_cfb3d9fc65baa6::t_634e6bd48fdeaa 410-438
+plans/sri-lanka.html
+  s_cfb3d9fc65baa6::t_17135e3b9a7c27 19,23-39,41-45,47-48,50-51,58-77,79-127,129-133,136-137,139,142-143,145,155-158,167,172-175,177-185,193,195-199,225-240,244
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "a2cf2189d006ac5d2caf86f3c3b10ab8a2af1345",
+  "prompts": {},
+  "sessions": {
+    "s_cfb3d9fc65baa6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f17aae31-e0db-41bd-9aee-e49907ff7b6a",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
