@@ -1,0 +1,23 @@
+_data/planned.yml
+  s_cfb3d9fc65baa6::t_d559a257323f7e 2,18,20-23
+assets/css/style.css
+  s_cfb3d9fc65baa6::t_d559a257323f7e 505-509
+index.html
+  s_cfb3d9fc65baa6::t_d559a257323f7e 67
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "18ec7d21247562f4b217018acec6581aa4d65bff",
+  "prompts": {},
+  "sessions": {
+    "s_cfb3d9fc65baa6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f17aae31-e0db-41bd-9aee-e49907ff7b6a",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
