@@ -1,0 +1,34 @@
+plans/sri-lanka.html
+  s_cfb3d9fc65baa6::t_6c74b24d076ff8 123
+  s_cfb3d9fc65baa6::t_c82631bada7bea 255
+  s_cfb3d9fc65baa6::t_15030e89eaf3f6 380
+  s_cfb3d9fc65baa6::t_4023602d13bcf3 93
+  s_cfb3d9fc65baa6::t_2abba29ab3b4b7 106
+  s_cfb3d9fc65baa6::t_850b98b08e6614 120
+  s_cfb3d9fc65baa6::t_78ad1be60e7726 121
+  s_cfb3d9fc65baa6::t_7d74799a176cac 36
+  s_cfb3d9fc65baa6::t_7bb864c214fb7c 337-349
+  s_cfb3d9fc65baa6::t_4126b35dae7f01 352-366
+  s_cfb3d9fc65baa6::t_e4c7c55a209e25 19
+  s_cfb3d9fc65baa6::t_f4ad8dc8e4ba0b 122
+  s_cfb3d9fc65baa6::t_7b919db3d2fb7e 75
+  s_cfb3d9fc65baa6::t_2541ab5b0292ea 108
+assets/plans/sri-lanka-places.csv
+  s_cfb3d9fc65baa6::t_87ea6e67147f11 49-64
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "335d102cb4a87c14bcf58dc22fc6bd3f737620f2",
+  "prompts": {},
+  "sessions": {
+    "s_cfb3d9fc65baa6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f17aae31-e0db-41bd-9aee-e49907ff7b6a",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
