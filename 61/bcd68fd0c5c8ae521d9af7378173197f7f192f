@@ -1,0 +1,23 @@
+assets/css/style.css
+  s_cfb3d9fc65baa6::t_1e59d239ffcdee 439-440
+assets/plans/sri-lanka-places.csv
+  s_cfb3d9fc65baa6::t_d01cb9b72d4cf9 1-48
+plans/sri-lanka.html
+  s_cfb3d9fc65baa6::t_66f9c5074b758e 29,131-202
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "61bcd68fd0c5c8ae521d9af7378173197f7f192f",
+  "prompts": {},
+  "sessions": {
+    "s_cfb3d9fc65baa6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f17aae31-e0db-41bd-9aee-e49907ff7b6a",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
