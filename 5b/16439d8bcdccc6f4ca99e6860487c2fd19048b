@@ -1,0 +1,26 @@
+_data/planned.yml
+  s_cfb3d9fc65baa6::t_fd8945a1779a39 24
+assets/css/style.css
+  s_cfb3d9fc65baa6::t_fd8945a1779a39 441-453
+plans/sri-lanka.html
+  s_cfb3d9fc65baa6::t_fd8945a1779a39 4,14,18-21,27,30,46,48,57-165,193,197,202-203,236-238,256-263,266-269,272,279,281,287-290,317,324,333,335-344,346,355-356,359-360,363,386,406,415-416,427,429-432,438-441
+  s_cfb3d9fc65baa6::t_2ff95cd3a1d108 226
+assets/plans/sri-lanka-places.csv
+  s_cfb3d9fc65baa6::t_fd8945a1779a39 15-21,24-27,30,37,39,46-48,54-55,57
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "5b16439d8bcdccc6f4ca99e6860487c2fd19048b",
+  "prompts": {},
+  "sessions": {
+    "s_cfb3d9fc65baa6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f17aae31-e0db-41bd-9aee-e49907ff7b6a",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
