@@ -1,5 +1,5 @@
 # Trips planned for 2027, shown on the home page. Each trip has a name, a region and its stops in order.
-# Add `when: "March 2027"` to a trip once its dates are fixed.
+# Add `when: "March 2027"` to a trip once its dates are fixed. Add `url` and `button` to show a button that opens its plan page.
 - title: "Land's End Temple Circuit"
   region: "Tamil Nadu"
   stops: ["Rameshwaram", "Dhanushkodi", "Kanyakumari"]
@@ -15,15 +15,12 @@
 - title: "North East Trail"
   region: "North East"
   stops: ["Meghalaya", "Assam", "Nagaland"]
-- title: "Island Escape: Sri Lanka or Bali"
+- title: "Sri Lanka"
   region: "Abroad"
-  routes:
-    - label: "Sri Lanka"
-      when: "14 to 22 March 2027"
-      url: "/plans/sri-lanka/"
-      stops: ["Colombo", "Sigiriya", "Kandy", "Ella", "Yala", "Mirissa", "Galle"]
-    - label: "Bali"
-      stops: ["Denpasar", "Ubud", "Sidemen", "Nusa Penida", "Uluwatu", "Canggu"]
+  when: "14 to 22 March 2027"
+  url: "/plans/sri-lanka/"
+  button: "See the Sri Lanka plan"
+  stops: ["Colombo", "Sigiriya", "Kandy", "Ella", "Yala", "Mirissa", "Galle"]
 - title: "Himachal Hill Villages"
   region: "Himachal Pradesh"
   stops: ["Delhi", "Shangarh", "Shoja", "Raghupur Fort", "Bir Billing"]

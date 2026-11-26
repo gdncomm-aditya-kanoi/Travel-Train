@@ -64,6 +64,7 @@ layout: default
         <span class="planned-region">{{ p.region }}</span>
         <h3 class="planned-title">{{ p.title }}</h3>
         {% if p.when %}<span class="planned-when">{{ p.when }}</span>{% endif %}
+        {% if p.url %}<a class="planned-btn" href="{{ p.url | relative_url }}">{{ p.button | default: "See the plan" }} <span aria-hidden="true">&rarr;</span></a>{% endif %}
       </div>
       {% if p.routes %}
       <div class="route-set">
