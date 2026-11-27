@@ -511,3 +511,19 @@ html { scroll-behavior: smooth; }
 .planned-btn { display: inline-flex; align-items: center; gap: 8px; margin-top: 14px; padding: 11px 20px; border-radius: 999px; background: var(--ink); color: #fff; font-family: var(--sans); font-size: 16px; font-weight: 600; text-decoration: none; box-shadow: 0 2px 0 var(--navy); transition: transform .12s, background .12s; }
 .planned-btn:hover, .planned-btn:focus-visible { background: var(--navy); color: #fff; transform: translateY(-1px); }
 .planned-body .planned-btn { display: flex; width: fit-content; }
+
+/* Download buttons on the Sri Lanka plan */
+.dl-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin: 14px 0 6px; }
+.dl-btn { display: flex; align-items: flex-start; gap: 14px; padding: 16px 18px; border: 1.5px solid var(--navy); border-radius: 12px; background: var(--paper); color: var(--navy); text-decoration: none; transition: transform .15s, box-shadow .15s, background .15s; }
+.dl-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(20, 32, 79, .16); background: #fff9ec; text-decoration: none; }
+.dl-btn:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+.dl-btn .ic { width: 38px; height: 38px; padding: 8px; border-radius: 50%; background: var(--navy); color: var(--paper); stroke-width: 2.2; vertical-align: 0; }
+.dl-t { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.dl-t b { font-family: var(--serif); font-size: 19px; font-weight: 500; line-height: 1.2; }
+.dl-m { font-size: 12.5px; font-weight: 600; letter-spacing: .02em; color: var(--ink); }
+.dl-d { font-size: 13.5px; line-height: 1.35; color: var(--text); }
+.dl-main { background: var(--navy); color: var(--paper); border-color: var(--navy); }
+.dl-main:hover { background: #1b2b6b; }
+.dl-main .ic { background: var(--paper); color: var(--navy); }
+.dl-main .dl-m { color: #E9D9A8; }
+.dl-main .dl-d { color: #E6E1D2; }
