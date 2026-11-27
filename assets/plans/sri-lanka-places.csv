@@ -1,12 +1,12 @@
 Name,Address,Description,Stage,Day
-Bandaranaike International Airport (CMB),"Bandaranaike International Airport Katunayake, Sri Lanka","Land 14 Mar 20:50, fly 21 Mar 21:50",Colombo,"Day 1, 8"
+Bandaranaike International Airport (CMB),"Bandaranaike International Airport Katunayake, Sri Lanka","Land 13 Mar 12:15, tuk-tuk drop and fly 21 Mar 21:50",Colombo,"Day 1, 9"
 Kelaniya Raja Maha Vihara,"Kelaniya Raja Maha Vihara Colombo, Sri Lanka","Temple, free",Colombo,Day 2
 Gangaramaya Temple,"Gangaramaya Temple Colombo, Sri Lanka",About LKR 400,Colombo,Day 2
 Seema Malaka Temple,"Seema Malaka Temple Beira Lake Colombo, Sri Lanka",Floating temple on Beira Lake,Colombo,Day 2
 "Kiri Kopi, Flower Road","Kiri Kopi Flower Road Colombo, Sri Lanka","Cafe, about 1,400 to 1,800 INR for two",Colombo,Day 2
 Seed cafe,"Seed cafe Colombo, Sri Lanka","Cafe, about 800 to 1,100 INR for two",Colombo,Day 2
 Colombo Mount Hostel,"Colombo Mount Hostel Mount Lavinia, Sri Lanka","Dorm, on the coastal train line",Colombo,Day 1
-Colombo Fort Railway Station,"Colombo Fort Railway Station, Sri Lanka","Train to Habarana at 15:15 (Day 2), coastal train arrives here (Day 8)",Colombo,"Day 2, 8"
+Colombo Fort Railway Station,"Colombo Fort Railway Station, Sri Lanka",Train to Habarana at 15:15,Colombo,Day 2
 Habarana Railway Station,"Habarana Railway Station, Sri Lanka","Train from Colombo Fort arrives 19:44, then an Uber to Sigiriya",Colombo,Day 2
 Sigiriya Lion Rock,"Sigiriya Rock Fortress, Sri Lanka","Climb early, SAARC rate with original passport",Cultural Triangle,Day 3
 Dambulla Royal Cave Temple,"Dambulla Cave Temple, Sri Lanka",Five cave shrines,Cultural Triangle,Day 3
@@ -16,51 +16,51 @@ Temple of the Sacred Tooth Relic,"Temple of the Sacred Tooth Relic Kandy, Sri La
 Kandy Bus Stand,"Kandy Bus Stand, Sri Lanka","Route 47 bus to Nuwara Eliya, first bus about 06:45",Kandy to Ella,Day 4
 "Nuwara Eliya colonial walk (Grand Hotel, Post Office, Hill Club)","Grand Hotel Nuwara Eliya, Sri Lanka","British colonial buildings, about 1 h",Kandy to Ella,Day 4
 "Victoria Park or Gregory Lake, Nuwara Eliya","Gregory Lake Nuwara Eliya, Sri Lanka","Pick one, about 1 h",Kandy to Ella,Day 4
-Nuwara Eliya Bus Stand,"Nuwara Eliya Bus Stand, Sri Lanka","Lunch, then an Uber tuk-tuk to Nanu Oya",Kandy to Ella,Day 4
-Nanu Oya Railway Station,"Nanu Oya Railway Station, Sri Lanka","Start of the scenic train, 2nd class seat",Kandy to Ella,Day 4
-Ella Railway Station,"Ella Railway Station, Sri Lanka",Train arrives,Kandy to Ella,Day 4
-"Mahamevnawa Buddhist Monastery, Ella","Mahamevnawa Buddhist Monastery Ella, Sri Lanka","Free, dress modestly, about 45 min",Kandy to Ella,"Day 5, 06:30"
-Nine Arch Bridge,"Nine Arches Bridge Ella, Sri Lanka","Golden hour, watch the blue train cross",Kandy to Ella,"Day 4, golden hour"
-Little Adam's Peak,"Little Adam's Peak Ella, Sri Lanka","Optional, only with the 04:30 Yala option, as a sunrise hike",Kandy to Ella,"Day 5, optional"
-Downtown Hostels Ella,"Downtown Hostels Ella, Sri Lanka","Dorm 900 to 1,100 INR",Kandy to Ella,Day 4 night
+Nuwara Eliya Bus Stand,"Nuwara Eliya Bus Stand, Sri Lanka","Arrive by bus. We sleep in Nuwara Eliya, then an Uber tuk-tuk to Nanu Oya on Day 5",Kandy to Ella,Day 4
+Nanu Oya Railway Station,"Nanu Oya Railway Station, Sri Lanka","Start of the scenic train at 09:00, 2nd class seat",Kandy to Ella,Day 5
+Ella Railway Station,"Ella Railway Station, Sri Lanka",Train arrives about 12:00,Kandy to Ella,Day 5
+"Mahamevnawa Buddhist Monastery, Ella","Mahamevnawa Buddhist Monastery Ella, Sri Lanka","Free, dress modestly, about 45 min",Kandy to Ella,"Day 6, 06:30"
+Nine Arch Bridge,"Nine Arches Bridge Ella, Sri Lanka","Golden hour, watch the blue train cross",Kandy to Ella,"Day 5, golden hour"
+Little Adam's Peak,"Little Adam's Peak Ella, Sri Lanka","Afternoon hike, about 1.5 h",Kandy to Ella,"Day 5, afternoon"
+Downtown Hostels Ella,"Downtown Hostels Ella, Sri Lanka","Dorm 900 to 1,100 INR",Kandy to Ella,Day 5 night
 "Hey Mama, Mirissa","Hey Mama Mirissa, Sri Lanka",Beachfront kottu roti,South coast,If time
-"N Ice Cream and Coffee, Mirissa","N Ice Cream and Coffee Mirissa, Sri Lanka",Ice cream and coffee,South coast,Day 6
-"Shady Lane, Mirissa","Shady Lane Mirissa, Sri Lanka",Smoothie bowls,South coast,Day 7
-"flow cafe, Weligama","flow cafe Weligama, Sri Lanka",Brunch and brews,South coast,Day 6
-"Marshmellow Surf Cafe, Ahangama","Marshmellow Surf Cafe Ahangama, Sri Lanka",Coastal road coffee,South coast,Day 7
-"Cactus, Ahangama","Cactus cafe Ahangama, Sri Lanka",Health plates,South coast,Day 7
-"Black Honey cafe, Ahangama","Black Honey cafe Ahangama, Sri Lanka","Smoothie bowls, focaccia",South coast,Day 7
-"Dream Cabana, Dalawella Beach Swing","Dream Cabana Dalawella Beach Swing, Sri Lanka",Palm tree rope swing,South coast,Day 7
-Galle Dutch Fort,"Galle Fort, Sri Lanka","UNESCO ramparts, free",South coast,Day 8
-KiXi Fort Galle,"KiXi Fort Galle, Sri Lanka",Cafe in the fort,South coast,Day 8
-"Salty Sand Hostel, Mirissa","Salty Sand Hostel Mirissa, Sri Lanka","Dorm 1,100 to 1,300 INR",South coast,Day 6 night
+"N Ice Cream and Coffee, Mirissa","N Ice Cream and Coffee Mirissa, Sri Lanka",Ice cream and coffee,South coast,Day 7
+"Shady Lane, Mirissa","Shady Lane Mirissa, Sri Lanka",Smoothie bowls,South coast,Day 8
+"flow cafe, Weligama","flow cafe Weligama, Sri Lanka",Brunch and brews,South coast,Day 7
+"Marshmellow Surf Cafe, Ahangama","Marshmellow Surf Cafe Ahangama, Sri Lanka",Coastal road coffee,South coast,Day 8
+"Cactus, Ahangama","Cactus cafe Ahangama, Sri Lanka",Health plates,South coast,Day 8
+"Black Honey cafe, Ahangama","Black Honey cafe Ahangama, Sri Lanka","Smoothie bowls, focaccia",South coast,Day 8
+"Dream Cabana, Dalawella Beach Swing","Dream Cabana Dalawella Beach Swing, Sri Lanka",Palm tree rope swing,South coast,Day 8
+Galle Dutch Fort,"Galle Fort, Sri Lanka","UNESCO ramparts, free",South coast,Day 9
+KiXi Fort Galle,"KiXi Fort Galle, Sri Lanka",Cafe in the fort,South coast,Day 9
+"Salty Sand Hostel, Mirissa","Salty Sand Hostel Mirissa, Sri Lanka","Dorm 1,100 to 1,300 INR",South coast,Day 7 night
 Pidurangala Rock,"Pidurangala Rock Sigiriya, Sri Lanka",Sunrise view of Sigiriya,Extra,If time
 Polonnaruwa Ancient City,"Polonnaruwa Ancient City, Sri Lanka",Needs an extra day,Extra,If time
 "Royal Botanic Garden, Peradeniya","Royal Botanic Gardens Peradeniya, Sri Lanka",On the way into Kandy,Extra,If time
 Pinnawala Elephant Orphanage,"Pinnawala Elephant Orphanage, Sri Lanka",Between Colombo and Kandy,Extra,If time
 "Horton Plains, World's End","Horton Plains National Park, Sri Lanka",Start before dawn,Extra,If time
 Ella Rock,"Ella Rock, Sri Lanka","Hike, 3 to 4 hours",Extra,If time
-Ravana Falls,"Ravana Falls Ella, Sri Lanka",On the road to Tissamaharama,South coast,Day 5
+Ravana Falls,"Ravana Falls Ella, Sri Lanka",On the road to Tissamaharama,South coast,Day 6
 "Lipton's Seat, Haputale","Lipton's Seat Haputale, Sri Lanka",Tea country viewpoint,Extra,If time
-"Coconut Tree Hill, Mirissa","Coconut Tree Hill Mirissa, Sri Lanka",Sunset,South coast,"Day 7, sunrise"
+"Coconut Tree Hill, Mirissa","Coconut Tree Hill Mirissa, Sri Lanka",Sunset,South coast,"Day 8, sunrise"
 Unawatuna Jungle Beach,"Jungle Beach Unawatuna, Sri Lanka",Near the Galle day,Extra,If time
-"Weligama, Taprobane Island","Taprobane Island Weligama, Sri Lanka",Surf town,South coast,"Day 7, viewpoint"
+"Weligama, Taprobane Island","Taprobane Island Weligama, Sri Lanka",Surf town,South coast,"Day 8, viewpoint"
 Hikkaduwa,"Hikkaduwa Beach, Sri Lanka",Turtles and coral,Extra,If time
 Mount Lavinia Beach,"Mount Lavinia Beach, Sri Lanka",On the coastal train line,Extra,If time
-Galle Face Green,"Galle Face Green Colombo, Sri Lanka","Sunset walk, only if you reach Colombo early",Colombo,If time
-Ravana Cave,"Ravana Cave Ella, Sri Lanka",Near Ravana Falls,South coast,"Day 5, if time"
-"Parrot Rock, Mirissa","Parrot Rock Mirissa, Sri Lanka",Rock at the beach,South coast,Day 6
-"Secret Beach, Mirissa","Secret Beach Mirissa, Sri Lanka",Quiet cove,South coast,Day 6
-Galle Lighthouse,"Galle Lighthouse, Sri Lanka",In Galle Fort,South coast,Day 8
-"Pedlar Street, Galle","Pedlar Street Galle Fort, Sri Lanka",Cafes and shops,South coast,Day 8
+Galle Face Green,"Galle Face Green Colombo, Sri Lanka",Sunset walk and street snacks,Colombo,"Day 1, sunset"
+Ravana Cave,"Ravana Cave Ella, Sri Lanka",Near Ravana Falls,South coast,"Day 6, if time"
+"Parrot Rock, Mirissa","Parrot Rock Mirissa, Sri Lanka",Rock at the beach,South coast,Day 7
+"Secret Beach, Mirissa","Secret Beach Mirissa, Sri Lanka",Quiet cove,South coast,Day 7
+Galle Lighthouse,"Galle Lighthouse, Sri Lanka",In Galle Fort,South coast,Day 9
+"Pedlar Street, Galle","Pedlar Street Galle Fort, Sri Lanka",Cafes and shops,South coast,Day 9
 "Tsunami Museum, Telwatta","Tsunami Photo Museum Telwatta, Sri Lanka",On the coastal train line,Extra,If time
-Pettah Market,"Pettah Market Colombo, Sri Lanka",Loud and busy,Colombo,If time
-Jami Ul-Alfar Mosque,"Jami Ul-Alfar Mosque Colombo, Sri Lanka",In Pettah,Colombo,If time
-Tissamaharama (Yala base),"Tissamaharama, Sri Lanka",Guesthouse and jeep pick-up,South coast,Day 5
-Yala National Park,"Yala National Park, Sri Lanka","Jeep safari, entry 14:00 (or 04:30 on Day 6), no tuk-tuk inside",South coast,Day 5
-"Tuk-tuk drop-off, Galle","Galle Fort, Sri Lanka",About USD 50 surcharge,South coast,Day 8
-"Tuk-tuk pick-up, Ella","Ella, Sri Lanka","Collect the tuk-tuk, about USD 40 surcharge",Kandy to Ella,Day 5
-"The Cliff, Weligama","The Cliff Weligama, Sri Lanka","Sunset dining on a cliff, arrive about 17:30",South coast,"Day 6, sunset"
-"Tiki Cliff Top bar and restaurant, Weligama","Tiki Cliff Top Restaurant and Bar Weligama, Sri Lanka","Cliff-top bar over Weligama Bay, lunch",South coast,"Day 6, lunch"
-Dalawella Beach,"Dalawella Beach, Sri Lanka","Beach and rocks, before the swing",South coast,Day 7
-"Nature Rex Hostel, Ahangama","Nature Rex Hostel Ahangama, Sri Lanka","Dorm 800 to 1,050 INR",South coast,Day 7 night
+Pettah Market,"Pettah Market Colombo, Sri Lanka","Bazaar streets, spices and cloth",Colombo,Day 1
+Jami Ul-Alfar Mosque,"Jami Ul-Alfar Mosque Colombo, Sri Lanka","The red-and-white mosque in Pettah, dress modestly",Colombo,Day 1
+Tissamaharama (Yala base),"Tissamaharama, Sri Lanka",Guesthouse and jeep pick-up,South coast,Day 6
+Yala National Park,"Yala National Park, Sri Lanka","Jeep safari, entry 14:00 (or 04:30 on Day 7), no tuk-tuk inside",South coast,Day 6
+"Tuk-tuk drop-off, airport","Bandaranaike International Airport Katunayake, Sri Lanka",Ask the company. The priced drop was Galle (about USD 50 surcharge),South coast,Day 9
+"Tuk-tuk pick-up, Ella","Ella, Sri Lanka","Collect the tuk-tuk, about USD 40 surcharge",Kandy to Ella,Day 6
+"The Cliff, Weligama","The Cliff Weligama, Sri Lanka","Sunset dining on a cliff, arrive about 17:30",South coast,"Day 7, sunset"
+"Tiki Cliff Top bar and restaurant, Weligama","Tiki Cliff Top Restaurant and Bar Weligama, Sri Lanka","Cliff-top bar over Weligama Bay, lunch",South coast,"Day 7, lunch"
+Dalawella Beach,"Dalawella Beach, Sri Lanka","Beach and rocks, before the swing",South coast,Day 8
+"Nature Rex Hostel, Ahangama","Nature Rex Hostel Ahangama, Sri Lanka","Dorm 800 to 1,050 INR",South coast,Day 8 night
