@@ -1,0 +1,26 @@
+assets/plans/sri-lanka-checklist.txt
+  s_cfb3d9fc65baa6::t_cbcb66e6e7eaef 1-175
+assets/plans/sri-lanka-checklist.md
+  s_cfb3d9fc65baa6::t_cbcb66e6e7eaef 1-165
+plans/sri-lanka.html
+  s_cfb3d9fc65baa6::t_a23ee9aca1471b 50
+  s_cfb3d9fc65baa6::t_c1e95572b8cc33 15,319,335-347,349-409,422,454,487-498
+assets/css/style.css
+  s_cfb3d9fc65baa6::t_1ae9c817aced3d 530-536
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "c6194e2cb4bc713deb886374a02dfedab8a0ac28",
+  "prompts": {},
+  "sessions": {
+    "s_cfb3d9fc65baa6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f17aae31-e0db-41bd-9aee-e49907ff7b6a",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
