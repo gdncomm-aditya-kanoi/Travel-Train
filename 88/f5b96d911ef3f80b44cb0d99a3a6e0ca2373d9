@@ -1,0 +1,21 @@
+plans/sri-lanka-checklist.html
+  s_cfb3d9fc65baa6::t_29a9e6ecc0fc2c 3-4,7-33,37-78,80-90,97,99-121,123-163
+  s_cfb3d9fc65baa6::t_15b54a2840003b 79
+  s_cfb3d9fc65baa6::t_91a9c67e23a5ab 34-36,91-96,98,122
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "88f5b96d911ef3f80b44cb0d99a3a6e0ca2373d9",
+  "prompts": {},
+  "sessions": {
+    "s_cfb3d9fc65baa6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f17aae31-e0db-41bd-9aee-e49907ff7b6a",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
