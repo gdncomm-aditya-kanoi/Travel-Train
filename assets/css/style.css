@@ -527,3 +527,10 @@ html { scroll-behavior: smooth; }
 .dl-main .ic { background: var(--paper); color: var(--navy); }
 .dl-main .dl-m { color: #E9D9A8; }
 .dl-main .dl-d { color: #E6E1D2; }
+
+/* Places by city, small tables side by side */
+.city-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px 22px; margin: 14px 0; align-items: start; }
+.city-card h4 { font-size: 16px; margin: 0 0 2px; }
+.city-card .timetable { min-width: 0; margin: 4px 0 0; font-size: 13px; }
+.stay-table td { height: 34px; }
+.stay-table { min-width: 720px; }
