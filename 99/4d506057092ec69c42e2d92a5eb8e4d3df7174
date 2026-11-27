@@ -1,0 +1,26 @@
+assets/plans/sri-lanka-places.csv
+  s_cfb3d9fc65baa6::t_afaae75081101e 2,8-10,14,16-18,22-24,50,57-58
+plans/sri-lanka.html
+  s_cfb3d9fc65baa6::t_53d3daf4080879 3-4,15,17-18,51-52,56-57,59-69,71-84,89,91-93,100,102,104,112-116,124-129,131,135-144,149,151,201,204-211,215,249
+  s_cfb3d9fc65baa6::t_0269e421cbbd19 53
+  s_cfb3d9fc65baa6::t_f7331fdb1c4afb 85,310-312,314,319,326-327,331-335,339-341,371,386,394,396,422,424-430,439-442,451,458,460,472,505-506,523-526,531,534-536,549,571-573,578,581-582,625
+  s_cfb3d9fc65baa6::t_afaae75081101e 550
+  s_cfb3d9fc65baa6::t_3de2b870905270 302
+  s_cfb3d9fc65baa6::t_c9a4bf03bce08b 47
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "994d506057092ec69c42e2d92a5eb8e4d3df7174",
+  "prompts": {},
+  "sessions": {
+    "s_cfb3d9fc65baa6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f17aae31-e0db-41bd-9aee-e49907ff7b6a",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
