@@ -1,163 +1,182 @@
 ---
 layout: default
 title: "Sri Lanka trip tracker"
-summary: "Tick off bookings city by city and record stays, amounts, links, tickets and PDFs. Saved on this device only."
+summary: "City-wise tracker table: stays, links, PDFs, amounts and notes, synced to a Google Sheet."
 permalink: /plans/sri-lanka-checklist/
 ---
 <style>
-.tk{max-width:900px;margin:0 auto;padding:0 0 60px}
+.tk{max-width:1100px;margin:0 auto;padding:0 0 60px}
 .tk h1{margin:0 0 4px}
-.tk .sub{color:var(--muted);margin:0 0 14px;font-size:14px}
-.tk-top{position:sticky;top:0;z-index:5;background:var(--paper,#f1e9db);border-bottom:1.5px solid var(--navy,#1b2b6b);padding:10px 0;margin-bottom:14px}
+.tk .sub{color:var(--muted);margin:0 0 12px;font-size:14px}
+.tk-top{position:sticky;top:0;z-index:5;background:var(--paper,#f1e9db);border-bottom:1.5px solid var(--navy,#1b2b6b);padding:10px 0;margin-bottom:12px}
 .tk-bar{height:10px;background:#ddd3bd;border-radius:6px;overflow:hidden}
 .tk-bar i{display:block;height:100%;width:0;background:var(--navy,#1b2b6b);transition:width .3s}
-.tk-stats{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:14px;margin-top:6px;align-items:center}
-.tk-stats b{font-weight:600}
-.tk-tools{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
-.tk button,.tk .btn{font:inherit;font-size:13px;padding:6px 11px;border:1px solid var(--navy,#1b2b6b);background:transparent;color:var(--navy,#1b2b6b);border-radius:6px;cursor:pointer}
+.tk-stats{display:flex;flex-wrap:wrap;gap:4px 18px;font-size:14px;margin-top:6px}
+.tk button{font:inherit;font-size:13px;padding:6px 11px;border:1px solid var(--navy,#1b2b6b);background:transparent;color:var(--navy,#1b2b6b);border-radius:6px;cursor:pointer}
 .tk button:hover{background:rgba(27,43,107,.08)}
+.tk-tools{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
 .tk .nav{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
 .tk .nav a{font-size:13px;padding:4px 10px;border:1px solid var(--line,#d8cfba);border-radius:20px;text-decoration:none;color:inherit}
-.tk .nav a.full{background:var(--navy,#1b2b6b);color:#fff;border-color:var(--navy,#1b2b6b)}
-.city{border:1px solid var(--line,#d8cfba);border-radius:10px;margin:0 0 14px;background:rgba(255,255,255,.35)}
-.city>summary{list-style:none;cursor:pointer;padding:12px 14px;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.city{margin:0 0 18px}
+.city>summary{list-style:none;cursor:pointer;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;padding:4px 0}
 .city>summary::-webkit-details-marker{display:none}
-.city h2{margin:0;font-size:20px}
+.city h2{margin:0;font-size:21px}
 .city .when{color:var(--muted);font-size:13px}
 .city .cp{margin-left:auto;font-size:13px;color:var(--muted)}
-.it{border-top:1px solid var(--line,#d8cfba);padding:8px 14px}
-.it.done .tt{text-decoration:line-through;color:var(--muted)}
-.row{display:flex;gap:10px;align-items:flex-start}
-.row input[type=checkbox]{width:20px;height:20px;margin-top:2px;flex:none;accent-color:var(--navy,#1b2b6b)}
-.tt{flex:1;font-size:15px}
-.tt .hint{display:block;color:var(--muted);font-size:12.5px}
-.tkcs{display:flex;gap:6px;flex-wrap:wrap;margin-top:4px}
-.tkc{font-size:12px;padding:1px 8px;border-radius:12px;background:#e6dfcb;text-decoration:none;color:inherit}
-.tkc.off{background:#dfe5ff}
-.stay .tt:before{content:"Stay";font-size:11px;letter-spacing:.06em;text-transform:uppercase;background:var(--navy,#1b2b6b);color:#fff;border-radius:4px;padding:1px 6px;margin-right:6px}
-.it>details>summary{cursor:pointer;font-size:12.5px;color:var(--navy,#1b2b6b);margin:4px 0 0 30px;list-style:none}
-.it>details>summary::-webkit-details-marker{display:none}
-.it>details>summary:before{content:"+ "}
-.it>details[open]>summary:before{content:"- "}
-.fld{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px;margin:8px 0 4px 30px}
-.fld label{font-size:12px;color:var(--muted);display:flex;flex-direction:column;gap:2px}
-.fld input,.fld select,.fld textarea{font:inherit;font-size:14px;padding:6px 8px;border:1px solid var(--line,#cfc6ae);border-radius:6px;background:#fff;color:inherit;width:100%;box-sizing:border-box}
-.fld .wide{grid-column:1/-1}
-.amt{display:flex;gap:6px}.amt select{width:84px;flex:none}
-.files{margin:6px 0 4px 30px}
-.files .f{display:inline-flex;flex-direction:column;gap:3px;margin:4px 8px 4px 0;font-size:12px;max-width:140px;vertical-align:top}
-.files img{width:130px;height:90px;object-fit:cover;border-radius:6px;border:1px solid var(--line)}
-.files .pdf{width:130px;height:90px;display:flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:6px;background:#fff;font-weight:600}
-.files .f button{padding:1px 6px;font-size:11px}
-.add{padding:10px 14px;border-top:1px solid var(--line,#d8cfba);display:flex;gap:8px;flex-wrap:wrap}
-.add button{font-size:13px}
+.tkt{width:100%;min-width:860px;border-collapse:collapse;font-size:14px;background:rgba(255,255,255,.4)}
+.tkt th{font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);text-align:left;padding:6px 6px;border-bottom:1.5px solid var(--navy,#1b2b6b);font-weight:500}
+.tkt td{padding:4px 6px;border-bottom:1px solid var(--line,#d8cfba);vertical-align:top}
+.tkt tr.done .tk-task{text-decoration:line-through;color:var(--muted)}
+.tkt td.c0{width:30px}.tkt td.c1{width:26%}.tkt td.c2{width:15%}.tkt td.c3,.tkt td.c4{width:15%}.tkt td.c5{width:13%}
+.tkt input[type=checkbox]{width:18px;height:18px;accent-color:var(--navy,#1b2b6b);margin-top:3px}
+.tkt input[type=text],.tkt input[type=url],.tkt input[type=number],.tkt select,.tkt textarea{font:inherit;font-size:13px;width:100%;box-sizing:border-box;border:1px solid transparent;background:transparent;padding:4px 5px;border-radius:5px;color:inherit}
+.tkt input:hover,.tkt select:hover,.tkt textarea:hover{border-color:var(--line,#cfc6ae)}
+.tkt input:focus,.tkt select:focus,.tkt textarea:focus{outline:none;border-color:var(--navy,#1b2b6b);background:#fff}
+.tkt textarea{resize:vertical;min-height:28px}
+.tk-task .hint{display:block;color:var(--muted);font-size:12px}
+.tk-task .off{display:block;font-size:12px;margin:2px 0 0}
+.tk-task .st{font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;background:var(--navy,#1b2b6b);color:#fff;border-radius:4px;padding:1px 5px;margin-right:5px}
+.lk{display:flex;align-items:center;gap:2px}.lk a{font-size:13px;text-decoration:none;padding:0 3px}
+.am{display:flex;gap:3px}.am select{width:60px;flex:none}
+.tkt tfoot td{font-weight:600;border-bottom:0;font-size:13px}
+.tk.hide-done tr.done{display:none}
 .tk .note{font-size:12.5px;color:var(--muted)}
-.tk.hide-done .it.done{display:none}
-@media(max-width:560px){.fld,.files{margin-left:0}.it>details>summary{margin-left:0}}
+#gate{max-width:340px;margin:60px auto;text-align:center}
+#gate input{font:inherit;font-size:18px;text-align:center;padding:8px;width:100%;box-sizing:border-box;border:1px solid var(--navy,#1b2b6b);border-radius:8px;margin:10px 0}
+#setup{border:1px solid var(--line,#d8cfba);border-radius:10px;padding:12px 14px;margin:10px 0;background:rgba(255,255,255,.4);font-size:14px}
+#setup textarea{width:100%;box-sizing:border-box;font:12px/1.4 ui-monospace,Menlo,monospace;height:170px;margin:6px 0}
+#setup input{font:inherit;width:100%;box-sizing:border-box;padding:6px 8px;border:1px solid var(--line,#cfc6ae);border-radius:6px;margin:4px 0 8px}
 </style>
-<div class="tk" id="tk">
+<div id="gate"><h1>Sri Lanka tracker</h1><p>Enter the password.</p><input id="pw" type="password" inputmode="numeric" autocomplete="off" autofocus><div id="pwe" class="note"></div></div>
+<div class="tk" id="tk" hidden>
 <h1>Sri Lanka trip tracker</h1>
-<p class="sub">13 to 21 March 2027. Tick things off, and record where you booked, the amount, the link, the confirmation number and your tickets. Saved in this browser only, so use Back up now to keep a copy.</p>
+<p class="sub">13 to 21 March 2027. Tick, and fill the link, PDF, amount and note cells. Changes save in this browser and, once connected, to your Google Sheet.</p>
 <div class="tk-top">
 <div class="tk-bar"><i id="bar"></i></div>
-<div class="tk-stats"><span><b id="pdone">0</b> of <b id="ptot">0</b> done</span><span>Spent: <b id="spent">nothing yet</b></span></div>
+<div class="tk-stats"><span><b id="pdone">0</b> of <b id="ptot">0</b> done</span><span>Spent: <b id="spent">nothing yet</b></span><span id="sync">Google Sheet: not connected</span></div>
 </div>
 <div class="tk-tools">
 <button type="button" id="hd">Hide done</button>
-<button type="button" id="ex">Back up now</button>
-<button type="button" id="im">Restore backup</button>
 <button type="button" id="oa">Open all</button>
 <button type="button" id="ca">Close all</button>
-<input type="file" id="imf" accept="application/json" hidden>
+<button type="button" id="sn">Sync now</button>
+<button type="button" id="cs">Connect Google Sheet</button>
+<a id="os" href="#" target="_blank" rel="noopener" hidden><button type="button">Open the sheet</button></a>
+</div>
+<div id="setup" hidden>
+<b>Connect a Google Sheet, once (about 3 minutes)</b>
+<ol>
+<li>Create a new Google Sheet. Open <b>Extensions, Apps Script</b>, delete what is there and paste the code below.</li>
+<li>In the code, change <code>CHANGE_ME</code> to your password.</li>
+<li><b>Deploy, New deployment, Web app</b>. Execute as <b>Me</b>, access <b>Anyone</b>. Approve the permissions, then copy the <b>Web app URL</b>.</li>
+<li>Paste the URL here and press Save.</li>
+</ol>
+<textarea id="code" readonly></textarea>
+<button type="button" id="cc">Copy the code</button>
+<label>Web app URL<input id="su" type="url" placeholder="https://script.google.com/macros/s/.../exec"></label>
+<label>Sheet link, optional, for the Open the sheet button<input id="sl" type="url" placeholder="https://docs.google.com/spreadsheets/d/..."></label>
+<button type="button" id="ss">Save and fill the sheet</button> <button type="button" id="sx">Disconnect</button>
 </div>
 <div class="nav" id="nav"></div>
 <div id="cities"></div>
-<p class="note">Files and notes stay on this device (this browser). They are not uploaded anywhere and are not on the public site. Clearing the browser data deletes them, so back up now and then. Passport and booking PDFs are private, so keep them here and not in the repository.</p>
+<p class="note">The PDF column takes a link, for example a Google Drive or Gmail link to the ticket or booking PDF, because a sheet cannot hold files. The password screen here is a light lock only. The real protection is the password inside your Apps Script, and keep the sheet itself private.</p>
 <p><a href="{{ '/plans/sri-lanka/' | relative_url }}">Back to the plan</a></p>
 </div>
 <script>
 var CITIES=[{"name": "Before you go", "when": "All of us", "short": "Before", "items": [{"id": "c0-0", "t": "ETA / visa online, one per person", "links": [["eta.gov.lk", "https://eta.gov.lk"]], "hint": "Rules changed in 2026, read the page first"}, {"id": "c0-1", "t": "Flight out, Sat 13 Mar 10:15 BLR to CMB, lands 12:15"}, {"id": "c0-2", "t": "Flight back, Sun 21 Mar 21:50 to 23:20 (IndiGo)", "links": [["goindigo.in", "https://www.goindigo.in"]]}, {"id": "c0-3", "t": "International Driving Permit (physical, A or B endorsement)", "links": [["sarathi.parivahan.gov.in", "https://sarathi.parivahan.gov.in"]], "hint": "Check your licence class covers a three-wheeler"}, {"id": "c0-4", "t": "Sri Lanka local tuk-tuk permit (AA Ceylon, about LKR 3,600) or via the rental company", "links": [["aaceylon.lk", "https://aaceylon.lk/services/idp/"]]}, {"id": "c0-5", "t": "Tuk-tuk rental: Ella pick-up Thu 18 Mar, drop at the airport Sun 21 Mar", "hint": "Get in writing: airport drop price, fits 3 people and bags, cover and excess"}, {"id": "c0-6", "t": "Drone permission from CAASL (start 4 to 6 weeks ahead)", "links": [["caa.lk", "https://www.caa.lk/en/drones"]]}, {"id": "c0-7", "t": "Travel insurance"}, {"id": "c0-8", "t": "SIM or eSIM for Sri Lanka"}, {"id": "c0-9", "t": "Some LKR cash for day one, and a card that works abroad"}, {"id": "c0-10", "t": "Original passports in the bag (SAARC rates need the original)"}, {"id": "c0-11", "t": "Print or save offline: tickets, permits, stay confirmations, the guide PDF"}, {"id": "c0-12", "t": "Download offline Google Maps for Sri Lanka and save the places list"}, {"id": "c0-13", "t": "Add the PickMe and Uber apps"}]}, {"name": "Colombo", "when": "Sat 13 to Sun 14 Mar", "short": "Colombo", "items": [{"id": "c1-0", "t": "Stay, night 1 (Sat 13)", "stay": true}, {"id": "c1-1", "t": "Airport to the hostel: Route 187 bus or PickMe (no booking)"}, {"id": "c1-2", "t": "Sat: Pettah market, Jami Ul-Alfar Mosque, Galle Face Green at sunset"}, {"id": "c1-3", "t": "Sun: Kelaniya, Gangaramaya, Seema Malaka, Kiri Kopi, Seed cafe"}, {"id": "c1-4", "t": "Book the Colombo Fort to Habarana train #6075, Sun 14 Mar 15:15, 2nd class reserved", "links": [["seatreservation.railway.gov.lk", "https://seatreservation.railway.gov.lk"]], "hint": "Opens about 12 Feb 2027, 30 days ahead. Help line 1971"}, {"id": "c1-5", "t": "Ask the hostel to hold the bags until about 14:00 on Sunday"}]}, {"name": "Sigiriya and Dambulla", "when": "Sun 14 to Mon 15 Mar", "short": "Sigiriya", "items": [{"id": "c2-0", "t": "Stay, night 2 (Sun 14)", "stay": true}, {"id": "c2-1", "t": "Tell the host you arrive after 20:30 (Uber from Habarana station, about 40 min)"}, {"id": "c2-2", "t": "Sigiriya Lion Rock ticket, SAARC rate, climb at 06:30", "links": [["eservices.ccf.gov.lk", "https://eservices.ccf.gov.lk/eticketing/landing"]], "hint": "Carry the original passport"}, {"id": "c2-3", "t": "Dambulla Royal Cave Temple ticket", "links": [["eservices.ccf.gov.lk", "https://eservices.ccf.gov.lk/eticketing/landing"]]}, {"id": "c2-4", "t": "Ask the host to keep the bags after check-out"}]}, {"name": "Kandy", "when": "Mon 15 to Tue 16 Mar", "short": "Kandy", "items": [{"id": "c3-0", "t": "Stay, night 3 (Mon 15)", "stay": true}, {"id": "c3-1", "t": "Dambulla to Kandy bus about 13:45 (no booking)"}, {"id": "c3-2", "t": "Temple of the Sacred Tooth Relic ticket (about LKR 2,500 SAARC)", "links": [["sridaladamaligawa.lk", "https://sridaladamaligawa.lk"]]}, {"id": "c3-3", "t": "Mandiya, late lunch: check the opening hours"}, {"id": "c3-4", "t": "Ask about an early check-out, about 06:15 for the 06:45 bus"}]}, {"name": "Nuwara Eliya", "when": "Tue 16 to Wed 17 Mar", "short": "Nuwara Eliya", "items": [{"id": "c4-0", "t": "Route 47 bus from Kandy bus stand, first bus about 06:45 (no booking)"}, {"id": "c4-1", "t": "Stay, night 4 (Tue 16)", "stay": true}, {"id": "c4-2", "t": "Ask for an extra blanket, about 12 C at night"}, {"id": "c4-3", "t": "Colonial walk, then Victoria Park or Gregory Lake, then a tea estate (not picked yet)"}, {"id": "c4-4", "t": "Line up an Uber tuk-tuk to Nanu Oya for about 08:15 on Wed"}]}, {"name": "Ella", "when": "Wed 17 to Thu 18 Mar", "short": "Ella", "items": [{"id": "c5-0", "t": "Book the Nanu Oya to Ella train, Wed 17 Mar 09:00, 2nd class reserved", "links": [["seatreservation.railway.gov.lk", "https://seatreservation.railway.gov.lk"], ["Fallback: 12go.com", "https://12go.com"]], "hint": "Opens about 15 Feb 2027, 30 days ahead. Cannot miss"}, {"id": "c5-1", "t": "Stay, night 5 (Wed 17)", "stay": true}, {"id": "c5-2", "t": "Little Adam's Peak in the afternoon, Nine Arch Bridge at golden hour"}, {"id": "c5-3", "t": "Mahamevnawa monastery 06:30 on Thu (dress modestly)"}, {"id": "c5-4", "t": "Confirm the tuk-tuk pick-up in Ella for 07:30 Thu, and do the pick-up check (photos, fuel, papers)"}]}, {"name": "Tissamaharama and Yala", "when": "Thu 18 to Fri 19 Mar", "short": "Yala", "items": [{"id": "c6-0", "t": "Stay, night 6 (Thu 18)", "stay": true}, {"id": "c6-1", "t": "Stay has parking for the tuk-tuk"}, {"id": "c6-2", "t": "Book the Yala jeep, 14:00 afternoon entry (04:30 is the other option)"}, {"id": "c6-3", "t": "Yala e-ticket / park entry, SAARC rate", "links": [["dwc.lankagate.gov.lk", "https://dwc.lankagate.gov.lk/DWCEpermitApp/"]], "hint": "Print the e-ticket"}, {"id": "c6-4", "t": "Ravana Falls stop on the way from Ella"}]}, {"name": "Mirissa and Weligama", "when": "Fri 19 to Sat 20 Mar", "short": "Mirissa", "items": [{"id": "c7-0", "t": "Stay, night 7 (Fri 19)", "stay": true}, {"id": "c7-1", "t": "Ask to drop bags at about 10:45 on arrival"}, {"id": "c7-2", "t": "Parrot Rock, Secret Beach, N Ice Cream and Coffee"}, {"id": "c7-3", "t": "Lunch Tiki Cliff Top, flow cafe, The Cliff at sunset (arrive about 17:30)"}, {"id": "c7-4", "t": "Whale watching, optional"}]}, {"name": "Ahangama and Dalawella", "when": "Sat 20 Mar", "short": "Ahangama", "items": [{"id": "c8-0", "t": "Stay, night 8 (Sat 20)", "stay": true}, {"id": "c8-1", "t": "Coconut Tree Hill at 06:30"}, {"id": "c8-2", "t": "Shady Lane, Taprobane viewpoint, Marshmellow Surf Cafe, Black Honey, Cactus"}, {"id": "c8-3", "t": "Dalawella beach and the Dream Cabana swing at about 17:00"}]}, {"name": "Galle and the airport", "when": "Sun 21 Mar", "short": "Galle", "items": [{"id": "c9-0", "t": "Check out about 07:30, drive to Galle Fort"}, {"id": "c9-1", "t": "Galle Fort walk, early lunch at KiXi"}, {"id": "c9-2", "t": "Leave Galle by 11:00 on the coast road (tuk-tuks cannot use the expressway, about 6 to 7 h)"}, {"id": "c9-3", "t": "Drop-off at the airport confirmed with the company, and do the drop-off check"}, {"id": "c9-4", "t": "At the airport by about 18:00, flight 21:50"}, {"id": "c9-5", "t": "Backup if the airport drop is refused: return the tuk-tuk in Galle, then a taxi or train"}]}];
-var KEY='srilanka2027-tracker-v1',S={items:{},custom:{}};
-try{S=JSON.parse(localStorage.getItem(KEY))||S}catch(e){}
-S.items=S.items||{};S.custom=S.custom||{};
-function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){alert('Could not save, browser storage is full or blocked.')}}
+var GATE="-1887896272";
+function h(s){var x=5381;s='sl27'+s;for(var i=0;i<s.length;i++)x=((x<<5)+x+s.charCodeAt(i))|0;return String(x)}
+function ss_(k,v){try{if(v===undefined)return sessionStorage.getItem(k);sessionStorage.setItem(k,v)}catch(e){}}
+function ls_(k,v){try{if(v===undefined)return localStorage.getItem(k);if(v===null)localStorage.removeItem(k);else localStorage.setItem(k,v)}catch(e){}}
+function unlock(p){ss_('slpw',p);document.getElementById('gate').hidden=true;document.getElementById('tk').hidden=false;init()}
+document.getElementById('pw').addEventListener('input',function(){var v=this.value;if(h(v)===GATE)unlock(v);else if(v.length>=4)document.getElementById('pwe').textContent='Wrong password'});
+if(ss_('slpw')&&h(ss_('slpw'))===GATE)unlock(ss_('slpw'));
+var S={items:{},custom:{}},dirty={},KEY='srilanka2027-tracker-v2',timer=null;
 function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function save(){ls_(KEY,JSON.stringify(S))}
 function g(id){return S.items[id]||(S.items[id]={})}
-/* files in IndexedDB */
-var dbp=new Promise(function(res,rej){try{var r=indexedDB.open('srilanka2027-files',1);r.onupgradeneeded=function(){r.result.createObjectStore('f')};r.onsuccess=function(){res(r.result)};r.onerror=function(){rej(r.error)}}catch(e){rej(e)}});
-function dbop(m,fn){return dbp.then(function(d){return new Promise(function(res,rej){var t=d.transaction('f',m),s=t.objectStore('f'),q=fn(s);t.oncomplete=function(){res(q&&q.result)};t.onerror=function(){rej(t.error)}})})}
 function allItems(ci){return CITIES[ci].items.concat(S.custom[ci]||[])}
-function itemHTML(it){
- var s=g(it.id),links=(it.links||[]).map(function(l){return '<a class="tkc off" href="'+esc(l[1])+'" target="_blank" rel="noopener">'+esc(l[0])+'</a>'}).join('');
- var yl=s.link?'<a class="tkc" href="'+esc(s.link)+'" target="_blank" rel="noopener">My booking link</a>':'';
- var am=s.amt?'<span class="tkc">'+esc(s.cur||'INR')+' '+esc(s.amt)+'</span>':'';
- var nm=s.name?'<span class="tkc">'+esc(s.name)+'</span>':'';
- var cf=s.conf?'<span class="tkc">Ref '+esc(s.conf)+'</span>':'';
- var nf=(s.files||[]).length?'<span class="tkc">'+s.files.length+' file'+(s.files.length>1?'s':'')+'</span>':'';
- var kind=it.stay?'<label>Type<select data-f="kind"><option value="">Choose</option>'+['Hostel','Hotel','Airbnb','Homestay'].map(function(k){return '<option'+(s.kind===k?' selected':'')+'>'+k+'</option>'}).join('')+'</select></label>':'';
- return '<div class="it'+(it.stay?' stay':'')+(s.done?' done':'')+'" data-id="'+it.id+'"><div class="row"><input type="checkbox" data-f="done"'+(s.done?' checked':'')+'><div class="tt">'+esc(it.t)+(it.hint?'<span class="hint">'+esc(it.hint)+'</span>':'')+'<div class="tkcs" data-chips>'+links+nm+am+cf+yl+nf+'</div></div></div>'+
- '<details><summary>Details, amount, files</summary><div class="fld">'+
- '<label>'+(it.stay?'Hostel, hotel or Airbnb name':'Booked with, or name')+'<input data-f="name" value="'+esc(s.name)+'"></label>'+kind+
- '<label>Amount<div class="amt"><select data-f="cur">'+['INR','LKR','USD'].map(function(c){return '<option'+((s.cur||'INR')===c?' selected':'')+'>'+c+'</option>'}).join('')+'</select><input data-f="amt" inputmode="decimal" value="'+esc(s.amt)+'"></div></label>'+
- '<label>Booking link<input data-f="link" type="url" placeholder="https://" value="'+esc(s.link)+'"></label>'+
- '<label>Confirmation or ticket no.<input data-f="conf" value="'+esc(s.conf)+'"></label>'+
- '<label class="wide">Notes<textarea data-f="note" rows="2">'+esc(s.note)+'</textarea></label></div>'+
- '<div class="files" data-files></div><div class="files"><button type="button" data-add="file">Add PDF or image</button> <input type="file" data-fi accept="application/pdf,image/*" multiple hidden></div></details></div>'}
+function find(id){for(var i=0;i<CITIES.length;i++){var a=allItems(i);for(var j=0;j<a.length;j++)if(a[j].id===id)return{it:a[j],ci:i}}return null}
+function load(){
+ try{var v=JSON.parse(ls_(KEY));if(v){S=v}}catch(e){}
+ if(!ls_(KEY)){try{var o=JSON.parse(ls_('srilanka2027-tracker-v1'));if(o){Object.keys(o.items||{}).forEach(function(k){var a=o.items[k];S.items[k]={done:a.done,name:a.name,kind:a.kind,link:a.link,amt:a.amt,cur:a.cur,note:[a.conf?'Ref '+a.conf:'',a.note||''].filter(Boolean).join('. ')}});S.custom=o.custom||{}}}catch(e){}}
+ S.items=S.items||{};S.custom=S.custom||{}}
+function rowHTML(it){
+ var s=g(it.id),off=(it.links||[]).map(function(l){return '<a class="off" href="'+esc(l[1])+'" target="_blank" rel="noopener">'+esc(l[0])+'</a>'}).join('');
+ var kind=it.stay?'<select data-f="kind"><option value="">Type</option>'+['Hostel','Hotel','Airbnb','Homestay'].map(function(k){return '<option'+(s.kind===k?' selected':'')+'>'+k+'</option>'}).join('')+'</select>':'';
+ function lk(f){return '<div class="lk"><input type="url" data-f="'+f+'" placeholder="paste link" value="'+esc(s[f])+'"><a data-o="'+f+'" href="'+esc(s[f]||'#')+'" target="_blank" rel="noopener"'+(s[f]?'':' hidden')+'>↗</a></div>'}
+ return '<tr data-id="'+it.id+'"'+(s.done?' class="done"':'')+'><td class="c0"><input type="checkbox" data-f="done"'+(s.done?' checked':'')+'></td>'+
+ '<td class="c1 tk-task">'+(it.stay?'<span class="st">Stay</span>':'')+esc(it.t)+(it.hint?'<span class="hint">'+esc(it.hint)+'</span>':'')+off+'</td>'+
+ '<td class="c2"><input type="text" data-f="name" placeholder="'+(it.stay?'Name':'Booked with')+'" value="'+esc(s.name)+'">'+kind+'</td>'+
+ '<td class="c3">'+lk('link')+'</td><td class="c4">'+lk('pdf')+'</td>'+
+ '<td class="c5"><div class="am"><input type="number" step="any" data-f="amt" placeholder="0" value="'+esc(s.amt)+'"><select data-f="cur">'+['INR','LKR','USD'].map(function(c){return '<option'+((s.cur||'INR')===c?' selected':'')+'>'+c+'</option>'}).join('')+'</select></div></td>'+
+ '<td class="c6"><textarea data-f="note" rows="1" placeholder="note">'+esc(s.note)+'</textarea></td></tr>'}
 function cityHTML(c,ci){
- return '<details class="city" id="c'+ci+'" open><summary><h2>'+esc(c.name)+'</h2><span class="when">'+esc(c.when)+'</span><span class="cp" data-cp="'+ci+'"></span></summary><div>'+allItems(ci).map(itemHTML).join('')+
- '<div class="add"><button type="button" data-addi="'+ci+'">+ Add an item</button><button type="button" data-adds="'+ci+'">+ Add another stay</button></div></div></details>'}
+ return '<details class="city" id="c'+ci+'" open><summary><h2>'+esc(c.name)+'</h2><span class="when">'+esc(c.when)+'</span><span class="cp" data-cp="'+ci+'"></span></summary>'+
+ '<div class="table-scroll"><table class="tkt"><thead><tr><th></th><th>To do</th><th>Name</th><th>Booking link</th><th>PDF or ticket link</th><th>Amount</th><th>Note</th></tr></thead><tbody>'+allItems(ci).map(rowHTML).join('')+'</tbody>'+
+ '<tfoot><tr><td></td><td colspan="4"><button type="button" data-addi="'+ci+'">+ Add a row</button> <button type="button" data-adds="'+ci+'">+ Add a stay</button></td><td data-tot="'+ci+'"></td><td></td></tr></tfoot></table></div></details>'}
 function render(){
+ var open=[].map.call(document.querySelectorAll('.city'),function(c){return c.open});
  document.getElementById('cities').innerHTML=CITIES.map(cityHTML).join('');
- document.getElementById('nav').innerHTML='<a class="full" href="#tk">Top</a>'+CITIES.map(function(c,i){return '<a href="#c'+i+'">'+esc(c.short)+'</a>'}).join('');
- document.querySelectorAll('.it').forEach(function(el){drawFiles(el)});refresh()}
+ document.querySelectorAll('.city').forEach(function(c,i){if(open[i]===false)c.open=false});
+ document.getElementById('nav').innerHTML=CITIES.map(function(c,i){return '<a href="#c'+i+'">'+esc(c.short)+'</a>'}).join('');
+ refresh()}
+function fmt(m){var p=Object.keys(m).map(function(k){return k+' '+Math.round(m[k]).toLocaleString('en-IN')});return p.join(' + ')}
 function refresh(){
  var tot=0,done=0,sp={};
- CITIES.forEach(function(c,ci){var t=0,d=0;allItems(ci).forEach(function(it){t++;var s=S.items[it.id]||{};if(s.done)d++;var a=parseFloat(String(s.amt||'').replace(/,/g,''));if(a>0){var k=s.cur||'INR';sp[k]=(sp[k]||0)+a}});tot+=t;done+=d;var e=document.querySelector('[data-cp="'+ci+'"]');if(e)e.textContent=d+' / '+t});
+ CITIES.forEach(function(c,ci){var t=0,d=0,cs={};allItems(ci).forEach(function(it){t++;var s=S.items[it.id]||{};if(s.done)d++;var a=parseFloat(s.amt);if(a>0){var k=s.cur||'INR';cs[k]=(cs[k]||0)+a;sp[k]=(sp[k]||0)+a}});tot+=t;done+=d;
+  var e=document.querySelector('[data-cp="'+ci+'"]');if(e)e.textContent=d+' / '+t;var f=document.querySelector('[data-tot="'+ci+'"]');if(f)f.textContent=fmt(cs)})
  document.getElementById('pdone').textContent=done;document.getElementById('ptot').textContent=tot;
  document.getElementById('bar').style.width=(tot?done*100/tot:0)+'%';
- var parts=Object.keys(sp).map(function(k){return k+' '+Math.round(sp[k]).toLocaleString('en-IN')});
- document.getElementById('spent').textContent=parts.length?parts.join(' + '):'nothing yet'}
-function chips(el){
- var id=el.dataset.id,it=findItem(id),s=g(id);
- el.querySelector('[data-chips]').innerHTML=(it.links||[]).map(function(l){return '<a class="tkc off" href="'+esc(l[1])+'" target="_blank" rel="noopener">'+esc(l[0])+'</a>'}).join('')+(s.name?'<span class="tkc">'+esc(s.name)+'</span>':'')+(s.amt?'<span class="tkc">'+esc(s.cur||'INR')+' '+esc(s.amt)+'</span>':'')+(s.conf?'<span class="tkc">Ref '+esc(s.conf)+'</span>':'')+(s.link?'<a class="tkc" href="'+esc(s.link)+'" target="_blank" rel="noopener">My booking link</a>':'')+((s.files||[]).length?'<span class="tkc">'+s.files.length+' file'+(s.files.length>1?'s':'')+'</span>':'')}
-function findItem(id){for(var i=0;i<CITIES.length;i++){var a=allItems(i);for(var j=0;j<a.length;j++)if(a[j].id===id)return a[j]}return{}}
-var urls=[];
-function drawFiles(el){
- var s=g(el.dataset.id),box=el.querySelector('[data-files]');box.innerHTML='';
- (s.files||[]).forEach(function(f){
-  var d=document.createElement('div');d.className='f';
-  dbop('readonly',function(st){return st.get(f.id)}).then(function(b){
-   if(!b){d.innerHTML='<div class="pdf">missing</div>';return}
-   var u=URL.createObjectURL(b);urls.push(u);
-   d.innerHTML=(f.type.indexOf('image')===0?'<a href="'+u+'" target="_blank"><img src="'+u+'" alt=""></a>':'<a href="'+u+'" target="_blank" class="pdf">PDF</a>')+'<span>'+esc(f.name)+'</span><button type="button" data-del="'+f.id+'">Remove</button>'}).catch(function(){d.textContent=f.name});
-  box.appendChild(d)})}
-var root=document.getElementById('cities');
-root.addEventListener('change',function(e){
- var el=e.target.closest('.it');if(!el)return;
- if(e.target.matches('[data-fi]')){
-  var s=g(el.dataset.id);s.files=s.files||[];var fs=[].slice.call(e.target.files);
-  Promise.all(fs.map(function(f){var id='f'+Date.now()+Math.random().toString(36).slice(2,7);return dbop('readwrite',function(st){return st.put(f,id)}).then(function(){s.files.push({id:id,name:f.name,type:f.type||'application/octet-stream'})})})).then(function(){save();drawFiles(el);chips(el);refresh()}).catch(function(){alert('Could not store the file in this browser.')});
-  e.target.value='';return}
- var f=e.target.dataset.f;if(!f)return;var s=g(el.dataset.id);
- if(f==='done'){s.done=e.target.checked;el.classList.toggle('done',s.done)}else s[f]=e.target.value.trim();
- save();chips(el);refresh()});
-root.addEventListener('input',function(e){var f=e.target.dataset.f;if(!f||f==='done'||f==='kind'||f==='cur')return;var el=e.target.closest('.it');g(el.dataset.id)[f]=e.target.value.trim();save();refresh()});
-root.addEventListener('click',function(e){
- var b=e.target.closest('button');if(!b)return;var el=b.closest('.it');
- if(b.dataset.add==='file'){el.querySelector('[data-fi]').click();return}
- if(b.dataset.del){var s=g(el.dataset.id),id=b.dataset.del;if(!confirm('Remove this file?'))return;s.files=s.files.filter(function(f){return f.id!==id});dbop('readwrite',function(st){return st.delete(id)});save();drawFiles(el);chips(el);refresh();return}
- if(b.dataset.addi!==undefined||b.dataset.adds!==undefined){var stay=b.dataset.adds!==undefined,ci=stay?b.dataset.adds:b.dataset.addi;var t=prompt(stay?'Stay name or note':'What needs doing?');if(!t)return;(S.custom[ci]=S.custom[ci]||[]).push({id:'x'+Date.now(),t:t,stay:stay});save();var open=[].map.call(document.querySelectorAll('.city'),function(c){return c.open});render();document.querySelectorAll('.city').forEach(function(c,i){c.open=open[i]})}});
-document.getElementById('hd').onclick=function(){var t=document.getElementById('tk');t.classList.toggle('hide-done');this.textContent=t.classList.contains('hide-done')?'Show done':'Hide done'};
-document.getElementById('oa').onclick=function(){document.querySelectorAll('.city').forEach(function(c){c.open=true})};
-document.getElementById('ca').onclick=function(){document.querySelectorAll('.city').forEach(function(c){c.open=false})};
-function blobToURL(b){return new Promise(function(r){var f=new FileReader();f.onload=function(){r(f.result)};f.readAsDataURL(b)})}
-document.getElementById('ex').onclick=function(){
- var ids=[];Object.keys(S.items).forEach(function(k){(S.items[k].files||[]).forEach(function(f){ids.push(f)})});
- Promise.all(ids.map(function(f){return dbop('readonly',function(st){return st.get(f.id)}).then(function(b){return b?blobToURL(b).then(function(u){return{id:f.id,data:u}}):null})})).then(function(fl){
-  var blob=new Blob([JSON.stringify({state:S,files:fl.filter(Boolean)})],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='sri-lanka-tracker-backup.json';a.click()})};
-document.getElementById('im').onclick=function(){document.getElementById('imf').click()};
-document.getElementById('imf').onchange=function(e){
- var f=e.target.files[0];if(!f)return;if(!confirm('This replaces what is saved here with the backup. Continue?'))return;
- f.text().then(function(t){var j=JSON.parse(t);S=j.state;save();return Promise.all((j.files||[]).map(function(x){return fetch(x.data).then(function(r){return r.blob()}).then(function(b){return dbop('readwrite',function(st){return st.put(b,x.id)})})}))}).then(function(){render()}).catch(function(){alert('That file could not be read.')})};
-render();
+ document.getElementById('spent').textContent=fmt(sp)||'nothing yet'}
+/* sync with Google Sheet through an Apps Script web app */
+function url_(){return ls_('sl-url')}
+function setSync(t){document.getElementById('sync').textContent='Google Sheet: '+t}
+function row(id){var f=find(id);if(!f)return null;var s=g(id),c=CITIES[f.ci];return{id:id,city:c.name,task:f.it.t,done:s.done?'TRUE':'FALSE',name:s.name||'',type:s.kind||'',link:s.link||'',pdf:s.pdf||'',amount:s.amt===undefined||s.amt===''?'':Number(s.amt),currency:s.cur||'INR',note:s.note||'',updated:s.u||0}}
+function push(all){
+ if(!url_())return;var ids=all?[].concat.apply([],CITIES.map(function(c,i){return allItems(i).map(function(x){return x.id})})):Object.keys(dirty);
+ if(!ids.length)return;setSync('saving...');
+ var rows=ids.map(row).filter(Boolean);
+ return fetch(url_(),{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({pw:ss_('slpw'),rows:rows})}).then(function(r){return r.json()}).then(function(j){
+  if(j.error){setSync('error, '+j.error);return}ids.forEach(function(i){delete dirty[i]});setSync('saved '+new Date().toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'}))}).catch(function(){setSync('offline, will retry')})}
+function queue(id){dirty[id]=1;clearTimeout(timer);timer=setTimeout(function(){push()},1200)}
+function pull(){
+ if(!url_()){setSync('not connected');return Promise.resolve()}
+ setSync('loading...');
+ return fetch(url_()+(url_().indexOf('?')<0?'?':'&')+'pw='+encodeURIComponent(ss_('slpw'))).then(function(r){return r.json()}).then(function(j){
+  if(j.error){setSync('error, '+j.error);return}
+  var ch=false;
+  (j.rows||[]).forEach(function(r){
+   var id=String(r.id),f=find(id);
+   if(!f&&id.charAt(0)==='x'){var ci=CITIES.map(function(c){return c.name}).indexOf(r.city);if(ci<0)return;(S.custom[ci]=S.custom[ci]||[]).push({id:id,t:r.task,stay:r.type!==''&&r.type!==undefined&&r.type!==null&&String(r.type)!==''});f=find(id);ch=true}
+   if(!f)return;var s=g(id),u=Number(r.updated)||0;
+   if(u>(s.u||0)){s.done=r.done===true||String(r.done).toUpperCase()==='TRUE';s.name=String(r.name||'');s.kind=String(r.type||'');s.link=String(r.link||'');s.pdf=String(r.pdf||'');s.amt=r.amount===''||r.amount===null?'':String(r.amount);s.cur=String(r.currency||'INR');s.note=String(r.note||'');s.u=u;ch=true}});
+  save();if(ch&&!document.activeElement.closest('.tkt'))render();
+  setSync('synced '+new Date().toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'}));
+  var u2=Object.keys(S.items).filter(function(k){return (S.items[k].u||0)>0});return null}).catch(function(){setSync('offline')})}
+function init(){
+ load();render();
+ var root=document.getElementById('cities');
+ function upd(e){var f=e.target.dataset.f;if(!f)return;var tr=e.target.closest('tr');var s=g(tr.dataset.id);
+  if(f==='done'){s.done=e.target.checked;tr.classList.toggle('done',s.done)}else s[f]=e.target.value.trim();
+  s.u=Date.now();var a=tr.querySelector('[data-o="'+f+'"]');if(a){a.hidden=!s[f];a.href=s[f]||'#'}
+  save();refresh();queue(tr.dataset.id)}
+ root.addEventListener('change',upd);root.addEventListener('input',function(e){if(e.target.dataset.f&&e.target.dataset.f!=='done'&&e.target.tagName!=='SELECT')upd(e)});
+ root.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;
+  if(b.dataset.addi!==undefined||b.dataset.adds!==undefined){var stay=b.dataset.adds!==undefined,ci=stay?b.dataset.adds:b.dataset.addi,t=prompt(stay?'Stay, for example Night 3 second room':'What is it?');if(!t)return;var id='x'+Date.now();(S.custom[ci]=S.custom[ci]||[]).push({id:id,t:t,stay:stay});g(id).u=Date.now();save();render();queue(id)}});
+ document.getElementById('hd').onclick=function(){var t=document.getElementById('tk');t.classList.toggle('hide-done');this.textContent=t.classList.contains('hide-done')?'Show done':'Hide done'};
+ document.getElementById('oa').onclick=function(){document.querySelectorAll('.city').forEach(function(c){c.open=true})};
+ document.getElementById('ca').onclick=function(){document.querySelectorAll('.city').forEach(function(c){c.open=false})};
+ document.getElementById('sn').onclick=function(){Promise.resolve(push()).then(pull)};
+ var su=document.getElementById('setup');
+ document.getElementById('cs').onclick=function(){su.hidden=!su.hidden;document.getElementById('su').value=url_()||'';document.getElementById('sl').value=ls_('sl-sheet')||''};
+ document.getElementById('code').value=SCRIPT;
+ document.getElementById('cc').onclick=function(){var t=document.getElementById('code');t.select();try{document.execCommand('copy');this.textContent='Copied'}catch(e){}var b=this;setTimeout(function(){b.textContent='Copy the code'},1500)};
+ document.getElementById('ss').onclick=function(){var u=document.getElementById('su').value.trim();if(!/^https:\/\/script\.google\.com\//.test(u)){alert('Paste the Web app URL that starts with https://script.google.com/');return}
+  ls_('sl-url',u);ls_('sl-sheet',document.getElementById('sl').value.trim());su.hidden=true;showSheet();pull().then(function(){return push(true)})};
+ document.getElementById('sx').onclick=function(){ls_('sl-url',null);ls_('sl-sheet',null);su.hidden=true;showSheet();setSync('not connected')};
+ function showSheet(){var a=document.getElementById('os'),l=ls_('sl-sheet');a.hidden=!l;if(l)a.href=l}
+ showSheet();
+ pull();document.addEventListener('visibilitychange',function(){if(!document.hidden)pull()})}
+var SCRIPT="var PASSWORD = 'CHANGE_ME';\nvar HEAD = ['id','city','task','done','name','type','link','pdf','amount','currency','note','updated'];\nfunction sheet_() {\n  var ss = SpreadsheetApp.getActiveSpreadsheet();\n  var s = ss.getSheetByName('Tracker') || ss.insertSheet('Tracker');\n  if (s.getLastRow() === 0) { s.appendRow(HEAD); s.setFrozenRows(1); }\n  return s;\n}\nfunction out_(o) {\n  return ContentService.createTextOutput(JSON.stringify(o)).setMimeType(ContentService.MimeType.JSON);\n}\nfunction doGet(e) {\n  if (e.parameter.pw !== PASSWORD) return out_({error: 'password'});\n  var v = sheet_().getDataRange().getValues(), rows = [];\n  for (var i = 1; i < v.length; i++) {\n    var o = {};\n    for (var j = 0; j < HEAD.length; j++) o[HEAD[j]] = v[i][j];\n    rows.push(o);\n  }\n  return out_({rows: rows});\n}\nfunction doPost(e) {\n  var b = JSON.parse(e.postData.contents);\n  if (b.pw !== PASSWORD) return out_({error: 'password'});\n  var lock = LockService.getScriptLock();\n  lock.waitLock(15000);\n  var s = sheet_(), v = s.getDataRange().getValues(), idx = {};\n  for (var i = 1; i < v.length; i++) idx[v[i][0]] = i + 1;\n  b.rows.forEach(function (r) {\n    var line = HEAD.map(function (h) { return r[h] === undefined ? '' : r[h]; });\n    if (idx[r.id]) s.getRange(idx[r.id], 1, 1, HEAD.length).setValues([line]);\n    else { s.appendRow(line); idx[r.id] = s.getLastRow(); }\n  });\n  lock.releaseLock();\n  return out_({ok: true, n: b.rows.length});\n}";
 </script>
