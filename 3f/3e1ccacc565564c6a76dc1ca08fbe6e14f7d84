@@ -1,0 +1,19 @@
+plans/sri-lanka.html
+  s_cfb3d9fc65baa6::t_ab88ba6dbb5df4 50
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "3f3e1ccacc565564c6a76dc1ca08fbe6e14f7d84",
+  "prompts": {},
+  "sessions": {
+    "s_cfb3d9fc65baa6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f17aae31-e0db-41bd-9aee-e49907ff7b6a",
+        "model": "unknown"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
