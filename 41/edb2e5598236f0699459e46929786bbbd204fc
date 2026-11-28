@@ -1,0 +1,23 @@
+assets/plans/sri-lanka-notion-tracker.csv
+  s_cfb3d9fc65baa6::t_34e8183a0d3888 1-62
+assets/plans/sri-lanka-notion-tracker.md
+  s_cfb3d9fc65baa6::t_1920333a57f2cd 1-114
+plans/sri-lanka.html
+  s_cfb3d9fc65baa6::t_98b36930c2eb6d 50
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "41edb2e5598236f0699459e46929786bbbd204fc",
+  "prompts": {},
+  "sessions": {
+    "s_cfb3d9fc65baa6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f17aae31-e0db-41bd-9aee-e49907ff7b6a",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Aditya Kanoi <aditya.kanoi@gdn-commerce.com>"
+    }
+  }
+}
